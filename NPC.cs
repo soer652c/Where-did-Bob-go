@@ -42,5 +42,16 @@ public class NPC
                 break;
         }
     }
+    public void StopConversation()
+    {
+        if choice == 3
+            return Place
+    }
+
+    public void UseMonocle(Monocle)
+      {
+
+      }  
+
     
 }
