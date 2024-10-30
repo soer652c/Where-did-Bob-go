@@ -5,20 +5,30 @@ public class NPC
     public string Place;
     public Dialog_Tree;
     public bool Visibility;
-    public string Warningsigns = new warningsigns;
+    public bool Warningsigns;
     public string Name;
     public uint Age;
     public char Gender;
 
-    public bool SuisideRisk(warningssigns)
+    public bool SuicideRisk(bool warningSigns)
     {
-        if warningsigns == True
-            ConsoleWriteLine("This Person does have warningsigns and should seek help")
+        // Reads the imput from console
+        Console.ReadLine();
+        if (warningSigns)
+        {
+            Console.WriteLine("This person does have warning signs and should seek help.");
+            return true; 
+            // Return true if there are warning signs
+        }
         else 
-            ConsoleWriteLine("This person does not show any warningsigsn")        
-    }
+        {
+            Console.WriteLine("This person does not show any warning signs.");
+            return false; 
+            // Return false if there are no warning signs
+        }
     public void StartConversation()
     {
+        // Short term code, to test if our conversation works in the first place, Gonna be revised later on
         Console.WriteLine("Starting conversation");
         Console.WriteLine("1. Greetings friend, How are you doing today?");
         Console.WriteLine("2. Sup nerd hows it hangin?");
@@ -51,7 +61,20 @@ public class NPC
     public void UseMonocle(Monocle)
       {
 
-      }  
+      }
 
-    
+    public void Identifiers()
+    {
+        string
+    }
+    public bool GuessImput(Warningsigns)
+    {
+        Guess = Console.ReadLine();
+    }
+
+    public bool GuessCheck(Guess)
+    {
+        If Guess = True
+            Console.WriteLine("")
+    }
 }
