@@ -3,14 +3,14 @@ public class Hint
     public string Help { get; }
     public string Message { get; }
 
-    public Hint(string help, string message) 
+    public Hint(string help, string message)
     {
         Help = help;
-        message = message;
+        Message = message; // Assigning the parameter to the Message property
     }
 
     public void Speak()
     {
-        console.WriteLine("You need help?")
+        Console.WriteLine("You need help?");
     }
 }
