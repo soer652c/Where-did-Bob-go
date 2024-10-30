@@ -12,7 +12,7 @@ public class Item
     }
 
     //metode
-    public virtual void Use()
+    public virtual string Use()
     {
         return ();
     }
