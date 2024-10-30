@@ -1,19 +1,19 @@
 public class Item
 {
-    //atribut
-    public string nameOfItem;
-    public string description;
+    // Attributes 
+    public string Name { get; }
+    public string Description { get; }
 
-    //constructor 
-    public Item(string init_nameOfItem, string init_description)
+    // Constructor 
+    public Item(string name, string description)
     {
-        this.nameOfItem = init_nameOfItem;
-        this.description = init_description;
+        this.Name = name;
+        this.Description = description;
     }
 
-    //metode
+    // Method
     public virtual string Use()
     {
-        return ();
+        return $"You found a {Name}.";
     }
 }
