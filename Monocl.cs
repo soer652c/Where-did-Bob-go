@@ -11,6 +11,6 @@ public class Hint
 
     public void Speak()
     {
-        Console.WriteLine("You need help?");
+        Console.WriteLine("Do you need help?");
     }
 }
