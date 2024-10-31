@@ -39,7 +39,7 @@ public class NPC
         switch (choice)
         {
             case "1":
-                Console.WriteLine($"I am doign very well thank you, What are you doing today?.");
+                Console.WriteLine("I am doign very well thank you, What are you doing today?.");
                 break;
             case "2":
                 Console.WriteLine("Im Skibidi Rizz Fam, Whats the sitch?");
@@ -75,6 +75,6 @@ public class NPC
     public bool GuessCheck(Guess)
     {
         If Guess = True
-            Console.WriteLine("")
+            Console.WriteLine("You are correct, now have a cookie!")
     }
 }
