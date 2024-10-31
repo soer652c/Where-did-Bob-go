@@ -74,7 +74,11 @@ public class NPC
 
     public bool GuessCheck(Guess)
     {
-        If Guess = True
+        If Guess == true
             Console.WriteLine("You are correct, now have a cookie!")
+
+        else Guess == false
+            Console.WriteLine("Sorry, this person is fine and healthy") 
+            
     }
 }
