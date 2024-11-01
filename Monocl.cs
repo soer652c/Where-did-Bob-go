@@ -6,11 +6,11 @@ public class Hint
     public Hint(string help, string message)
     {
         Help = help;
-        Message = message; // Assigning the parameter to the Message property
+        Message = message;
     }
 
     public void Speak()
     {
-        Console.WriteLine("Do you need help?");
+        Console.WriteLine("You need help?");
     }
 }
