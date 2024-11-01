@@ -1,0 +1,15 @@
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.AssemblyInfoInputs.cache
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.AssemblyInfo.cs
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.csproj.CoreCompileInputs.cache
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.sourcelink.json
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\bin\Debug\net8.0\Where_did_Bob_Go_VA.exe
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\bin\Debug\net8.0\Where_did_Bob_Go_VA.deps.json
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\bin\Debug\net8.0\Where_did_Bob_Go_VA.runtimeconfig.json
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\bin\Debug\net8.0\Where_did_Bob_Go_VA.dll
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\bin\Debug\net8.0\Where_did_Bob_Go_VA.pdb
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.dll
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\refint\Where_did_Bob_Go_VA.dll
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.pdb
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\Where_did_Bob_Go_VA.genruntimeconfig.cache
+C:\Users\awm18\Documents\GitHub\Where_did_Bob_Go_VA\Where_did_Bob_Go_VA\obj\Debug\net8.0\ref\Where_did_Bob_Go_VA.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Where_did_Bob_Go_VA/1.0.0": {
+        "runtime": {
+          "Where_did_Bob_Go_VA.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Where_did_Bob_Go_VA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Where_did_Bob_Go_VA",
+    "\\Where_did_Bob_Go_VA\\GUI",
+    "\\Where_did_Bob_Go_VA\\NPC",
+    "\\Where_did_Bob_Go_VA\\NPC\\Dialog"
   ],
-  "SelectedNode": "\\Item.cs",
+  "SelectedNode": "\\Where_did_Bob_Go_VA.sln",
   "PreviewInSolutionExplorer": false
 }

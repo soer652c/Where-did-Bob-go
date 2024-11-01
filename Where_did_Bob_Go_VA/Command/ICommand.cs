@@ -1,0 +1,25 @@
+using System;
+using Where_did_Bob_Go_VA.Command_NS;
+using Where_did_Bob_Go_VA.GUI_NS;
+using Where_did_Bob_Go_VA.Item_NS;
+using Where_did_Bob_Go_VA.NPC_NS;
+using Where_did_Bob_Go_VA.NPC_NS.Dialog_NS;
+using Where_did_Bob_Go_VA.Player_NS;
+using Where_did_Bob_Go_VA.Proc_Gen_NS;
+using Where_did_Bob_Go_VA.World_NS;
+using Where_did_Bob_Go_VA.Game_NS;
+
+namespace Where_did_Bob_Go_VA.Command_NS
+{
+
+
+    /* Command interface
+     */
+
+    public interface ICommand
+    {
+        void Execute(Context context, string command, string[] parameters);
+        string GetDescription();
+    }
+
+}
