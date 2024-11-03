@@ -24,7 +24,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public void Welcome()
         {
-            Console.WriteLine("You are now at " + name);
+            Console.WriteLine("You are now at " + World);
             HashSet<string> exits = edges.Keys.ToHashSet();
             Console.WriteLine("Current exits are:");
             foreach (String exit in exits)
@@ -47,7 +47,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Movement_in_room():
         public void Movement_in_room()
         {
-
+            
         }
         //+ Move_to_NPC(NPC):
         public override string ToString()
@@ -64,7 +64,9 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             return false;
         }
-        //+ Display_Rooms():
+        //+ Display_Rooms(): vi skal lave rum færdig
+        public void Display_Room()
+        
         //+ Display_NPC's():
     }
 
