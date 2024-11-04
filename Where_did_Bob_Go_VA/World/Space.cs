@@ -1,13 +1,4 @@
-using System;
-using Where_did_Bob_Go_VA.Command_NS;
-using Where_did_Bob_Go_VA.GUI_NS;
-using Where_did_Bob_Go_VA.Item_NS;
 using Where_did_Bob_Go_VA.NPC_NS;
-using Where_did_Bob_Go_VA.NPC_NS.Dialog_NS;
-using Where_did_Bob_Go_VA.Player_NS;
-using Where_did_Bob_Go_VA.Proc_Gen_NS;
-using Where_did_Bob_Go_VA.World_NS;
-using Where_did_Bob_Go_VA.Game_NS;
 
 namespace Where_did_Bob_Go_VA.World_NS
 {
@@ -45,31 +36,31 @@ namespace Where_did_Bob_Go_VA.World_NS
         List<NPC> NPCList = new List<NPC>();
 
         //+ Movement_in_room():
-        public void Movement_in_room()
+        public void NPCInRoom()
         {
             
         }
-            }
 
-        
+
+
         //+ Move_to_NPC(NPC): We just need a plain talk to npc, we don't need to move anywhere
         public override string ToString()
         {
-            return SuisideRisk;
+            return SuicideRisk;
         }
         public override bool Equals(object NPCList_ToCompare)
         {
             if (((NPC)NPCList_ToCompare).NPCList() == NPCList)
             {
                 return true;
-                Console.WriteLine(SuisideRisk);
+                Console.WriteLine(SuicideRisk);
             }
 
             return false;
         }
         //+ Display_Rooms(): vi skal lave rum færdig
         public void Display_Room()
-        
+
         //+ Display_NPC's():
     }
 
