@@ -49,7 +49,10 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             
         }
-        //+ Move_to_NPC(NPC):
+            }
+
+        
+        //+ Move_to_NPC(NPC): We just need a plain talk to npc, we don't need to move anywhere
         public override string ToString()
         {
             return SuisideRisk;
