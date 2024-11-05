@@ -20,81 +20,55 @@ namespace Where_did_Bob_Go_VA.NPC_NS
     {
         public string Place;
         //public Dialog_Tree;
-        public bool Visibility;
-        public bool Warningsigns;
-        public string Name;
-        public uint Age;
-        public char Gender;
+        public bool NPCvisibility;
+        public bool NPCwarningsigns;
+        public string NPCname;
+        public uint NPCage;
+        public char NPCgender;
+        public string[] NPCidentifiers;
 
-        public bool SuicideRisk(bool warningSigns)
-        {
-            // Reads the imput from console
-            Console.ReadLine();
-            if (warningSigns)
-            {
-                Console.WriteLine("This person does have warning signs and should seek help.");
-                return true;
-                // Return true if there are warning signs
-            }
-            else
-            {
-                Console.WriteLine("This person does not show any warning signs.");
-                return false;
-                // Return false if there are no warning signs
-            }
-        }
+        //public bool SuicideRisk(bool warningSigns)
+        //{
+        //    // Reads the imput from console
+        //    Console.ReadLine();
+        //    if (warningSigns)
+        //    {
+        //        Console.WriteLine("This person does have warning signs and should seek help.");
+        //        return true;
+        //        // Return true if there are warning signs
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("This person does not show any warning signs.");
+        //        return false;
+        //        // Return false if there are no warning signs
+        //    }
+        //}
 
         public void StartConversation()
         {
+            string[] TextBox = { "1. Greetings friend, How are you doing today?", "2. Sup nerd hows it hangin?", "3. Nevermind, i got somewhere else to be!" };
             Update_TextBox_Main(TextBox);
             // Short term code, to test if our conversation works in the first place, Gonna be revised later on
-            string[] TextBox = { "1. Greetings friend, How are you doing today?", "2. Sup nerd hows it hangin?", "3. Nevermind, i got somewhere else to be!" };
 
 
-
-            Update_TextBox_Options(TextBox);
             String[] Textbox = { "I am doign very well thank you, What are you doing today?.", "Im Skibidi Rizz Fam, Whats the sitch?" };
+            Update_TextBox_Options(TextBox);
+            
 
+        //private void StopConversation()
+        //    {
+             
+        //    }
 
-            string choice = Console.ReadLine();
+        //public void UseMonocle(Moncle monocle)
+        //{
 
-            public PickOption(string choice)
+        //}
+
+            private NPCidentifiers(string NPCName, int NPCage, string NPCgender)
             {
-
-                switch (choice)
-                {
-                    case "1":
-                        break;
-
-                    case "2":
-                        break;
-
-                    case "3":
-                        break;
-
-                    default:
-
-                        break;
-                }
-            }
-            public void StopConversation()
-            {
-                string choice = Console.ReadLine();
-
-                if (choice == "3")
-                {
-                    return;
-                }
-            }
-
-            //public void UseMonocle(Moncle monocle)
-            //{
-
-            //}
-
-            public void Identifiers(string NPCName, int NPCage, string NPCgender)
-            {
-                NPCName =
+                
             }
             public bool GuessInput()
             {
@@ -116,6 +90,42 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                     return false;
                 }
             }
+            
         }
+        private bool NPCvisibility (bool visibility)
+        // changes depending if the NPC is visible
+        {
+            // if condition is visible NPC is visible
+            // else NPC is hidden
+        }
+
+        string userChoice = Console.ReadLine();  
+        // Read user input
+        PickOption(userChoice);  
+        // Pass the input to the method
+
+        private static void PickOption(string userChoice)  
+        // choice is passed as a parameter
+        {
+            switch (userChoice)
+            {
+                case "1":
+                    // Handle option 1
+                    break;
+
+                case "2":
+                    // Handle option 2
+                    break;
+
+                case "3":
+                    // Handle option 3
+                    break;
+
+                default:
+                    // Handle invalid input
+                    break;
+            }
+        }
+
     }
 
