@@ -54,16 +54,16 @@ namespace Where_did_Bob_Go_VA.World_NS
             bar.AddEdge("Outside", outside);
             park.AddEdge("Playground", playground);
             playground.AddEdge("Park", park);
-            park.AddEgde("Outside", outside);
+            park.AddEdge("Outside", outside);
             school.AddEdge("Community", community);
             community.AddEdge("School", school);
-            school.AddEgde("Outside", outside);
-            subway.AddEdge("Outside", outside)
+            school.AddEdge("Outside", outside);
+            subway.AddEdge("Outside", outside);
             hospital.AddEdge("Psychiatry", psychiatry);
             psychiatry.AddEdge("Hospital", hospital);
             hospital.AddEdge("Outside", outside);
 
-            this.entry = entry;
+            this.entry = home;
         }
 
         public Space GetEntry()
