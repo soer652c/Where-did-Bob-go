@@ -37,13 +37,24 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public void Welcome()
         {
-            Update_TextBox_Main("You are now at " + name);
+            // .
             HashSet<string> exits = edges.Keys.ToHashSet();
-            Update_TextBox_Main("Current exits are:");
-            foreach (String exit in exits)
+
+            Update_TextBox_Main("You are now at " + name);
+
+            // .   
+            string[] exits_string = new string[ (exits.Count() + 1) ];
+
+            exits_string[0] = ("Current exits are:");
+
+            // .   
+            for (int i = 0; i < exits.Count(); i++) 
             {
-                Update_TextBox_Main(" - " + exit);
+                exits_string[i+1] = ( " - " + exits.ElementAt(i) );
             }
+
+            // .  
+            Update_TextBox_Main(exits_string);
         }
 
         public void Goodbye()
