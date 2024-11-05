@@ -222,6 +222,84 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
 
 
+
+
+
+
+        /////   Update_TextBox_TopLeft ( string[] )   /////   
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_TopLeft(string new_text)
+        {
+            // .  
+            string[] temp_string = { new_text };
+
+            // .
+            Change_TextBox_TopLeft(temp_string);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
+        /////   Update_TextBox_TopRight ( string[] )   /////   
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_TopRight(string new_text)
+        {
+            // .  
+            string[] temp_string = { new_text };
+
+            // .
+            Change_TextBox_TopRight(temp_string);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
+        /////   Update_TextBox_Main ( string[] )   /////   
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_Main(string new_text)
+        {
+            // .  
+            string[] temp_string = { new_text };
+
+            // .
+            Change_TextBox_Main(temp_string);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
+        /////   Update_TextBox_Options ( string[] )   /////   
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_Options(string new_text)
+        {
+            // .  
+            string[] temp_string = { new_text };
+
+            // .
+            Change_TextBox_Options(temp_string);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
+
+
         /////   Change_TextBox_TopLeft ( string[] )   /////   
         // Takes in a string array and changes the text of a the textbox.   
         public static void Change_TextBox_TopLeft(string[] new_text)
