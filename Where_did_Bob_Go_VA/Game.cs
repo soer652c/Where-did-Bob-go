@@ -42,7 +42,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
 
         public Game(/*string[] args*/)
         {
-            Console.WriteLine("Welcome to the World of Zuul!");
+            Update_TextBox_Main("Welcome to the World of Zuul!");
 
 
 
@@ -55,7 +55,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
                 string? line = Console.ReadLine();
                 if (line != null) registry.Dispatch(line);
             }
-            Console.WriteLine("Game Over 😥");
+            Update_TextBox_Main("Game Over 😥");
         }
     }
 
