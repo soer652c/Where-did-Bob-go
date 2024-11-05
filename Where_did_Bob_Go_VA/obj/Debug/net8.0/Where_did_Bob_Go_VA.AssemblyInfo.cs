@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Where_did_Bob_Go_VA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+489aa2e0bb929ea6c920b235bb065c6fe822f836")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21129719d0347c730f99d3a6b3bd1e1a760e2bcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Where_did_Bob_Go_VA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Where_did_Bob_Go_VA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

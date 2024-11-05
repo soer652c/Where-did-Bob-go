@@ -14,9 +14,14 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
     public class Food_Item : Item
     {
+        public Food_Item(string name, string description) : base(name, description)
+        {
+            // .
+        }
+
         public override string Use()
         {
-            RestoreHealth();
+            //RestoreHealth();
 
             return "You got +1 health";
         }

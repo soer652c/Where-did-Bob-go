@@ -24,7 +24,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public void Welcome()
         {
-            Console.WriteLine("You are now at " + World);
+            Console.WriteLine("You are now at " + name);
             HashSet<string> exits = edges.Keys.ToHashSet();
             Console.WriteLine("Current exits are:");
             foreach (String exit in exits)
@@ -54,16 +54,16 @@ namespace Where_did_Bob_Go_VA.World_NS
             person.StartConversation();
         }
 
-        public override string ToString()
+        public string ToString()
         {
-            return SuicideRisk;
+            return "";
         }
-        public override bool Equals(object NPCList_ToCompare)
+
+        public override bool Equals(object space_ToCompare)
         {
-            if (((NPC)NPCList_ToCompare).NPCList() == NPCList)
+            if ( ((Space) space_ToCompare).ToString() == this.ToString())
             {
                 return true;
-                Console.WriteLine(SuicideRisk);
             }
 
             return false;
@@ -76,7 +76,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Display_NPC's():
         public void Display_NPCList()
         {
-            for (int i = 0; i < NPCList.Lenght; i++)
+            for (int i = 0; i < NPCList.Length; i++)
             {
                 if (NPCList[i] != null && NPCList[i].Visibility)
                 {

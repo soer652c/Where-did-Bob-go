@@ -12,7 +12,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 
-namespace Where_did_Bob_Go_VA.Item
+namespace Where_did_Bob_Go_VA.Item_NS
 {
     public class Moncle
     {

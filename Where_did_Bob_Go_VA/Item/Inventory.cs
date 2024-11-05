@@ -12,7 +12,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 
-namespace Where_did_Bob_Go_VA.Item
+namespace Where_did_Bob_Go_VA.Item_NS
 {
     public class Inventory
     {
@@ -67,7 +67,7 @@ namespace Where_did_Bob_Go_VA.Item
             if (ItemList.Contains(item))
             {
                 ItemList.Remove(item);
-                Console.WriteLine("Item removed" + " " + item.nameOfItem);
+                Console.WriteLine("Item removed" + " " + item.Name);
             }
             else
             {
@@ -80,7 +80,7 @@ namespace Where_did_Bob_Go_VA.Item
             Console.WriteLine("Inventorylist");
             foreach (Item item in ItemList)
             {
-                Console.WriteLine(item.nameOfItem + "\n" + "This is the name Item; " + item.nameOfItem + "\n" + " And this is the description of the item: " + item.description + "\n");
+                Console.WriteLine(item.Name + "\n" + "This is the name Item; " + item.Name + "\n" + " And this is the description of the item: " + item.Description + "\n");
             }
         }
     }
