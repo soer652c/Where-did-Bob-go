@@ -37,12 +37,12 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public void Welcome()
         {
-            Console.WriteLine("You are now at " + name);
+            Update_TextBox_Main("You are now at " + name);
             HashSet<string> exits = edges.Keys.ToHashSet();
-            Console.WriteLine("Current exits are:");
+            Update_TextBox_Main("Current exits are:");
             foreach (String exit in exits)
             {
-                Console.WriteLine(" - " + exit);
+                Update_TextBox_Main(" - " + exit);
             }
         }
 
@@ -84,7 +84,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Display_Rooms(): vi skal lave rum færdig
         public void Display_Room()
         {
-            Console.WriteLine(description);
+            Update_TextBox_Main(description);
         }
         //+ Display_NPC's():
         public void Display_NPCList()
@@ -93,7 +93,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             {
                 if (NPCList[i] != null && NPCList[i].Visibility)
                 {
-                    Console.WriteLine(NPCList[i].Name);
+                    Update_TextBox_Main(NPCList[i].Name);
                 }
             }
         }
