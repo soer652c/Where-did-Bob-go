@@ -10,6 +10,8 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using System.Threading.Tasks;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Where_did_Bob_Go_VA.NPC_NS
 {
@@ -44,69 +46,76 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
         public void StartConversation()
         {
+            Update_TextBox_Main(TextBox);
             // Short term code, to test if our conversation works in the first place, Gonna be revised later on
-            Console.WriteLine("Starting conversation");
-            Console.WriteLine("1. Greetings friend, How are you doing today?");
-            Console.WriteLine("2. Sup nerd hows it hangin?");
-            Console.WriteLine("3. Nevermind, i got somewhere else to be!");
+            string[] TextBox = { "1. Greetings friend, How are you doing today?", "2. Sup nerd hows it hangin?", "3. Nevermind, i got somewhere else to be!" };
+
+
+
+            Update_TextBox_Options(TextBox);
+            String[] Textbox = { "I am doign very well thank you, What are you doing today?.", "Im Skibidi Rizz Fam, Whats the sitch?" };
+
 
             string choice = Console.ReadLine();
 
-            switch (choice)
+            public PickOption(string choice)
             {
-                case "1":
-                    Console.WriteLine($"I am doign very well thank you, What are you doing today?.");
-                    break;
-                case "2":
-                    Console.WriteLine("Im Skibidi Rizz Fam, Whats the sitch?");
-                    break;
-                case "3":
-                    Console.WriteLine("Allrighty then, have a good day then");
-                    break;
-                default:
-                    Console.WriteLine("I don't understand that....");
-                    break;
+
+                switch (choice)
+                {
+                    case "1":
+                        break;
+
+                    case "2":
+                        break;
+
+                    case "3":
+                        break;
+
+                    default:
+
+                        break;
+                }
             }
-        }
-        public void StopConversation()
-        {
-            string choice = Console.ReadLine();
-
-            if (choice == "3")
+            public void StopConversation()
             {
-                return;
+                string choice = Console.ReadLine();
+
+                if (choice == "3")
+                {
+                    return;
+                }
             }
-        }
 
-        public void UseMonocle(Moncle monocle)
-        {
+            //public void UseMonocle(Moncle monocle)
+            //{
 
-        }
+            //}
 
-        public void Identifiers()
-        {
-            //string;
-        }
-        public bool GuessInput()
-        {
-            Console.WriteLine("Does the NPC show warning signs? (yes/no)");
-            string guess = Console.ReadLine();
-            return guess?.ToLower() == "yes";
-        }
-
-        public bool GuessCheck(bool guess)
-        {
-            if (guess == Warningsigns)
+            public void Identifiers(string NPCName, int NPCage, string NPCgender)
             {
-                Console.WriteLine("Gæt er korrekt.");
-                return true;
+                NPCName =
             }
-            else
+            public bool GuessInput()
             {
-                Console.WriteLine("Gæt er forkert.");
-                return false;
+                Console.WriteLine("Does the NPC show warning signs? (yes/no)");
+                string guess = Console.ReadLine();
+                return guess?.ToLower() == "yes";
+            }
+
+            public bool GuessCheck(bool guess)
+            {
+                if (guess == Warningsigns)
+                {
+                    Console.WriteLine("Gæt er korrekt.");
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Gæt er forkert.");
+                    return false;
+                }
             }
         }
     }
-}
 
