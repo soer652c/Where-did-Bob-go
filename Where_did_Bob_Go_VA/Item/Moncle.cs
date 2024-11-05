@@ -28,7 +28,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
         public void Speak()
         {
-            Console.WriteLine("You need help?");
+            Update_TextBox_Main("You need help?");
         }
 
     }

@@ -37,11 +37,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if (ItemList.Contains(item))
             {
-                Console.WriteLine("You used this item");
+                Update_TextBox_Main("You used this item");
             }
             else
             {
-                Console.WriteLine("Item not found on the list in Inventory");
+                Update_TextBox_Main("Item not found on the list in Inventory");
             }
         }
         // metode til use.int
@@ -53,7 +53,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
             }
             else
             {
-                Console.WriteLine("Invalid, list is out of range");
+                Update_TextBox_Main ("Invalid, list is out of range");
             }
         }
         //metode til Remove.int 
@@ -69,20 +69,21 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (ItemList.Contains(item))
             {
                 ItemList.Remove(item);
-                Console.WriteLine("Item removed" + " " + item.Name);
+                Update_TextBox_Main("Item removed" + " " + item.Name);
             }
             else
             {
-                Console.WriteLine("Item not found on the list in Inventory");
+                Update_TextBox_Main("Item not found on the list in Inventory");
             }
         }
         //display inventory 
         public void Display()
         {
-            Console.WriteLine("Inventorylist");
+            Update_TextBox_Main("Inventorylist");
             foreach (Item item in ItemList)
             {
-                Console.WriteLine(item.Name + "\n" + "This is the name Item; " + item.Name + "\n" + " And this is the description of the item: " + item.Description + "\n");
+                string[] cocoon = { (item.Name), ("This is the name Item; " + item.Name), (" And this is the description of the item: " + item.Description) };
+                Update_TextBox_Main(cocoon);
             }
         }
     }
