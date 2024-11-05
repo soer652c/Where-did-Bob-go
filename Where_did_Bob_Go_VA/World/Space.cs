@@ -54,7 +54,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             }
 
             // .  
-            Update_TextBox_Main(exits_string);
+            Update_TextBox_Options(exits_string);
         }
 
         public void Goodbye()
