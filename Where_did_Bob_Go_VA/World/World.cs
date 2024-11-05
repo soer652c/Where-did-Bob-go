@@ -33,7 +33,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             NPC[] TempNPCList = { Karen, Bo, Tim, Jay };
 
 
-            Space entry = new Space("Entry", "Something something description", TempNPCList);
+            Space home = new Space("Home", "Something something description", TempNPCList);
             Space outside = new Space("Outside", "Something something description", TempNPCList);
             Space subway = new Space("Subway", "Something something description", TempNPCList);
             Space hospital = new Space("Hospital", "Something something description", TempNPCList);
@@ -45,16 +45,23 @@ namespace Where_did_Bob_Go_VA.World_NS
             Space bar = new Space("Bar", "Something something description", TempNPCList);
 
 
-            entry.AddEdge("door", outside);
-            outside.AddEdge("south", subway);
-            outside.AddEdge("west", school);
-            outside.AddEdge("east", park);
-            outside.AddEdge("south-east", bar);
-            park.AddEdge("north", playground);
-            school.AddEdge("north", community);
-            subway.AddEdge("north", outside);
-            outside.AddEdge("south-west", hospital);
-            hospital.AddEdge("south", psychiatry);
+            home.AddEdge("Outside", outside);
+            outside.AddEdge("Subway", subway);
+            outside.AddEdge("School", school);
+            outside.AddEdge("Park", park);
+            outside.AddEdge("Bar", bar);
+            outside.AddEdge("Hospital", hospital);
+            bar.AddEdge("Outside", outside);
+            park.AddEdge("Playground", playground);
+            playground.AddEdge("Park", park);
+            park.AddEgde("Outside", outside);
+            school.AddEdge("Community", community);
+            community.AddEdge("School", school);
+            school.AddEgde("Outside", outside);
+            subway.AddEdge("Outside", outside)
+            hospital.AddEdge("Psychiatry", psychiatry);
+            psychiatry.AddEdge("Hospital", hospital);
+            hospital.AddEdge("Outside", outside);
 
             this.entry = entry;
         }
