@@ -17,7 +17,12 @@ namespace Where_did_Bob_Go_VA.World_NS
     // This class is responsible for the graphical representation on the terminal, using ASCII.
     public class GUI
     {
-
+        public void DisplayGuessResult(NPC npc)
+        {
+            bool guess = npc.GuessInput();
+            bool result = npc.GuessCheck(guess);
+            Console.WriteLine(result ? "Du har gættet rigtigt!" : "Du har gættet forkert.");
+        }
         // Properties.
 
         // main_text_string

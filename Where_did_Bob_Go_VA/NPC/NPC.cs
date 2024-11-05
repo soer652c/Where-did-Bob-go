@@ -79,16 +79,27 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             {
                 string
             }
-            public bool GuessImput(Warningsigns)
+            public bool GuessInput()
             {
-                Guess = Console.ReadLine();
+                Console.WriteLine("Does the NPC show warning signs? (yes/no)");
+                string guess = Console.ReadLine();
+                return guess?.ToLower() == "yes";
             }
 
-            public bool GuessCheck(Guess)
+            public bool GuessCheck(bool guess)
             {
-                If Guess = True
-                    Console.WriteLine("")
+                if (guess == Warningsigns)
+                {
+                    Console.WriteLine("Gæt er korrekt.");
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Gæt er forkert.");
+                    return false;
+                }
             }
+        }
         }
 
     }
