@@ -49,11 +49,11 @@ namespace Where_did_Bob_Go_VA.World_NS
             outside.AddEdge("south", subway);
             outside.AddEdge("west", school);
             outside.AddEdge("east", park);
-            outside.AddEdge("south east", bar);
+            outside.AddEdge("south-east", bar);
             park.AddEdge("north", playground);
             school.AddEdge("north", community);
             subway.AddEdge("north", outside);
-            outside.AddEdge("south west", hospital);
+            outside.AddEdge("south-west", hospital);
             hospital.AddEdge("south", psychiatry);
 
             this.entry = entry;

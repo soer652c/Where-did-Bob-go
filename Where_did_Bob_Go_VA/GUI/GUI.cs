@@ -38,9 +38,14 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         private static TextBox TextBox_Main = new TextBox(100, 20, "#", 3, 1);
 
 
+        /////   TextBox_Inventory   /////  
+        // .   
+        private static TextBox TextBox_Inventory = new TextBox(16, 20, "#", 1, 1);
+
+
         /////   TextBox_Options   /////  
         // .   
-        private static TextBox TextBox_Options = new TextBox(100, 6, "#", 3, 1);
+        private static TextBox TextBox_Options = new TextBox(100, 8, "#", 3, 1);
 
 
 
@@ -67,6 +72,9 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
             // .    
             TextBox_Main.Set_Text(default_text);
+
+            // .    
+            TextBox_Inventory.Set_Text(default_text);
 
             // .    
             TextBox_Options.Set_Text(default_text);
@@ -119,8 +127,32 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             /////   Printing out the main text-box  /////  
 
             // .    
-            TextBox_Main.Output_TextBox_ToConsole();
+            // TextBox_Main.Output_TextBox_ToConsole();
 
+            // .    
+            string[] TextBox_Main_StringArr = TextBox_Main.Generate_TextBox_ToStrArr();
+            string[] TextBox_Inventory_StringArr = TextBox_Inventory.Generate_TextBox_ToStrArr();
+
+            // .   
+            string[] textBox_MainPlus_StringArr = new string[TextBox_Main.textBox_Height];
+
+            // .  
+            if (TextBox_Main.textBox_Height == TextBox_Inventory.textBox_Height)
+            {
+                // .
+                for (int i = 0; i < TextBox_Main.textBox_Height; i++)
+                {
+                    textBox_MainPlus_StringArr[i] = TextBox_Main_StringArr[i] + TextBox_Inventory_StringArr[i];
+                }
+
+                // .
+                for (int i = 0; i < TextBox_Inventory.textBox_Height; i++)
+                {
+                    // .
+                    Console.WriteLine(textBox_MainPlus_StringArr[i]);
+                }
+
+            }
 
 
 
@@ -205,6 +237,21 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         }
 
 
+        /////   Update_TextBox_Inventory ( string[] )   /////   
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_Inventory(string[] new_text)
+        {
+            // .
+            Change_TextBox_Inventory(new_text);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
         /////   Update_TextBox_Options ( string[] )   /////   
         // Takes in a string array, changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_Options(string[] new_text)
@@ -280,6 +327,24 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         }
 
 
+        /////   Update_TextBox_Inventory ( string[] )   /////    
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_Inventory(string new_text)
+        {
+            // .  
+            string[] temp_string = { new_text };
+
+            // .
+            Change_TextBox_Inventory(temp_string);
+
+            // .
+            Update_GUI();
+
+            // .  
+            return;
+        }
+
+
         /////   Update_TextBox_Options ( string[] )   /////   
         // Takes in a string array, changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_Options(string new_text)
@@ -296,6 +361,9 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .  
             return;
         }
+
+
+
 
 
 
@@ -327,6 +395,18 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         /////   Change_TextBox_Main ( string[] )   /////   
         // Takes in a string array and changes the text of a the textbox.   
         public static void Change_TextBox_Main(string[] new_text)
+        {
+            // .
+            TextBox_Main.Set_Text(new_text);
+
+            // .  
+            return;
+        }
+
+
+        /////   Change_TextBox_Inventory ( string[] )   /////   
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_Inventory(string[] new_text)
         {
             // .
             TextBox_Main.Set_Text(new_text);
