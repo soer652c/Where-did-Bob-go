@@ -449,8 +449,6 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                 // We use this to make sure that .    
                 uint TextLines_LineCounter;
 
-                string emptyString = "";
-
 
 
                 // Add text_array to textBox_TextLines      

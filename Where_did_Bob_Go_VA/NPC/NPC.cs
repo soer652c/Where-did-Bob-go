@@ -27,6 +27,12 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         public char NPCgender;
         public string[] NPCidentifiers;
 
+        public NPC(string name)
+        {
+            // .
+            NPCname = name;
+        }
+
         //public bool SuicideRisk(bool warningSigns)
         //{
         //    // Reads the imput from console
