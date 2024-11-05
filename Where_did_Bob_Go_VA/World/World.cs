@@ -23,17 +23,27 @@ namespace Where_did_Bob_Go_VA.World_NS
         public World()
         {
             Space entry = new Space("Entry");
-            Space corridor = new Space("Corridor");
-            Space cave = new Space("Cave");
-            Space pit = new Space("Darkest Pit");
             Space outside = new Space("Outside");
+            Space subway = new Space("Subway");
+            Space hospital = new Space("Hospital");
+            Space psychiatry = new Space("Psychiatry");
+            Space school = new Space("School");
+            Space community = new Space("Community");
+            Space park = new Space("Park");
+            Space playground = new Space("Playground");
+            Space bar = new Space("Bar");
 
-            entry.AddEdge("door", corridor);
-            corridor.AddEdge("door", cave);
-            cave.AddEdge("north", pit);
-            cave.AddEdge("south", outside);
-            pit.AddEdge("door", cave);
-            outside.AddEdge("door", cave);
+
+            entry.AddEdge("door", outside);
+            outside.AddEdge("south", subway);
+            outside.AddEdge("west", school);
+            outside.AddEdge("east", park);
+            outside.AddEdge("south east", bar);
+            park.AddEdge("north", playground);
+            school.AddEdge("north", community);
+            subway.AddEdge("north", outside);
+            outside.AddEdge("south west", hospital);
+            hospital.AddEdge("south", psychiatry);
 
             this.entry = entry;
         }
