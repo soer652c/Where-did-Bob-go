@@ -25,16 +25,18 @@ namespace Where_did_Bob_Go_VA.World_NS
         public World()
         {
 
-            NPC Karen = new NPC();
-            NPC Bo = new NPC();
-            NPC Tim = new NPC();
-            NPC Jay = new NPC();
+            NPC Empty = new NPC("");
+            NPC Karen = new NPC("Karen");
+            NPC Bo = new NPC("Bo");
+            NPC Tim = new NPC("Tim");
+            NPC Jay = new NPC("Jay");
 
             NPC[] TempNPCList = { Karen, Bo, Tim, Jay };
+            NPC[] EmptyTempNPCList = { Empty, Empty, Empty, Empty };
 
 
-            Space home = new Space("Home", "Something something description", TempNPCList);
-            Space outside = new Space("Outside", "Something something description", TempNPCList);
+            Space home = new Space("Home", "Something something description", EmptyTempNPCList);
+            Space outside = new Space("Outside", "Something something description", EmptyTempNPCList);
             Space subway = new Space("Subway", "Something something description", TempNPCList);
             Space hospital = new Space("Hospital", "Something something description", TempNPCList);
             Space psychiatry = new Space("Psychiatry", "Something something description", TempNPCList);

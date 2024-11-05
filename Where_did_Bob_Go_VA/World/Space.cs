@@ -41,10 +41,17 @@ namespace Where_did_Bob_Go_VA.World_NS
             HashSet<string> exits = edges.Keys.ToHashSet();
 
             // .
-            string[] welcome_description = new string[3];
+            string[] welcome_description = new string[7];
 
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
+            welcome_description[2] = (NPCList[0].NPCname);
+            welcome_description[3] = NPCList[1].NPCname;
+            welcome_description[4] = NPCList[2].NPCname;
+            welcome_description[5] = NPCList[3].NPCname;
+
+            // .
+
 
             Update_TextBox_Main(welcome_description);
 
