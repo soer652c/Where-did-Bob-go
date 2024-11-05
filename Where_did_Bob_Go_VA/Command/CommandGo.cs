@@ -29,7 +29,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
             if (GuardEq(parameters, 1))
             {
-                Console.WriteLine("I don't seem to know where that is 🤔");
+                Update_TextBox_Main("I don't seem to know where that is 🤔");
                 return;
             }
             context.Transition(parameters[0]);

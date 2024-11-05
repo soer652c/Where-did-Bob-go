@@ -91,9 +91,9 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             for (int i = 0; i < NPCList.Length; i++)
             {
-                if (NPCList[i] != null && NPCList[i].Visibility)
+                if (NPCList[i] != null && NPCList[i].NPCvisibility)
                 {
-                    Console.WriteLine(NPCList[i].Name);
+                    Console.WriteLine(NPCList[i].NPCname);
                 }
             }
         }

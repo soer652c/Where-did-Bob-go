@@ -42,7 +42,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             }
 
             // present list of commands
-            Console.WriteLine("Commands:");
+            Update_TextBox_Main("Commands:");
             foreach (String commandName in commandNames)
             {
                 string description = registry.GetCommand(commandName).GetDescription();

@@ -54,11 +54,11 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
             String[] Textbox = { "I am doign very well thank you, What are you doing today?.", "Im Skibidi Rizz Fam, Whats the sitch?" };
             Update_TextBox_Options(TextBox);
-            
 
+        }
         //private void StopConversation()
         //    {
-             
+
         //    }
 
         //public void UseMonocle(Moncle monocle)
@@ -66,47 +66,52 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
         //}
 
-            private NPCidentifiers(string NPCName, int NPCage, string NPCgender)
-            {
-                
-            }
-            public bool GuessInput()
-            {
-                Console.WriteLine("Does the NPC show warning signs? (yes/no)");
-                string guess = Console.ReadLine();
-                return guess?.ToLower() == "yes";
-            }
+        private void NPC_identifiers(string NPCName, int NPCage, string NPCgender)
+        {
 
-            public bool GuessCheck(bool guess)
-            {
-                if (guess == Warningsigns)
-                {
-                    Console.WriteLine("Gæt er korrekt.");
-                    return true;
-                }
-                else
-                {
-                    Console.WriteLine("Gæt er forkert.");
-                    return false;
-                }
-            }
-            
         }
-        private bool NPCvisibility (bool visibility)
+
+        public bool GuessInput()
+        {
+            Console.WriteLine("Does the NPC show warning signs? (yes/no)");
+            string guess = Console.ReadLine();
+            return guess?.ToLower() == "yes";
+        }
+
+        /*public bool GuessCheck(bool guess)
+        {
+            if (guess == Warningsigns)
+            {
+                Console.WriteLine("Gæt er korrekt.");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Gæt er forkert.");
+                return false;
+            }
+        }*/
+
+
+        private bool NPC_visibility(bool visibility)
         // changes depending if the NPC is visible
         {
             // if condition is visible NPC is visible
             // else NPC is hidden
+            return visibility;
         }
 
-        string userChoice = Console.ReadLine();  
-        // Read user input
-        PickOption(userChoice);  
-        // Pass the input to the method
 
-        private static void PickOption(string userChoice)  
+
+        private static void PickOption(string userChoice)
         // choice is passed as a parameter
         {
+            //string userChoice = Console.ReadLine();
+            // Read user input
+
+            PickOption(userChoice);
+            // Pass the input to the method
+
             switch (userChoice)
             {
                 case "1":
@@ -128,4 +133,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         }
 
     }
+
+}
 
