@@ -26,6 +26,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         public uint NPCage;
         public char NPCgender;
         public string[] NPCidentifiers;
+        public string NPCID;
 
         public NPC(string name)
         {
