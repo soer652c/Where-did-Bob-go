@@ -19,7 +19,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
     public class NPC
     {
         public string Place;
-        //public Dialog_Tree;
+        public Dialog_Tree;
         public bool NPCvisibility;
         public bool NPCwarningsigns;
         public string NPCname;
