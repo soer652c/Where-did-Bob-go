@@ -26,7 +26,7 @@ namespace Where_did_Bob_Go_VA.Player_NS
             return;
         }
 
-        public void ReStoreHealth()
+        public void RestoreHealth()
         {
             Health = Health++;
             return;

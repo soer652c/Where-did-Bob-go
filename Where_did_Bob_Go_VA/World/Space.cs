@@ -92,9 +92,9 @@ namespace Where_did_Bob_Go_VA.World_NS
             person.StartConversation();
         }
 
-        public string ToString()
+        public override ToString()
         {
-            return "";
+            // bodyen er tom
         }
 
         public override bool Equals(object space_ToCompare)
