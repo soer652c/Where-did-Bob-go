@@ -27,5 +27,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
     // This class is for getting the dialog options from the dialog files and store the informations, based on ID and such.
     public class Dialog_NPC
     {
+        CurrentNPC = new NPC();
     }
 }
