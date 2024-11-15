@@ -87,9 +87,33 @@ namespace Where_did_Bob_Go_VA.World_NS
         
 
         //+ Move_to_NPC(NPC):
-        public void Move_to_NPC(NPC person)
+        public void Move_to_NPC(string NPC)
+        {
+            NPC.StartConversation();
+        }
+        public void Move_to_NPC(string person)
         {
             person.StartConversation();
+
+            public void Execute(Context context, string command, string[] parameters)
+            {
+                // Check if an NPC is available in the context
+                if (context.GetCurrent == null)
+                {
+                    Console.WriteLine("There is no one here to talk to.");
+                    return;
+                }
+                if (command.ToLower() == "talk")
+                {
+                    // Begin or continue dialog with the current NPC
+                    context.CurrentNPC.StartDialog();
+                }
+                else
+                {
+                    Console.WriteLine("Invalid command. Try using 'talk'.");
+                }
+            }
+
         }
 
         public override ToString()

@@ -17,20 +17,13 @@ public class CommandTalk : BaseCommand, ICommand
 {
     public void Execute(Context context, string command, string[] parameters)
     {
-        // Check if an NPC is available in the context
-        if (context.CurrentNPC == null)
-        {
-            Console.WriteLine("There is no one here to talk to.");
-            return;
+
+
+        Space current_location = Context.GetCurrent()
+            {
+
+            current_location.Move_to_NPC(parameters[0]);
         }
-        if (command.ToLower() == "talk")
-        {
-            // Begin or continue dialog with the current NPC
-            context.CurrentNPC.StartDialog();
-        }
-        else
-        {
-            Console.WriteLine("Invalid command. Try using 'talk'.");
-        }
+    }
     }
 }
