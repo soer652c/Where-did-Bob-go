@@ -29,6 +29,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
         static Context context = new Context(world.GetEntry());
         static ICommand fallback = new CommandUnknown();
         static Registry registry = new Registry(context, fallback);
+        static public Inventory inventory = new Inventory();
 
         private static void InitRegistry()
         {

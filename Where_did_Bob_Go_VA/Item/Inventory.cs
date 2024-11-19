@@ -12,13 +12,14 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace Where_did_Bob_Go_VA.Item_NS
 {
     public class Inventory
     {
-        public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();;
+        public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
 
         //constructor
         public Inventory()
@@ -32,13 +33,14 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (!ItemMap.ContainsKey(item.Name))
             {
                 ItemMap[item.Name] = item;
-                Update_TextBox_Main(Item "{item.Name}" tilføjet til inventory);
+                Update_TextBox_Main("{item.Name} added to inventory");
             }
             else
             {
-                Update_TextBox_main(Item already in inventroy);
+                Update_TextBox_Main("Item already in inventroy");
             }
-         
+
+            return;
         }
 
         // Metode Use Item
@@ -46,8 +48,8 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if (ItemMap.ContainsKey(item.Name))
             {
-                Update_TextBox_Main("You used this item");
-                item.Use();
+                ItemMap[item.Name].Use();
+                Update_TextBox_Main("You have used this item");
             }
             else
             {
@@ -55,37 +57,28 @@ namespace Where_did_Bob_Go_VA.Item_NS
             }
         }
         // metode til use.int
-        public void Use(int number)
+        public void Use(string name)
         {
-            if (number >= 0 && number < ItemMap.Count)
+            if (name != null)
             {
-                string key = GetKeyNumber(number);
-                if (key != null)
-                {
-                    ItemMap[key].Use();
-                    Update_TextBox_Main(Du har brugt dette item);
-                }
+                ItemMap[name].Use();
+                Update_TextBox_Main("You have used this item");
             }
             else
             {
-                Update_TextBox_Main ("Invalid, list is out of range");
+                Update_TextBox_Main("Item not found on the list in Inventory");
             }
         }
         //metode til Remove.int 
-        public void Remove(int number)
+        public void Remove(string name)
         {
-            if (number >= 0 && number < ItemMap.Count)
+            if ( ItemMap.Remove(name) )
             {
-                string key = GetKeyByIndex(number);
-                if (key != null)
-                {
-                    ItemMap.Remove(key);
-                    Update_TextBox_Main("Item removed from the inventory.");
-                }
+                Update_TextBox_Main("Item removed from the inventory.");
             }
             else
             {
-                Update_TextBox_Main("Invalid");
+                Update_TextBox_Main("Item not found in the inventory.");
             }
         }
         //Remove Item 
@@ -104,9 +97,9 @@ namespace Where_did_Bob_Go_VA.Item_NS
         public void Display()
         {
             Update_TextBox_Main("Inventorylist");
-            foreach (Item item in ItemMap)
+            foreach (KeyValuePair<string, Item> item in ItemMap)
             {
-                string[] cocoon = { (item.Name), ("This is the name Item; " + item.Name), (" And this is the description of the item: " + item.Description) };
+                string[] cocoon = { (item.Value.Name), ("This is the name Item; " + item.Value.Name), (" And this is the description of the item: " + item.Value.Description) };
                 Update_TextBox_Main(cocoon);
             }
         }
