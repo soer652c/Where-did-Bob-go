@@ -12,6 +12,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using System.Xml.Linq;
 
 namespace Where_did_Bob_Go_VA.World_NS
 {
@@ -86,8 +87,6 @@ namespace Where_did_Bob_Go_VA.World_NS
             return (Space)(base.FollowEdge(direction));
         }
 
-       
-
         //+ Movement_in_room():
         //public void Movement_in_room()
         
@@ -121,15 +120,12 @@ namespace Where_did_Bob_Go_VA.World_NS
         //    }
         //}
 
-
+        //Retrunstatmant skal indholde, hvad er i det specifikke rum, Items og NPC
         public override string ToString()
         {
-            // bodyen er tom
-
-            // Return String.
-            ////// REMBEMEBER TO CHANGE/UPDATE !!!! //////
-            return "";
+            return (description + ItemMap + NPCMap);
         }
+   
 
         public override bool Equals(object space_ToCompare)
         {
