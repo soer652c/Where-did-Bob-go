@@ -22,7 +22,8 @@ namespace Where_did_Bob_Go_VA.Command_NS
     public class CommandUse : BaseCommand, ICommand
     {
         Registry registry;
-
+        
+        //Konstruktor der tager ser i regersty 
         public CommandUse(Registry registry)
         {
             this.registry = registry;
