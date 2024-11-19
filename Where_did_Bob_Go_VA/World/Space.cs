@@ -156,12 +156,12 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             return false;
         }
-        //+ Display_Rooms(): vi skal lave rum færdig
+        //+ Display_Rooms() displayer description i textbox main
         public void Display_Room()
         {
             Update_TextBox_Main(description);
         }
-        //+ Display_NPC's():
+        //+ Display_NPC's() den kigger igennem NPCMap
         public void Display_NPCList()
         {
             // .  
