@@ -27,6 +27,9 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
             return "You got +1 health";
         }
-
+        public override string ToString()
+        {
+            return (base.ToString());
+        }
     }
 }
