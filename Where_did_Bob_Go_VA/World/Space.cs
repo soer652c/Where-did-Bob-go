@@ -166,6 +166,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             Update_TextBox_Main(npc_String_List);
         }
+        //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
         public Item Take_Item(string item)
         { 
                 if (ItemMap.ContainsKey(item))
@@ -176,10 +177,6 @@ namespace Where_did_Bob_Go_VA.World_NS
                 {
                 return null; 
             }
-
-               
-          
-            //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
         }
           
      
