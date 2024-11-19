@@ -34,11 +34,12 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             // Takes a space and grabs it
             Space current_space = Game.context.GetCurrent();
-		
-			if (current_space.Take_Item() == null) {
+
+			if (current_space.Take_Item() == null)
+			{
 
 				Console.WriteLine("There is no item here");
-
+			}
 			
 			// If there is an item it will add it to inventory
 			// If not console writeline will pe the input. 
