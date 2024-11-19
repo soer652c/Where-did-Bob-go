@@ -18,7 +18,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 {
     public class Inventory
     {
-        public List<Item> ItemList = new List<Item>();
+        public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();;
 
         //constructor
         public Inventory()
@@ -29,15 +29,25 @@ namespace Where_did_Bob_Go_VA.Item_NS
         //Metode Add.Item
         public void Add(Item item)
         {
-            ItemList.Add(item);
+            if (!ItemMap.ContainsKey(item.Name))
+            {
+                ItemMap[item.Name] = item;
+                Update_TextBox_Main(Item "{item.Name}" tilføjet til inventory);
+            }
+            else
+            {
+                Update_TextBox_main(Item already in inventroy);
+            }
+         
         }
 
         // Metode Use Item
         public void Use(Item item)
         {
-            if (ItemList.Contains(item))
+            if (ItemMap.ContainsKey(item.Name))
             {
                 Update_TextBox_Main("You used this item");
+                item.Use();
             }
             else
             {
@@ -47,9 +57,14 @@ namespace Where_did_Bob_Go_VA.Item_NS
         // metode til use.int
         public void Use(int number)
         {
-            if (number >= 0 && number < ItemList.Count)
+            if (number >= 0 && number < ItemMap.Count)
             {
-                ItemList[number].Use();
+                string key = GetKeyNumber(number);
+                if (key != null)
+                {
+                    ItemMap[key].Use();
+                    Update_TextBox_Main(Du har brugt dette item);
+                }
             }
             else
             {
@@ -59,28 +74,37 @@ namespace Where_did_Bob_Go_VA.Item_NS
         //metode til Remove.int 
         public void Remove(int number)
         {
-            if (ItemList.Contains(ItemList[number]))
-                ItemList.RemoveAt(number);
-        }
-
-        //Remove Item 
-        public void Remove(Item item)
-        {
-            if (ItemList.Contains(item))
+            if (number >= 0 && number < ItemMap.Count)
             {
-                ItemList.Remove(item);
-                Update_TextBox_Main("Item removed" + " " + item.Name);
+                string key = GetKeyByIndex(number);
+                if (key != null)
+                {
+                    ItemMap.Remove(key);
+                    Update_TextBox_Main("Item removed from the inventory.");
+                }
             }
             else
             {
-                Update_TextBox_Main("Item not found on the list in Inventory");
+                Update_TextBox_Main("Invalid");
+            }
+        }
+        //Remove Item 
+        public void Remove(Item item)
+        {
+            if (ItemMap.Remove(item.Name))
+            {
+                Update_TextBox_Main("Item removed from the inventory.");
+            }
+            else
+            {
+                Update_TextBox_Main("Item not found in the inventory.");
             }
         }
         //display inventory 
         public void Display()
         {
             Update_TextBox_Main("Inventorylist");
-            foreach (Item item in ItemList)
+            foreach (Item item in ItemMap)
             {
                 string[] cocoon = { (item.Name), ("This is the name Item; " + item.Name), (" And this is the description of the item: " + item.Description) };
                 Update_TextBox_Main(cocoon);
