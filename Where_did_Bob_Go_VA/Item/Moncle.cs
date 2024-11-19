@@ -26,6 +26,10 @@ namespace Where_did_Bob_Go_VA.Item_NS
             Message = message;
         }
 
+        public override string ToString()
+        {
+            return Help;
+        }
         public void Speak()
         {
             Update_TextBox_Main("You need help?");
