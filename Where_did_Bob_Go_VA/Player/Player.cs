@@ -19,6 +19,11 @@ namespace Where_did_Bob_Go_VA.Player_NS
         // atribut
         public int Health;
 
+        public Player(int health) 
+        { 
+            this.Health = health;
+        }
+
         //metode
         public void LoseHealth()
         {

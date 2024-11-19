@@ -30,6 +30,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
         static public ICommand fallback = new CommandUnknown();
         static public Registry registry = new Registry(context, fallback);
         static public Inventory inventory = new Inventory();
+        static public Player player = new Player(3);
 
         private static void InitRegistry()
         {
