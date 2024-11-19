@@ -123,7 +123,16 @@ namespace Where_did_Bob_Go_VA.World_NS
         //Retrunstatmant skal indholde, hvad er i det specifikke rum, Items og NPC
         public override string ToString()
         {
-            return (description + ItemMap + NPCMap);
+            string temp = description;
+            foreach (KeyValuePair<string, NPC> item in NPCMap)
+            {
+               temp = (temp + item.Key);
+            {
+            foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
+                    {
+                        temp = temp + item.Key + Iteminspace.Key;
+                    }
+            return (temp);
         }
    
 
