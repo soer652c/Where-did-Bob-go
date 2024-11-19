@@ -17,17 +17,17 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
     public class CommandTalk : BaseCommand, ICommand
     {
-        // .  
+        // .  Defining the Attribute registry
         Registry registry;
 
-        // .  
+        // .  making a second attribute current_NPC, and allowing it to be a Null value
         public NPC ?current_NPC;
 
-        // 
+        // Making the constructor for the class CommandTalk
         public CommandTalk(Registry registry)
         {
             this.registry = registry;
-            this.description = "Display a help message";
+            this.description = "This command allows you to interact with a NPC in your current room";
         }
 
         public void Execute(Context context, string command, string[] parameters)
