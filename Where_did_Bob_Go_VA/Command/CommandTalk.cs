@@ -10,6 +10,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static Where_did_Bob_Go_VA.Game_NS.Game;
 
 namespace Where_did_Bob_Go_VA.Command_NS
 {
@@ -18,23 +19,22 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         public void Execute(Context context, string command, string[] parameters)
         {
-             Space current_location = Context.GetCurrent()
-                {
-
-                current_location.Move_to_NPC(parameters[0]);
-                string npcName = parameters[0];
-                NPC currentNPC = current_location.GetNPC(npcName);
-                if (currentNPC == null)
-                {
-                    Update_TextBox_Main("There is no one named " + npcName + " here.");
-                }
-                else
-                {
-                    currentNPC.Talk();
-                        // Initiate the textbox call
-
-                }
+            Space current_location = Game.context.GetCurrent();
+             
+            current_location.Move_to_NPC(parameters[0]);
+            string npcName = parameters[0];
+            NPC currentNPC = current_location.GetNPC(npcName);
+            if (currentNPC == null)
+            {
+                Update_TextBox_Main("There is no one named " + npcName + " here.");
             }
+            else
+            {
+                currentNPC.Talk();
+                    // Initiate the textbox call
+
+            }
+         
         }
     }
 }
