@@ -129,7 +129,7 @@ namespace Where_did_Bob_Go_VA.World_NS
                 temp = temp + NPCinSpace.Key;
             }
 
-            temp = (temp "/n , + "); 
+            temp = (temp + "\n , + "); 
 
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
             {
