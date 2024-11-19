@@ -126,15 +126,17 @@ namespace Where_did_Bob_Go_VA.World_NS
             string temp = description;
             foreach (KeyValuePair<string, NPC> NPCinSpace in NPCMap)
             {
-                temp = temp + " There is an the corner, don't you see himn " + NPCinSpace.Key;
+                temp = temp + "  " + NPCinSpace.Key;
             }
 
-            temp = (temp + "\n , + "); 
+            temp = (temp + "" +
+                "There is a man in the corner, don't you see him , \n , + "); 
 
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
             {
-                temp = temp + "Thees are your current items at this location" + Iteminspace.Key;
+                temp = temp + "  " + Iteminspace.Key;
             }
+            temp = (temp + "Thees are your current items at this location");
             return (temp);
         }   
 
