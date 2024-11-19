@@ -126,12 +126,15 @@ namespace Where_did_Bob_Go_VA.World_NS
             string temp = description;
             foreach (KeyValuePair<string, NPC> NPCinSpace in NPCMap)
             {
-                temp = temp + " + " + NPCinSpace.Key;
+                temp = temp + NPCinSpace.Key;
             }
+
+            temp = (temp "/n , + "); 
+
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
-                    {
-                        temp = temp + " + " + Iteminspace.Key;
-                    }
+            {
+                temp = temp + " + " + Iteminspace.Key;
+            }
             return (temp);
         }   
 
