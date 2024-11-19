@@ -124,19 +124,21 @@ namespace Where_did_Bob_Go_VA.World_NS
         public override string ToString()
         {
             string temp = description;
+           
+            temp = (temp + "" +
+                          "There is a man in the corner, don't you see him , \n , + ");
+
             foreach (KeyValuePair<string, NPC> NPCinSpace in NPCMap)
             {
                 temp = temp + "  " + NPCinSpace.Key;
             }
 
-            temp = (temp + "" +
-                "There is a man in the corner, don't you see him , \n , + "); 
-
+            temp = (temp + "Thees are your current items at this location");
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
             {
                 temp = temp + "  " + Iteminspace.Key;
             }
-            temp = (temp + "Thees are your current items at this location");
+           
             return (temp);
         }   
 
