@@ -29,7 +29,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         
         public Dictionary<string, NPC> NPCMap = new Dictionary<string, NPC>();
-
+        public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
         public Space(String name, string description, Dictionary<string, NPC> NPCList) : base(name)
         {
             this.description = description;
