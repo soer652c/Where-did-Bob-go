@@ -166,6 +166,23 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             Update_TextBox_Main(npc_String_List);
         }
+        public void Take_Item(Item item)
+        { 
+                if (!ItemMap.ContainsKey(item.Name))
+                {
+                ItemMap.[item.Name] = item;
+                }
+                else
+                {
+                return (Item); 
+            }
+
+               
+          
+            //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
+        }
+          
+     
     }
 
 }

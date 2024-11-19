@@ -27,7 +27,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandUse(Registry registry)
         {
             this.registry = registry;
-            this.description = "Display a help message";
+            this.description = "This is an item";
         }
 
 
