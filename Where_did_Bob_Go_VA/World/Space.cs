@@ -148,18 +148,13 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Display_NPC's():
         public void Display_NPCList()
         {
-            for (int i = 0; i < NPCMap.Count; i++)
-            {
-                if (NPCMap.[i] != null && NPCMap[i].NPCvisibility)
-                {
-                    Console.WriteLine(NPCMap[i].NPCname);
-                }
-            }
-
+            // .  
             string[] npc_String_List = new string[NPCMap.Count];
 
+            // .  
             int npc_String_Count = 0;
             
+            // .  
             foreach (KeyValuePair<string, NPC> npc in NPCMap)
             {
                 if (npc.Value.NPCvisibility)
@@ -168,6 +163,8 @@ namespace Where_did_Bob_Go_VA.World_NS
                     npc_String_Count++;
                 }
             }
+
+            Update_TextBox_Main(npc_String_List);
         }
     }
 

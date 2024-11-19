@@ -17,10 +17,18 @@ using Where_did_Bob_Go_VA.Game_NS;
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 using static Where_did_Bob_Go_VA.Game_NS.Game;
 
-namespace Where_did_Bob_Go_VA.Command
+namespace Where_did_Bob_Go_VA.Command_NS
 {
     public class CommandUse : BaseCommand, ICommand
     {
+        Registry registry;
+
+        public CommandUse(Registry registry)
+        {
+            this.registry = registry;
+            this.description = "Display a help message";
+        }
+
 
         // Metode til at udføre "Use"-kommandoen
         public void Execute(Context context, string command, string[] args)

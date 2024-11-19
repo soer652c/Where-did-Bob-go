@@ -17,6 +17,17 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
     public class CommandLeave : BaseCommand, ICommand
     {
+
+        // .  
+        Registry registry;
+
+        // 
+        public CommandLeave(Registry registry)
+        {
+            this.registry = registry;
+            this.description = "Display a help message";
+        }
+
         public void Execute(Context context, string command, string[] parameters)
         {
             // registry. får vi fra vores Game.cs fil

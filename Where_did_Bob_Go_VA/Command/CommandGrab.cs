@@ -13,24 +13,37 @@ using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 
 namespace Where_did_Bob_Go_VA.Command_NS
 {
-	public class CommandUse : BaseCommand, ICommand
+	public class CommandGrab : BaseCommand, ICommand
 	{
-		private void GrabItem(string itemName)
-		{
-			if (string.IsNullOrEmpty(itemName))
+        Registry registry;
+
+        public CommandGrab(Registry registry)
+        {
+            this.registry = registry;
+            this.description = "Display a help message";
+        }
+
+        public void Execute(Context context, string command, string[] parameters)
+        {
+			if (string.IsNullOrEmpty(parameters[0]))
 			{
 				Console.WriteLine("Grab what?");
 				return;
 			}
 
-			Item item = currentSpace.GrabItem(itemName);
+            // .  
+            Space current_space = Game.context.GetCurrent();
+
+			// .  
+            Item item = current_space.Take_Item(parameters[0]);
+
 			if (item == null)
 			{
-				Console.WriteLine($"There is no {itemName} here.");
+				Console.WriteLine($"There is no {parameters[0]} here.");
 			}
 			else
 			{
-				Player.GrabItem(item);
+                Game.inventory.Add(item);
 			}
 		}
 	}
