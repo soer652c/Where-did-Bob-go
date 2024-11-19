@@ -35,7 +35,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // Takes the space and grabs it. Defining what space/room ur in at the momement. 
             Space current_space = Game.context.GetCurrent();
 
-			if (current_space.Take_Item(item) == null)
+			if (current_space.Take_Item(parameters[0]) == null)
 			{
 
 				Console.WriteLine("There is no item here");
