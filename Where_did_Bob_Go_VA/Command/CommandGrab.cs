@@ -20,10 +20,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandGrab(Registry registry)
         {
             this.registry = registry;
-            this.description = "Display a help message";
+            this.description = "Use grab to pick up items/food items in certain rooms";
         }
 
-		// If null or empty say "Grab what?"
+		// If you try to pick up an item thats not there, or if the item was taken before, the console will write "Grab what?"
         public void Execute(Context context, string command, string[] parameters)
         {
 			if (string.IsNullOrEmpty(parameters[0]))
@@ -32,18 +32,17 @@ namespace Where_did_Bob_Go_VA.Command_NS
 				return;
 			}
 
-            // Takes a space and grabs it
+            // Takes the space and grabs it. Defining what space/room ur in at the momement. 
             Space current_space = Game.context.GetCurrent();
 
-			if (current_space.Take_Item() == null)
+			if (current_space.Take_Item(item) == null)
 			{
 
 				Console.WriteLine("There is no item here");
 			}
 			
-			// If there is an item it will add it to inventory
-			// If not console writeline will pe the input. 
-			// Also if theres no item and you write "take item" it will return null
+			// If there is an item it will add it to if not console writeline will say "There is no...". 
+			// If theres no item and you write take "item" it will return null instead of crashing the game.
             Item item = current_space.Take_Item(parameters[0]);
 
 			if (item == null)
