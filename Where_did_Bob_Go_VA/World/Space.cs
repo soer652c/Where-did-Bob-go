@@ -168,18 +168,16 @@ namespace Where_did_Bob_Go_VA.World_NS
         }
         //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
         public Item Take_Item(string item)
-        { 
-                if (ItemMap.ContainsKey(item))
-                {
+        {
+            if (ItemMap.ContainsKey(item))
+            {
                 return ItemMap[item];
-                }
-                else
-                {
-                return null; 
             }
-        }
-          
-     
+            else
+            {
+                return null;
+            }
+        }     
     }
 
 }
