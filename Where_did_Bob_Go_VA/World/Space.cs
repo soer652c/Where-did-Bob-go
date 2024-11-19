@@ -125,15 +125,20 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             string temp = description;
            
-            temp = (temp + "" +
-                          "There is a man in the corner, don't you see him , \n , + ");
+            temp = (temp + " " +
+                          "There is a man in the corner, don't you see him , \n + ");
+//ser på NPCMap efter <string, NPC> og giver den navnet NPCinSpace. 
+// Derefter skriver den decription og de NPC's ud den fandt på stedet
 
             foreach (KeyValuePair<string, NPC> NPCinSpace in NPCMap)
             {
                 temp = temp + "  " + NPCinSpace.Key;
             }
 
-            temp = (temp + "Thees are your current items at this location");
+            // Bryder linjenen og skriver teksten ud
+            temp = (temp + "\n These are your current items at this location");
+            //Ser i ItemMap efter <string, Item> og giver den IteminSpace navnet.
+            //Derefter skriver den decription ud og de items der på loacation
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
             {
                 temp = temp + "  " + Iteminspace.Key;
@@ -151,12 +156,12 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             return false;
         }
-        //+ Display_Rooms(): vi skal lave rum færdig
+        //+ Display_Rooms() displayer description i textbox main
         public void Display_Room()
         {
             Update_TextBox_Main(description);
         }
-        //+ Display_NPC's():
+        //+ Display_NPC's() den kigger igennem NPCMap
         public void Display_NPCList()
         {
             // .  
