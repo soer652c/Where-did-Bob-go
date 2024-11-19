@@ -24,14 +24,16 @@ namespace Where_did_Bob_Go_VA.World_NS
     {
         private string description;
 
+
         //List<NPC> NPCList = new List<NPC>();
 
-        public NPC[] NPCList;
+        
+        public Dictionary<string, NPC> NPCMap = new Dictionary<string, NPC>();
 
-        public Space(String name, string description, NPC[] NPCList) : base(name)
+        public Space(String name, string description, Dictionary<string, NPC> NPCList) : base(name)
         {
             this.description = description;
-            this.NPCList = NPCList;
+            this.NPCMap = NPCList;
         }
 
 
@@ -45,15 +47,16 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
-            welcome_description[2] = (NPCList[0].NPCname);
-            welcome_description[3] = NPCList[1].NPCname;
-            welcome_description[4] = NPCList[2].NPCname;
-            welcome_description[5] = NPCList[3].NPCname;
+
+            int NPC_Number = 2; 
+            foreach (KeyValuePair<string, NPC> item in NPCMap)
+            {
+                welcome_description[NPC_Number] = item.Value.NPCname;
+                NPC_Number++;
+            }
 
             // .
-
-
-            Update_TextBox_Main(welcome_description);
+            Change_TextBox_Main(welcome_description);
 
 
             // .   
@@ -68,7 +71,10 @@ namespace Where_did_Bob_Go_VA.World_NS
             }
 
             // .  
-            Update_TextBox_Options(exits_string);
+            Change_TextBox_Options(exits_string);
+
+            // . 
+            Update_GUI();
         }
 
         public void Goodbye()
@@ -87,38 +93,42 @@ namespace Where_did_Bob_Go_VA.World_NS
         
 
         //+ Move_to_NPC(NPC):
-        public void Move_to_NPC(string NPC)
+        public void Move_to_NPC(NPC npc)
         {
-            NPC.StartConversation();
+            NPCMap[npc.NPCname].StartConversation();
         }
-        public void Move_to_NPC(string person)
+        public void Move_to_NPC(string name)
         {
-            person.StartConversation();
-
-            public void Execute(Context context, string command, string[] parameters)
-            {
-                // Check if an NPC is available in the context
-                if (context.GetCurrent == null)
-                {
-                    Console.WriteLine("There is no one here to talk to.");
-                    return;
-                }
-                if (command.ToLower() == "talk")
-                {
-                    // Begin or continue dialog with the current NPC
-                    context.CurrentNPC.StartDialog();
-                }
-                else
-                {
-                    Console.WriteLine("Invalid command. Try using 'talk'.");
-                }
-            }
-
+            NPCMap[name].StartConversation();
         }
 
-        public override ToString()
+        //public void Execute(Context context, string command, string[] parameters)
+        //{
+        //    // Check if an NPC is available in the context
+        //    if (context.GetCurrent == null)
+        //    {
+        //        Console.WriteLine("There is no one here to talk to.");
+        //        return;
+        //    }
+        //    if (command.ToLower() == "talk")
+        //    {
+        //        // Begin or continue dialog with the current NPC
+        //        context.CurrentNPC.StartDialog();
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("Invalid command. Try using 'talk'.");
+        //    }
+        //}
+
+
+        public override string ToString()
         {
             // bodyen er tom
+
+            // Return String.
+            ////// REMBEMEBER TO CHANGE/UPDATE !!!! //////
+            return "";
         }
 
         public override bool Equals(object space_ToCompare)
@@ -138,11 +148,24 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Display_NPC's():
         public void Display_NPCList()
         {
-            for (int i = 0; i < NPCList.Length; i++)
+            for (int i = 0; i < NPCMap.Count; i++)
             {
-                if (NPCList[i] != null && NPCList[i].NPCvisibility)
+                if (NPCMap.[i] != null && NPCMap[i].NPCvisibility)
                 {
-                    Console.WriteLine(NPCList[i].NPCname);
+                    Console.WriteLine(NPCMap[i].NPCname);
+                }
+            }
+
+            string[] npc_String_List = new string[NPCMap.Count];
+
+            int npc_String_Count = 0;
+            
+            foreach (KeyValuePair<string, NPC> npc in NPCMap)
+            {
+                if (npc.Value.NPCvisibility)
+                {
+                    npc_String_List[npc_String_Count] = npc.Value.NPCname;
+                    npc_String_Count++;
                 }
             }
         }

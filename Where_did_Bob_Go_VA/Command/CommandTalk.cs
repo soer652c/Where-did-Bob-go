@@ -10,31 +10,49 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static Where_did_Bob_Go_VA.Game_NS.Game;
 
 namespace Where_did_Bob_Go_VA.Command_NS
 {
 
     public class CommandTalk : BaseCommand, ICommand
     {
+        // .  
+        Registry registry;
+
+        // .  
+        public NPC ?current_NPC;
+
+        // 
+        public CommandTalk(Registry registry)
+        {
+            this.registry = registry;
+            this.description = "Display a help message";
+        }
+
         public void Execute(Context context, string command, string[] parameters)
         {
-             Space current_location = Context.GetCurrent()
-                {
+            // .  
+            Space current_location = Game.context.GetCurrent();
 
-                current_location.Move_to_NPC(parameters[0]);
-                string npcName = parameters[0];
-                NPC currentNPC = current_location.GetNPC(npcName);
-                if (currentNPC == null)
-                {
-                    Update_TextBox_Main("There is no one named " + npcName + " here.");
-                }
-                else
-                {
-                    currentNPC.Talk();
-                        // Initiate the textbox call
+            // .  
+            string npcName = parameters[0];
 
-                }
+            // .  
+            if ( (current_location.NPCMap.Count != 0) && (current_location.NPCMap[npcName].NPCvisibility) )
+            {
+                // .  
+                current_NPC = current_location.NPCMap[npcName];
+                
+                // .  
+                current_location.Move_to_NPC(npcName);
             }
+            else
+            {
+                // .  
+                Update_TextBox_Main("There is no one named " + npcName + " here.");
+            }
+         
         }
     }
 }

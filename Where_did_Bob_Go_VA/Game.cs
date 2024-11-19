@@ -25,10 +25,10 @@ namespace Where_did_Bob_Go_VA.Game_NS
 
     public class Game
     {
-        static World world = new World();
-        static Context context = new Context(world.GetEntry());
-        static ICommand fallback = new CommandUnknown();
-        static Registry registry = new Registry(context, fallback);
+        static public World world = new World();
+        static public Context context = new Context(world.GetEntry());
+        static public ICommand fallback = new CommandUnknown();
+        static public Registry registry = new Registry(context, fallback);
         static public Inventory inventory = new Inventory();
 
         private static void InitRegistry()
@@ -39,6 +39,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
             registry.Register("bye", cmdExit);
             registry.Register("go", new CommandGo());
             registry.Register("help", new CommandHelp(registry));
+            registry.Register("talk", new CommandTalk(registry));
         }
 
         public Game(/*string[] args*/)
