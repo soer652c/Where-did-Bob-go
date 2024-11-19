@@ -166,15 +166,15 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             Update_TextBox_Main(npc_String_List);
         }
-        public void Take_Item(Item item)
+        public Item Take_Item(string item)
         { 
-                if (!ItemMap.ContainsKey(item.Name))
+                if (ItemMap.ContainsKey(item))
                 {
-                ItemMap.[item.Name] = item;
+                return ItemMap[item];
                 }
                 else
                 {
-                return (Item); 
+                return null; 
             }
 
                
