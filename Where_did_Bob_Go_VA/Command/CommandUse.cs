@@ -28,21 +28,9 @@ public class CommandUse : BaseCommand, ICommand
         // Hent spillerens inventory
         Inventory playerInventory = context.GetPlayerInventory();
 
-        // tjekker om Inventory er null
-
-
-        // Find itemet i inventory baseret på navnet
-        Item itemToUse = playerInventory.ItemList.Find(item => item.Name.Equals(itemName, StringComparison.OrdinalIgnoreCase));
-
-        // Tjek om itemet blev fundet
-        if (itemToUse != null)
-        {
-            // Brug itemet
-            playerInventory.Use(itemToUse);
-        }
-        else
-        {
-            Update_TextBox_Main($"Item '{itemName}' not found in your inventory.");
-        }
+    }
+    public void Execute(Context context, string command, string[] parameters)
+    {
+        context.MakeDone();
     }
 }
