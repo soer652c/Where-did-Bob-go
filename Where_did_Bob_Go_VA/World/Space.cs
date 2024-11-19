@@ -126,15 +126,14 @@ namespace Where_did_Bob_Go_VA.World_NS
             string temp = description;
             foreach (KeyValuePair<string, NPC> item in NPCMap)
             {
-               temp = (temp + item.Key);
-            {
+                temp = (temp + item.Key);
+            }
             foreach (KeyValuePair<string, Item > Iteminspace in ItemMap)
                     {
                         temp = temp + item.Key + Iteminspace.Key;
                     }
             return (temp);
-        }
-   
+        }   
 
         public override bool Equals(object space_ToCompare)
         {
