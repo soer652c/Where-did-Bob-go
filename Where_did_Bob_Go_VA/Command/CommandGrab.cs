@@ -23,6 +23,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             this.description = "Display a help message";
         }
 
+		// If null or empty say "Grab what?"
         public void Execute(Context context, string command, string[] parameters)
         {
 			if (string.IsNullOrEmpty(parameters[0]))
@@ -31,10 +32,18 @@ namespace Where_did_Bob_Go_VA.Command_NS
 				return;
 			}
 
-            // .  
+            // Takes a space and grabs it
             Space current_space = Game.context.GetCurrent();
 
-			// .  
+			if (current_space.Take_Item() == null)
+			{
+
+				Console.WriteLine("There is no item here");
+			}
+			
+			// If there is an item it will add it to inventory
+			// If not console writeline will pe the input. 
+			// Also if theres no item and you write "take item" it will return null
             Item item = current_space.Take_Item(parameters[0]);
 
 			if (item == null)
