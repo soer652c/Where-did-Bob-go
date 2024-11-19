@@ -17,22 +17,40 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
     public class CommandTalk : BaseCommand, ICommand
     {
+        // .  
+        Registry registry;
+
+        // .  
+        public NPC ?current_NPC;
+
+        // 
+        public CommandTalk(Registry registry)
+        {
+            this.registry = registry;
+            this.description = "Display a help message";
+        }
+
         public void Execute(Context context, string command, string[] parameters)
         {
+            // .  
             Space current_location = Game.context.GetCurrent();
-             
-            current_location.Move_to_NPC(parameters[0]);
+
+            // .  
             string npcName = parameters[0];
-            NPC currentNPC = current_location.GetNPC(npcName);
-            if (currentNPC == null)
+
+            // .  
+            if ( (current_location.NPCMap.Count != 0) && (current_location.NPCMap[npcName].NPCvisibility) )
             {
-                Update_TextBox_Main("There is no one named " + npcName + " here.");
+                // .  
+                current_NPC = current_location.NPCMap[npcName];
+                
+                // .  
+                current_location.Move_to_NPC(npcName);
             }
             else
             {
-                currentNPC.Talk();
-                    // Initiate the textbox call
-
+                // .  
+                Update_TextBox_Main("There is no one named " + npcName + " here.");
             }
          
         }

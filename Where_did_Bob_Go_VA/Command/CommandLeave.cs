@@ -23,7 +23,24 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // GetCommand trækker commandedn leave
             // placeholder trækker fra CommandTalk, som viser hvilken NPC man snakker med
             // så kører den StopConversation() for at afslutte samtalen
-            (Game.registry.GetCommand("leave"))..StopConversation();
+
+            // ((CommandTalk)Game.registry.GetCommand("talk"))  
+            // .  
+
+            // ((CommandTalk)Game.registry.GetCommand("talk")).current_NPC.StopConversation();  
+            // .  
+
+            // . 
+            if (((CommandTalk)Game.registry.GetCommand("talk")).current_NPC != null)
+            {
+                // .  
+                ((CommandTalk)Game.registry.GetCommand("talk")).current_NPC.StopConversation();
+            }
+            else
+            {
+                // .  
+                throw new Exception("Not currently talking with an NPC with that name. ");
+            }
         }
     }
 }

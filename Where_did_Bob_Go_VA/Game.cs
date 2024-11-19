@@ -39,6 +39,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
             registry.Register("bye", cmdExit);
             registry.Register("go", new CommandGo());
             registry.Register("help", new CommandHelp(registry));
+            registry.Register("talk", new CommandTalk(registry));
         }
 
         public Game(/*string[] args*/)

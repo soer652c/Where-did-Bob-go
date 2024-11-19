@@ -64,10 +64,10 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             Update_TextBox_Options(TextBox);
 
         }
-        //private void StopConversation()
-        //    {
+        public void StopConversation()
+        {
 
-        //    }
+        }
 
         //public void UseMonocle(Moncle monocle)
         //{
