@@ -10,6 +10,9 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using System.Xml.Linq;
+using System.ComponentModel.Design;
+using System.Transactions;
 
 namespace Where_did_Bob_Go_VA.Game_NS
 {
@@ -35,17 +38,18 @@ namespace Where_did_Bob_Go_VA.Game_NS
         public void Transition(string direction)
         {
             Space next = current.FollowEdge(direction);
-            if (next == null)
-            {
-                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
-            }
-            else
+            if (string.IsNullOrEmpty(direction) && char.IsUpper(direction[0]))
             {
                 current.Goodbye();
                 current = next;
                 current.Welcome();
             }
+            else
+            {
+                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
+            }
         }
+ 
 
         public void MakeDone()
         {
