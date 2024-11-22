@@ -62,7 +62,8 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (name != null)
             {
                 ItemMap[name].Use();
-                Update_TextBox_Main("You have used this " + name);
+                Update_TextBox_Main("You have used the item " + name);
+                Remove(name);
             }
             else
             {
@@ -74,7 +75,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if ( ItemMap.Remove(name) )
             {
-                Update_TextBox_Main(name + " removed from the inventory.");
+
             }
             else
             {
