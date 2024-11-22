@@ -11,6 +11,7 @@ using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 using System.Security.Cryptography.X509Certificates;
+using System.ComponentModel;
 
 namespace Where_did_Bob_Go_VA.World_NS
 {
@@ -22,7 +23,7 @@ namespace Where_did_Bob_Go_VA.World_NS
     public class World
     {
         Space entry;
-
+        public Dictionary<string, Space> SpaceMap = new Dictionary<string, Space>();
         public World()
         {
 
@@ -46,8 +47,6 @@ namespace Where_did_Bob_Go_VA.World_NS
            
 
             Item Banana = new Item("Banana", "a long one");
-
-
 
 
             Space home = new Space("Home", "Something something description", Temp_NPC_List, Banana);
@@ -81,11 +80,34 @@ namespace Where_did_Bob_Go_VA.World_NS
             hospital.AddEdge("Outside", outside);
 
             this.entry = home;
+            SpaceMap.Add(home.name, home);
+            SpaceMap.Add(outside.name, outside);
+            SpaceMap.Add(subway.name, subway);
+            SpaceMap.Add(hospital.name, hospital);
+            SpaceMap.Add(psychiatry.name, psychiatry);
+            SpaceMap.Add(school.name, school);
+            SpaceMap.Add(community.name, community);
+            SpaceMap.Add(park.name, park);
+            SpaceMap.Add(playground.name, playground);
+            SpaceMap.Add(bar.name, bar);
         }
 
         public Space GetEntry()
         {
             return entry;
+        }
+        public int NPCLeft()
+        {
+            int NPCVisualbilitiCounter = 0;
+            for (int i=0; SpaceMap.Count > 0; i++)
+            {
+                //Kig i Space, og find NPSList;
+                // FOR LOOP
+                //Går igennem NPC_Map og tjekker om hver NPC er synlig 
+                //IF NPC synlig tilføj til NPCVisualbilitiCounter;
+            }    
+
+                return NPCVisualbilitiCounter;
         }
     }
 

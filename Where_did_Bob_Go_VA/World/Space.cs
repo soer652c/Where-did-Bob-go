@@ -23,6 +23,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
     public class Space : Node
     {
+        public string name; 
         private string description;
 
 
@@ -35,6 +36,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             this.description = description;
             this.NPCMap = NPCList;
+            this.name = name;
         }
 
         public Space(String name, string description, Dictionary<string, NPC> NPCList, Dictionary<string, Item> ItemList) : base(name)
@@ -42,6 +44,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.description = description;
             this.NPCMap = NPCList;
             this.ItemMap = ItemList;
+            this.name=name;
         }
 
         public Space(String name, string description, Dictionary<string, NPC> NPCList, Item ItemKartoffel) : base(name)
@@ -49,7 +52,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.description = description;
             this.NPCMap = NPCList;
             this.ItemMap.Add(ItemKartoffel.Name,ItemKartoffel);
-
+            this.name = name;
         }
 
 

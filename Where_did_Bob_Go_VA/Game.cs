@@ -60,6 +60,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
                 Console.Write("> ");
                 string? line = Console.ReadLine();
                 if (line != null) registry.Dispatch(line);
+                //Tjek om NPCcount er null
             }
             Update_TextBox_Main("Game Over 😥");
         }
