@@ -33,11 +33,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (!ItemMap.ContainsKey(item.Name))
             {
                 ItemMap[item.Name] = item;
-                Update_TextBox_Main("{item.Name} added to inventory");
+                Update_TextBox_Main(item.Name +" Has been added to the inventory");
             }
             else
             {
-                Update_TextBox_Main("Item already in inventroy");
+                Update_TextBox_Main(item.Name + " already in inventroy");
             }
 
             return;
@@ -49,11 +49,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (ItemMap.ContainsKey(item.Name))
             {
                 ItemMap[item.Name].Use();
-                Update_TextBox_Main("You have used this item");
+                Update_TextBox_Main("You have used this " + item.Name);
             }
             else
             {
-                Update_TextBox_Main("Item not found on the list in Inventory");
+                Update_TextBox_Main(item.Name + " not found on the list in Inventory");
             }
         }
         // metode til use.int
@@ -62,11 +62,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
             if (name != null)
             {
                 ItemMap[name].Use();
-                Update_TextBox_Main("You have used this item");
+                Update_TextBox_Main("You have used this " + name);
             }
             else
             {
-                Update_TextBox_Main("Item not found on the list in Inventory");
+                Update_TextBox_Main(name + " not found on the list in Inventory");
             }
         }
         //metode til Remove.int 
@@ -74,11 +74,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if ( ItemMap.Remove(name) )
             {
-                Update_TextBox_Main("Item removed from the inventory.");
+                Update_TextBox_Main(name + " removed from the inventory.");
             }
             else
             {
-                Update_TextBox_Main("Item not found in the inventory.");
+                Update_TextBox_Main(name + " not found in the inventory.");
             }
         }
         //Remove Item 
@@ -86,11 +86,11 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if (ItemMap.Remove(item.Name))
             {
-                Update_TextBox_Main("Item removed from the inventory.");
+                Update_TextBox_Main(item.Name + " removed from the inventory.");
             }
             else
             {
-                Update_TextBox_Main("Item not found in the inventory.");
+                Update_TextBox_Main(item.Name + " not found in the inventory.");
             }
         }
         //display inventory 

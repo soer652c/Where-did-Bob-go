@@ -37,15 +37,21 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             Dictionary<string, NPC> Temp_NPC_List = new Dictionary<string, NPC>();
 
+
+
             Temp_NPC_List.Add("Karen", new NPC("Karen")); 
             Temp_NPC_List.Add("Bo", new NPC("Bo")); 
             Temp_NPC_List.Add("Tim", new NPC("Tim")); 
             Temp_NPC_List.Add("Nina", new NPC("Nina")); 
+           
+
+            Item Banana = new Item("Banana", "a long one");
 
 
 
-            Space home = new Space("Home", "Something something description", Temp_NPC_List);
-            Space outside = new Space("Outside", "Something something description", Temp_NPC_List);
+
+            Space home = new Space("Home", "Something something description", Temp_NPC_List, Banana);
+            Space outside = new Space("Outside", "Something something description", Temp_NPC_List, Banana);
             Space subway = new Space("Subway", "Something something description", Temp_NPC_List);
             Space hospital = new Space("Hospital", "Something something description", Temp_NPC_List);
             Space psychiatry = new Space("Psychiatry", "Something something description", Temp_NPC_List);

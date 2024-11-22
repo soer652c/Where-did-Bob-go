@@ -44,6 +44,14 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.ItemMap = ItemList;
         }
 
+        public Space(String name, string description, Dictionary<string, NPC> NPCList, Item ItemKartoffel) : base(name)
+        {
+            this.description = description;
+            this.NPCMap = NPCList;
+            this.ItemMap.Add(ItemKartoffel.Name,ItemKartoffel);
+
+        }
+
 
         public void Welcome()
         {
