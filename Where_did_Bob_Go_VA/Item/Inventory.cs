@@ -61,13 +61,21 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if (name != null)
             {
-                ItemMap[name].Use();
-                Update_TextBox_Main("You have used the item " + name);
-                Remove(name);
+                if (ItemMap.ContainsKey(name))
+                {
+                    ItemMap[name].Use();
+                    Update_TextBox_Main("You have used the item " + name);
+                    Remove(name);
+                }
+                else
+                {
+                    Update_TextBox_Main(name + " not found on the list in Inventory");
+                }
+
             }
             else
             {
-                Update_TextBox_Main(name + " not found on the list in Inventory");
+                Update_TextBox_Main("item had no name");
             }
         }
         //metode til Remove.int 

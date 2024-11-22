@@ -38,7 +38,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 			if (current_space.Take_Item(parameters[0]) == null)
 			{
 
-				Console.WriteLine("There is no item here");
+				Console.WriteLine("There is no item here, try" + (item));
 			}
 			
 			// If there is an item it will add it to if not console writeline will say "There is no...". 
