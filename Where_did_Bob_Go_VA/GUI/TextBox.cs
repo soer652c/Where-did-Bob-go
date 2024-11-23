@@ -1871,7 +1871,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         /// 
         public void Set_Text(string text)
         {
-            // Converts the string into a string array.
+            // Converts the string into a string array.   
             string[] text_array = Text_Seperation( text ); 
 
             // Sets the Textbox Text to the content of "text_array".   
