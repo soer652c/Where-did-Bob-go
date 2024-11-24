@@ -102,11 +102,22 @@ namespace Where_did_Bob_Go_VA.World_NS
             for (int i=0; SpaceMap.Count > 0; i++)
             {
                 //Kig i Space, og find NPSList;
+                Space currentSpace = SpaceMap[i];
                 // FOR LOOP
-                //Går igennem NPC_Map og tjekker om hver NPC er synlig 
-                //IF NPC synlig tilføj til NPCVisualbilitiCounter;
-            }    
+                foreach (KeyValuePair<string, NPC> npcEntry in currentSpace.NPCMap)
+                {
+                    NPC nPC = npcEntry.Value;
 
+                    //NPC's synlighed øg tælleren
+                    //Går igennem NPC_Map og tjekker om hver NPC er synlig 
+                    //IF NPC synlig tilføj til NPCVisualbilitiCounter;
+                    if (NPCVisualbilitiCounter > 0)
+                    {
+                        NPCVisualbilitiCounter++;
+                    }
+                }
+                
+            }    
                 return NPCVisualbilitiCounter;
         }
     }

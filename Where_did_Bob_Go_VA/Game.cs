@@ -59,8 +59,18 @@ namespace Where_did_Bob_Go_VA.Game_NS
             {
                 Console.Write("> ");
                 string? line = Console.ReadLine();
-                if (line != null) registry.Dispatch(line);
+                if (line != null) 
+                    registry.Dispatch(line);
                 //Tjek om NPCcount er null
+                if (context.NPCLeft() == 0)
+                {
+                    Update_TextBox_Main("Tillykke! Du har gennemført spillet");
+                    break;
+                }
+                if (context.NPCLeft() !=0)
+                {
+                    Update_TextBox_Main("Game over");
+                }
             }
             Update_TextBox_Main("Game Over 😥");
         }
