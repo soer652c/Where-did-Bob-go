@@ -49,35 +49,35 @@ namespace Where_did_Bob_Go_VA.World_NS
             Item Banana = new Item("Banana", "a long one");
 
 
-            Space home = new Space("Home", "Something something description", Temp_NPC_List, Banana);
-            Space outside = new Space("Outside", "Something something description", Temp_NPC_List, Banana);
-            Space subway = new Space("Subway", "Something something description", Temp_NPC_List);
-            Space hospital = new Space("Hospital", "Something something description", Temp_NPC_List);
-            Space psychiatry = new Space("Psychiatry", "Something something description", Temp_NPC_List);
-            Space school = new Space("School", "Something something description", Temp_NPC_List);
-            Space community = new Space("Community", "Something something description", Temp_NPC_List);
-            Space park = new Space("Park", "Something something description", Temp_NPC_List);
-            Space playground = new Space("Playground", "Something something description", Temp_NPC_List);
-            Space bar = new Space("Bar", "Something something description", Temp_NPC_List);
+            Space home = new Space("home", "Its cozy and you feel comfortable", Temp_NPC_List, Banana);
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Temp_NPC_List, Banana);
+            Space subway = new Space("subway", "there are a lot of people rushing by", Temp_NPC_List);
+            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Temp_NPC_List);
+            Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Temp_NPC_List);
+            Space school = new Space("school", "Children are playing around on the playground", Temp_NPC_List);
+            Space community = new Space("community", "you feel at ease here", Temp_NPC_List);
+            Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Temp_NPC_List);
+            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Temp_NPC_List);
+            Space bar = new Space("bar", "the music is playing in the background and people are drinking diverse alcoholic beverages", Temp_NPC_List);
 
 
-            home.AddEdge("Outside", outside);
-            outside.AddEdge("Subway", subway);
-            outside.AddEdge("School", school);
-            outside.AddEdge("Park", park);
-            outside.AddEdge("Bar", bar);
-            outside.AddEdge("Hospital", hospital);
-            bar.AddEdge("Outside", outside);
-            park.AddEdge("Playground", playground);
-            playground.AddEdge("Park", park);
-            park.AddEdge("Outside", outside);
-            school.AddEdge("Community", community);
-            community.AddEdge("School", school);
-            school.AddEdge("Outside", outside);
-            subway.AddEdge("Outside", outside);
-            hospital.AddEdge("Psychiatry", psychiatry);
-            psychiatry.AddEdge("Hospital", hospital);
-            hospital.AddEdge("Outside", outside);
+            home.AddEdge("outside", outside);
+            outside.AddEdge("subway", subway);
+            outside.AddEdge("school", school);
+            outside.AddEdge("park", park);
+            outside.AddEdge("bar", bar);
+            outside.AddEdge("hospital", hospital);
+            bar.AddEdge("outside", outside);
+            park.AddEdge("playground", playground);
+            playground.AddEdge("park", park);
+            park.AddEdge("outside", outside);
+            school.AddEdge("community", community);
+            community.AddEdge("school", school);
+            school.AddEdge("outside", outside);
+            subway.AddEdge("outside", outside);
+            hospital.AddEdge("psychiatry", psychiatry);
+            psychiatry.AddEdge("hospital", hospital);
+            hospital.AddEdge("outside", outside);
 
             this.entry = home;
             SpaceMap.Add(home.name, home);

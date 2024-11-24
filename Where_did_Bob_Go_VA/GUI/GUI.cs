@@ -85,6 +85,20 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
 
 
+        ///////////////////////////////////////////////////////////////////    
+        ///////////////        GUI_TopPart_StringArr        ///////////////
+        private static string[] GUI_TopPart_StringArr;
+
+        //////////////////////////////////////////////////////////////////////    
+        ///////////////        GUI_MiddlePart_StringArr        ///////////////
+        private static string[] GUI_MiddlePart_StringArr;
+
+        //////////////////////////////////////////////////////////////////////    
+        ///////////////        GUI_BottomPart_StringArr        ///////////////
+        private static string[] GUI_BottomPart_StringArr;
+
+
+
 
 
         ///////////////////////////////////////////////////////////////////////////////////////   
@@ -151,32 +165,47 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Pack and prepare the GUI, and the print it out to the Terminal.   
         private static void Generate_GUI( )
         {
-            /////   Printing out top text-boxes   /////  
-            
-            // .    
-            string[] TextBox_TopLeft_StringArr = TextBox_TopLeft.Generate_TextBox_ToStrArr();   
-            string[] TextBox_TopMiddle_StringArr = TextBox_TopMiddle.Generate_TextBox_ToStrArr();   
-            string[] TextBox_TopRight_StringArr = TextBox_TopRight.Generate_TextBox_ToStrArr();  
+            // .  
+            Generate_GUI_TopPart();
 
             // .   
-            string[] textBox_TopPlus_StringArr = new string[TextBox_TopLeft.textBox_Height];
+            Generate_GUI_MiddlePart();
 
             // .  
-            if ( (TextBox_TopLeft.textBox_Height == TextBox_TopMiddle.textBox_Height) && (TextBox_TopMiddle.textBox_Height == TextBox_TopRight.textBox_Height) )
-            {
-                // .
-                for (int i = 0; i < TextBox_TopLeft.textBox_Height; i++) 
-                {
-                    textBox_TopPlus_StringArr[i] = TextBox_TopLeft_StringArr[i] + TextBox_TopMiddle_StringArr[i] + TextBox_TopRight_StringArr[i];
-                }
+            Generate_GUI_BottomPart();
 
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////    
+        ///////////////        Generate_GUI_TopPart (  )        ///////////////     
+        // Pack and prepare the GUI, and the print it out to the Terminal.   
+        private static void Generate_GUI_TopPart()
+        {
+            // .    
+            string[] TextBox_TopLeft_StringArr = TextBox_TopLeft.Generate_TextBox_ToStrArr();
+            string[] TextBox_TopMiddle_StringArr = TextBox_TopMiddle.Generate_TextBox_ToStrArr();
+            string[] TextBox_TopRight_StringArr = TextBox_TopRight.Generate_TextBox_ToStrArr();
+
+            GUI_TopPart_StringArr = new string[TextBox_TopLeft.textBox_Height];
+
+            //// .  
+            //if (GUI_TopPart_StringArr.Length != TextBox_TopLeft.textBox_Height)
+            //{
+            //    // .   
+            //    GUI_TopPart_StringArr = new string[TextBox_TopLeft.textBox_Height];
+            //}
+
+            // .  
+            if ((TextBox_TopLeft.textBox_Height == TextBox_TopMiddle.textBox_Height) && (TextBox_TopMiddle.textBox_Height == TextBox_TopRight.textBox_Height))
+            {
                 // .
                 for (int i = 0; i < TextBox_TopLeft.textBox_Height; i++)
                 {
-                    // .
-                    Console.WriteLine(textBox_TopPlus_StringArr[i]);
+                    GUI_TopPart_StringArr[i] = TextBox_TopLeft_StringArr[i] + TextBox_TopMiddle_StringArr[i] + TextBox_TopRight_StringArr[i];
                 }
-
             }
             else
             {
@@ -184,34 +213,37 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                 throw new Exception();
             }
 
+            // Returns void. 
+            return;
+        }
 
 
-
-            /////   Printing out the main text-box  /////  
-
-            // .    
+        //////////////////////////////////////////////////////////////////////////    
+        ///////////////        Generate_GUI_MiddlePart (  )        ///////////////     
+        // Pack and prepare the GUI, and the print it out to the Terminal.   
+        private static void Generate_GUI_MiddlePart()
+        {
+            // .   
             string[] TextBox_Main_StringArr = TextBox_Main.Generate_TextBox_ToStrArr();
             string[] TextBox_Commands_StringArr = TextBox_Commands.Generate_TextBox_ToStrArr();
 
-            // .   
-            string[] textBox_MainPlus_StringArr = new string[TextBox_Main.textBox_Height];
+            GUI_MiddlePart_StringArr = new string[TextBox_Main.textBox_Height];
 
-            // .  
+            //// .  
+            //if (GUI_MiddlePart_StringArr.Length != TextBox_Main.textBox_Height)
+            //{
+            //    // .   
+            //    GUI_MiddlePart_StringArr = new string[TextBox_Main.textBox_Height];
+            //}
+
+            // .   
             if (TextBox_Main.textBox_Height == TextBox_Commands.textBox_Height)
             {
                 // .
                 for (int i = 0; i < TextBox_Main.textBox_Height; i++)
                 {
-                    textBox_MainPlus_StringArr[i] = TextBox_Main_StringArr[i] + TextBox_Commands_StringArr[i];
+                    GUI_MiddlePart_StringArr[i] = TextBox_Main_StringArr[i] + TextBox_Commands_StringArr[i];
                 }
-
-                // .
-                for (int i = 0; i < TextBox_Commands.textBox_Height; i++)
-                {
-                    // .
-                    Console.WriteLine(textBox_MainPlus_StringArr[i]);
-                }
-
             }
             else
             {
@@ -219,17 +251,28 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                 throw new Exception();
             }
 
+            // Returns void. 
+            return;
+        }
 
 
-
-            /////   Printing out the options text-box  /////  
-
+        //////////////////////////////////////////////////////////////////////////    
+        ///////////////        Generate_GUI_BottomPart (  )        ///////////////     
+        // Pack and prepare the GUI, and the print it out to the Terminal.   
+        private static void Generate_GUI_BottomPart()
+        {
             // .    
             string[] TextBox_Options_StringArr = TextBox_Options.Generate_TextBox_ToStrArr();
             string[] TextBox_Inventory_StringArr = TextBox_Inventory.Generate_TextBox_ToStrArr();
 
-            // .   
-            string[] textBox_OptionsPlus_StringArr = new string[TextBox_Options.textBox_Height];
+            GUI_BottomPart_StringArr = new string[TextBox_Options.textBox_Height];
+
+            //// .  
+            //if (GUI_BottomPart_StringArr.Length != TextBox_Options.textBox_Height)
+            //{
+            //    // .   
+            //    GUI_BottomPart_StringArr = new string[TextBox_Options.textBox_Height];
+            //}
 
             // .  
             if (TextBox_Options.textBox_Height == TextBox_Inventory.textBox_Height)
@@ -237,16 +280,8 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                 // .
                 for (int i = 0; i < TextBox_Options.textBox_Height; i++)
                 {
-                    textBox_OptionsPlus_StringArr[i] = TextBox_Options_StringArr[i] + TextBox_Inventory_StringArr[i];
+                    GUI_BottomPart_StringArr[i] = TextBox_Options_StringArr[i] + TextBox_Inventory_StringArr[i];
                 }
-
-                // .
-                for (int i = 0; i < TextBox_Inventory.textBox_Height; i++)
-                {
-                    // .
-                    Console.WriteLine(textBox_OptionsPlus_StringArr[i]);
-                }
-
             }
             else
             {
@@ -254,10 +289,110 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                 throw new Exception();
             }
 
-
-
+            // Returns void. 
             return;
         }
+
+
+        ////////////////////////////////////////////////////////////    
+        ///////////////        Print_GUI (  )        ///////////////     
+        // Pack and prepare the GUI, and the print it out to the Terminal.   
+        private static void Print_GUI()
+        {
+            
+            // "Clear()" and "\x1b[3J" Clears the terminal even on Windows Shell.   
+            Console.Clear();
+            Console.WriteLine("\x1b[3J");
+
+
+
+            // .  
+            // .  
+            if (GUI_TopPart_StringArr == null || GUI_TopPart_StringArr.Length == 0)
+            {
+                // .
+                Generate_GUI_TopPart();
+
+                //
+                if (GUI_TopPart_StringArr == null || GUI_TopPart_StringArr.Length == 0)
+                {
+                    // .    
+                    throw new Exception();
+                }
+            }
+
+            // .   
+            if (GUI_TopPart_StringArr != null)
+            {
+                // .
+                for (int i = 0; i < GUI_TopPart_StringArr.Length; i++)
+                {
+                    Console.WriteLine(GUI_TopPart_StringArr[i]);
+                }
+            }
+
+
+
+            // .   
+            // .   
+            if (GUI_MiddlePart_StringArr == null || GUI_MiddlePart_StringArr.Length == 0)
+            {
+                // .
+                Generate_GUI_MiddlePart();
+
+                //
+                if (GUI_MiddlePart_StringArr == null || GUI_MiddlePart_StringArr.Length == 0)
+                {
+                    // .    
+                    throw new Exception();
+                }
+            }
+
+            // .   
+            if (GUI_MiddlePart_StringArr != null)
+            {
+                // .
+                for (int i = 0; i < GUI_MiddlePart_StringArr.Length; i++)
+                {
+                    Console.WriteLine(GUI_MiddlePart_StringArr[i]);
+                }
+            }
+
+
+
+            // .  
+            // .  
+            if (GUI_BottomPart_StringArr == null || GUI_BottomPart_StringArr.Length == 0)
+            {
+                // .
+                Generate_GUI_BottomPart();
+
+                //
+                if (GUI_BottomPart_StringArr == null || GUI_BottomPart_StringArr.Length == 0)
+                {
+                    // .    
+                    throw new Exception();
+                }
+            }
+
+            // .   
+            if (GUI_BottomPart_StringArr != null)
+            {
+                // .
+                for (int i = 0; i < GUI_BottomPart_StringArr.Length; i++)
+                {
+                    Console.WriteLine(GUI_BottomPart_StringArr[i]);
+                }
+            }
+
+
+
+            // Returns void. 
+            return;
+        }
+
+
+
 
 
 
@@ -275,16 +410,17 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Clear the Terminal and calls Generate_GUI( ).   
         public static void Update_GUI( )
         {
-
-            // "Clear()" og "\x1b[3J" Clears the terminal even on Windows Shell.   
-            Console.Clear();
-            Console.WriteLine("\x1b[3J");
-
             // .   
             Generate_GUI();
 
+            // .   
+            Print_GUI();
 
+            // Returns void. 
+            return;
         }
+
+
 
 
 
@@ -297,10 +433,32 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .
             Change_TextBox_TopLeft(new_text);
 
-            // .
-            Update_GUI();
+            // . 
+            Generate_GUI_TopPart();
 
-            // .  
+            // .
+            Print_GUI();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Update_TextBox_TopMiddle ( string[] )        ///////////////    
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_TopMiddle(string[] new_text)
+        {
+            // .
+            Change_TextBox_TopMiddle(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // .
+            Print_GUI();
+
+            // Returns void. 
             return;
         }
 
@@ -313,10 +471,13 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .
             Change_TextBox_TopRight(new_text);
 
-            // .
-            Update_GUI();
+            // . 
+            Generate_GUI_TopPart();
 
-            // .  
+            // .
+            Print_GUI();
+
+            // Returns void. 
             return;
         }
 
@@ -329,10 +490,13 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .
             Change_TextBox_Main(new_text);
 
-            // .
-            Update_GUI();
+            // . 
+            Generate_GUI_MiddlePart();
 
-            // .  
+            // .
+            Print_GUI();
+
+            // Returns void. 
             return;
         }
 
@@ -345,10 +509,13 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .
             Change_TextBox_Commands(new_text);
 
-            // .
-            Update_GUI();
+            // . 
+            Generate_GUI_MiddlePart();
 
-            // .  
+            // .
+            Print_GUI();
+
+            // Returns void. 
             return;
         }
 
@@ -361,10 +528,32 @@ namespace Where_did_Bob_Go_VA.GUI_NS
             // .
             Change_TextBox_Options(new_text);
 
-            // .
-            Update_GUI();
+            // . 
+            Generate_GUI_BottomPart();
 
-            // .  
+            // .
+            Print_GUI();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Update_TextBox_Inventory ( string[] )        ///////////////    
+        // Takes in a string array, changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_Inventory(string[] new_text)
+        {
+            // .
+            Change_TextBox_Inventory(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // .
+            Print_GUI();
+
+            // Returns void. 
             return;
         }
 
@@ -380,16 +569,35 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_TopLeft(string new_text)
         {
-            // .  
-            string[] temp_string = { new_text };
+            // .
+            Change_TextBox_TopLeft(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
 
             // .
-            Change_TextBox_TopLeft(temp_string);
+            Print_GUI();
+
+            // Returns void. 
+            return;
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Update_TextBox_TopMiddle ( string )        ///////////////    
+        // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
+        public static void Update_TextBox_TopMiddle(string new_text)
+        {
+            // .
+            Change_TextBox_TopMiddle(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
 
             // .
-            Update_GUI();
+            Print_GUI();
 
-            // .  
+            // Returns void. 
             return;
         }
 
@@ -399,16 +607,16 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_TopRight(string new_text)
         {
-            // .  
-            string[] temp_string = { new_text };
+            // .
+            Change_TextBox_TopRight(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
 
             // .
-            Change_TextBox_TopRight(temp_string);
+            Print_GUI();
 
-            // .
-            Update_GUI();
-
-            // .  
+            // Returns void. 
             return;
         }
 
@@ -418,16 +626,16 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_Main(string new_text)
         {
-            // .  
-            string[] temp_string = { new_text };
+            // .
+            Change_TextBox_Main(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
 
             // .
-            Change_TextBox_Main(temp_string);
+            Print_GUI();
 
-            // .
-            Update_GUI();
-
-            // .  
+            // Returns void. 
             return;
         }
 
@@ -437,179 +645,31 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
         public static void Update_TextBox_Commands(string new_text)
         {
-            // .  
-            string[] temp_string = { new_text };
+            // .
+            Change_TextBox_Commands(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
 
             // .
-            Change_TextBox_Commands(temp_string);
+            Print_GUI();
 
-            // .
-            Update_GUI();
-
-            // .  
+            // Returns void. 
             return;
         }
 
 
         ///////////////////////////////////////////////////////////////////////////////    
         ///////////////        Update_TextBox_Options ( string )        ///////////////    
-        // Takes in a string, converts the string into string[], changes the text of the textbox, and updates the GUI.   
-        public static void Update_TextBox_Options(string new_text)
-        {
-            // .  
-            string[] temp_string = { new_text };
-
-            // .
-            Change_TextBox_Options(temp_string);
-
-            // .
-            Update_GUI();
-
-            // .  
-            return;
-        }
-
-
-
-
-
-
-
-        /////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_TopLeft ( string[] )        ///////////////    
-        // Takes in a string array and changes the text of a the textbox.   
-        public static void Change_TextBox_TopLeft(string[] new_text)
-        {
-            // .
-            TextBox_TopLeft.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        //////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_TopRight ( string[] )        ///////////////    
-        // Takes in a string array and changes the text of a the textbox.   
-        public static void Change_TextBox_TopRight(string[] new_text)
-        {
-            // .
-            TextBox_TopRight.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        //////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Main ( string[] )        ///////////////    
-        // Takes in a string array and changes the text of a the textbox.   
-        public static void Change_TextBox_Main(string[] new_text)
-        {
-            // .
-            TextBox_Main.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        //////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Commands ( string[] )        ///////////////    
-        // Takes in a string array and changes the text of a the textbox.   
-        public static void Change_TextBox_Commands(string[] new_text)
-        {
-            // .
-            TextBox_Main.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        /////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Options ( string[] )        ///////////////    
-        // Takes in a string array and changes the text of a the textbox.   
-        public static void Change_TextBox_Options(string[] new_text)
-        {
-            // .
-            TextBox_Options.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-
-
-
-
-
-
-        ///////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_TopLeft ( string )        ///////////////    
-        // Takes in a string array, converts the string into string[], and changes the text of a the textbox.   
-        public static void Change_TextBox_TopLeft(string new_text)
-        {
-            // .
-            TextBox_TopLeft.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        ////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_TopRight ( string )        ///////////////    
-        // Takes in a string array, converts the string into string[], and changes the text of a the textbox.   
-        public static void Change_TextBox_TopRight(string new_text)
-        {
-            // .
-            TextBox_TopRight.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        ////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Main ( string )        ///////////////    
-        // Takes in a string array, converts the string into string[], and changes the text of a the textbox.   
-        public static void Change_TextBox_Main(string new_text)
-        {
-            // .
-            TextBox_Main.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        ////////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Commands ( string )        ///////////////    
-        // Takes in a string array, converts the string into string[], and changes the text of a the textbox.   
-        public static void Change_TextBox_Commands(string new_text)
-        {
-            // .
-            TextBox_Main.Set_Text(new_text);
-
-            // .  
-            return;
-        }
-
-
-        ///////////////////////////////////////////////////////////////////////////////    
-        ///////////////        Change_TextBox_Options ( string )        ///////////////    
-        // Takes in a string array, converts the string into string[], and changes the text of a the textbox.   
         /// <summary>
         /// <c> Change_TextBox_Options : </c> <br/>  
-        /// Generates the combined/final string-array that contains the complete Textbox. <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Options", and then Updates the Textbox. <br/>  
         ///  <br/>  
         ///  <br/>  
         /// </summary>
         /// 
         /// <remarks>  
-        ///  <br/>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
         ///  <br/>  
         ///  <br/>  
         ///  <br/>
@@ -647,14 +707,14 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         ///     <item>  
         ///         <term> Update Textbox </term>  
         ///         <description>  
-        ///         Changes the Textbox Text.  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
         ///         </description>  
         ///     </item>  
         ///     
         ///     <item>  
         ///         <term> Update GUI </term>  
         ///         <description>  
-        ///         .  
+        ///         Updates all Textbox Changes and prints it.  
         ///         </description>  
         ///     </item>  
         ///     
@@ -665,7 +725,8 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         ///     
         ///     <code>
         ///     
-        ///     // . 
+        ///     // Changes the Textbox Text.
+        ///     Update_TextBox_Options( "Hello World" );
         ///     
         ///     </code>
         ///  </example>
@@ -675,12 +736,396 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         ///  <br/>  
         /// </returns>
         /// 
-        public static void Change_TextBox_Options(string new_text)
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Update_TextBox_Options(string new_text)
+        {
+            // .
+            Change_TextBox_Options(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // .
+            Print_GUI();
+
+            // Returns void. 
+            return;
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Update_TextBox_Inventory ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Inventory : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Inventory", and then Updates the Textbox. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Update_TextBox_Inventory( "Hello World" );
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Update_TextBox_Inventory(string new_text)
+        {
+            // .
+            Change_TextBox_Inventory(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // .
+            Print_GUI();
+
+            // Returns void. 
+            return;
+        }
+
+
+
+
+
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopLeft ( string[] )        ///////////////    
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_TopLeft(string[] new_text)
+        {
+            // .
+            TextBox_TopLeft.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopMiddle ( string[] )        ///////////////    
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_TopMiddle(string[] new_text)
+        {
+            // .
+            TextBox_TopMiddle.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopRight ( string[] )        ///////////////    
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_TopRight(string[] new_text)
+        {
+            // .
+            TextBox_TopRight.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Main ( string[] )        ///////////////    
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_Main(string[] new_text)
+        {
+            // .
+            TextBox_Main.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        //////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Commands ( string[] )        ///////////////    
+        // Takes in a string array and changes the text of a the textbox.   
+        public static void Change_TextBox_Commands(string[] new_text)
+        {
+            // .
+            TextBox_Commands.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Options ( string[] )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Options : </c> <br/>  
+        /// Takes in a string[] and Changes the Text in the Textbox "Options". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Text to put inside the Textbox. 
+        ///     string[] text = {"Hello!", "I am Alex.", "What is your name?"};
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Options( test );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> Each element in the array is its own line, and "\n" are not allowed. </param>  
+        /// 
+        public static void Change_TextBox_Options(string[] new_text)
         {
             // .
             TextBox_Options.Set_Text(new_text);
 
-            // .  
+            // . 
+            Generate_GUI_BottomPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Inventory ( string[] )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Inventory : </c> <br/>  
+        /// Takes in a string[] and Changes the Text in the Textbox "Inventory". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Text to put inside the Textbox. 
+        ///     string[] text = {"Hello!", "I am Alex.", "What is your name?"};
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Inventory( test );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> Each element in the array is its own line, and "\n" are not allowed. </param>  
+        /// 
+        public static void Change_TextBox_Inventory(string[] new_text)
+        {
+            // .
+            TextBox_Inventory.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // Returns void. 
             return;
         }
 
@@ -691,7 +1136,678 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
 
 
+        ///////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopLeft ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_TopLeft : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "TopLeft". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_TopLeft( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_TopLeft(string new_text)
+        {
+            // .
+            TextBox_TopLeft.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopMiddle ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_TopMiddle : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "TopMiddle". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_TopMiddle( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_TopMiddle(string new_text)
+        {
+            // .
+            TextBox_TopMiddle.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_TopRight ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_TopRight : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "TopRight". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_TopRight( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_TopRight(string new_text)
+        {
+            // .
+            TextBox_TopRight.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_TopPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Main ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Main : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Main". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Main( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_Main(string new_text)
+        {
+            // .
+            TextBox_Main.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Commands ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Commands : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Commands". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Commands( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_Commands(string new_text)
+        {
+            // .
+            TextBox_Commands.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_MiddlePart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        ///////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Options ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Options : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Options". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Options( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_Options(string new_text)
+        {
+            // .
+            TextBox_Options.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+        /////////////////////////////////////////////////////////////////////////////////    
+        ///////////////        Change_TextBox_Inventory ( string )        ///////////////    
+        /// <summary>
+        /// <c> Change_TextBox_Inventory : </c> <br/>  
+        /// Takes in a string and Changes the Text in the Textbox "Inventory". <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        /// </summary>
+        /// 
+        /// <remarks>  
+        /// Remember to call "Update_GUI" for the changes to be printed. <br/>  
+        ///  <br/>  
+        ///  <br/>  
+        ///  <br/>
+        ///  
+        ///  <list type="bullet|number|table">  
+        ///  
+        ///     <listheader>  
+        ///         <term> Textbox </term>  
+        ///         <description>  
+        ///         The box that will be printed/generated, based on the attributes inside the TextBox Object. 
+        ///         </description>  
+        ///     </listheader>  
+        ///     
+        ///     <item>  
+        ///         <term> Textbox Text </term>  
+        ///         <description>  
+        ///         The text that will be inside the Textbox, and stored in the TextBox Object.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> GUI </term>  
+        ///         <description>  
+        ///         Normally it would mean the "Graphical User Interface", but this is more like a "CLI" (Commmand-Line Interface).  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Change Textbox </term>  
+        ///         <description>  
+        ///         Preparing the Textbox with a new Text, so it is ready for when the "Update GUI" gets called.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update Textbox </term>  
+        ///         <description>  
+        ///         Changes the Textbox Text, then Updates the Textbox and prints it out.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///     <item>  
+        ///         <term> Update GUI </term>  
+        ///         <description>  
+        ///         Updates all Textbox Changes and prints it.  
+        ///         </description>  
+        ///     </item>  
+        ///     
+        ///  </list>  
+        ///  
+        ///  <example>
+        ///     Here is an example of how to use this method: 
+        ///     
+        ///     <code>
+        ///     
+        ///     // Changes the Textbox Text.
+        ///     Change_TextBox_Inventory( "Hello World" );
+        ///     
+        ///     // Updates GUI.
+        ///     Update_GUI;
+        ///     
+        ///     </code>
+        ///  </example>
+        /// </remarks>  
+        /// 
+        /// <returns> 
+        ///  <br/>  
+        /// </returns>
+        /// 
+        /// <param name="new_text"> The Text to be printed in the Textbox. <br/> To signal a new-line/line-break use "\n". </param>  
+        /// 
+        public static void Change_TextBox_Inventory(string new_text)
+        {
+            // .
+            TextBox_Inventory.Set_Text(new_text);
+
+            // . 
+            Generate_GUI_BottomPart();
+
+            // Returns void. 
+            return;
+        }
+
+
+
+
+
+
     }
 
 
 }
+
+

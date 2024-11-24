@@ -25,11 +25,13 @@ namespace Where_did_Bob_Go_VA.World_NS
     {
         public string name; 
         private string description;
+        public string NPC_Map;
+        public string Item_Map;
 
 
         //List<NPC> NPCList = new List<NPC>();
 
-        
+
         public Dictionary<string, NPC> NPCMap = new Dictionary<string, NPC>();
         public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
         public Space(String name, string description, Dictionary<string, NPC> NPCList) : base(name)
@@ -66,6 +68,8 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
+            welcome_description[2] = "You see the following NPCs:" + NPC_Map;
+            welcome_description[3] = "You see the following items:" + Item_Map;
 
             int NPC_Number = 2; 
             foreach (KeyValuePair<string, NPC> item in NPCMap)

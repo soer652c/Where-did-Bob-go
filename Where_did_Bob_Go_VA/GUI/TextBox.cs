@@ -1752,7 +1752,8 @@ namespace Where_did_Bob_Go_VA.GUI_NS
                         else
                         {
                             // Throw Exception.  
-                            throw new Exception("The length of your string is longer then the space on the line.");
+                            throw new Exception("The length of your string is longer than the space on the line.");
+                            Console.WriteLine("The length of your string is longer than the space on the line");
                         }
                     }
                     else if (String.IsNullOrEmpty(text_array[TextLines_LineCounter]))
@@ -1871,7 +1872,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
         /// 
         public void Set_Text(string text)
         {
-            // Converts the string into a string array.
+            // Converts the string into a string array.   
             string[] text_array = Text_Seperation( text ); 
 
             // Sets the Textbox Text to the content of "text_array".   

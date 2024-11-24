@@ -41,6 +41,8 @@ namespace Where_did_Bob_Go_VA.World_NS
         public virtual Node FollowEdge(string direction)
         {
             return edges[direction];
+
+
         }
         //+ Display_Rooms(): vi skal lave rum færdig
         public void DisplayRoom()
