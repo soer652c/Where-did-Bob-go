@@ -37,18 +37,20 @@ namespace Where_did_Bob_Go_VA.Game_NS
 
         public void Transition(string direction)
         {
+
             Space next = current.FollowEdge(direction);
-            if (string.IsNullOrEmpty(direction) && char.IsUpper(direction[0]))
+            if (string.IsNullOrEmpty(direction) && char.IsLower(direction[0]))
+            {
+                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
+            }
+            else
             {
                 current.Goodbye();
                 current = next;
                 current.Welcome();
             }
-            else
-            {
-                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
-            }
         }
+
  
 
         public void MakeDone()
