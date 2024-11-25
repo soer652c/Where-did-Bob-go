@@ -50,10 +50,11 @@ namespace Where_did_Bob_Go_VA.Game_NS
         {
             Update_TextBox_Main("Welcome to the World of Zuul!");
 
-
-
             InitRegistry();
             context.GetCurrent().Welcome();
+
+            //Ny context 
+            context = new Context(world.GetEntry(), World); //Her har world og context klassen kontakt
 
             while (context.IsDone() == false)
             {

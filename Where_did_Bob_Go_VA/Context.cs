@@ -24,7 +24,14 @@ namespace Where_did_Bob_Go_VA.Game_NS
     {
         Space current;
         bool done = false;
+        World world; //Referere til Klassen-word
 
+       public Context(Space node, World world)
+        {
+            current = node;
+            this.world = world; //Her gemmes World referencen så den kan bruges i context
+            //klassen
+        }
         public Context(Space node)
         {
             current = node;
@@ -51,8 +58,6 @@ namespace Where_did_Bob_Go_VA.Game_NS
             }
         }
 
- 
-
         public void MakeDone()
         {
             done = true;
@@ -61,6 +66,12 @@ namespace Where_did_Bob_Go_VA.Game_NS
         public bool IsDone()
         {
             return done;
+        }
+
+        //NPCLeft()-metoden kalder MPCleft i Worldklasen
+        public int NPCleft()
+        {
+            return world.NPCLeft(); //World.klassen i NPCleft
         }
     }
 
