@@ -99,10 +99,11 @@ namespace Where_did_Bob_Go_VA.World_NS
         public int NPCLeft()
         {
             int NPCVisualbilitiCounter = 0;
-            for (int i=0; SpaceMap.Count > 0; i++)
+            for (int k=0; SpaceMap.Count > 0; k++)
             {
+                string v = Convert.ToString(k);
                 //Kig i Space, og find NPSList;
-                Space currentSpace = SpaceMap[i];
+                Space currentSpace = SpaceMap[v];
                 // FOR LOOP
                 foreach (KeyValuePair<string, NPC> npcEntry in currentSpace.NPCMap)
                 {
