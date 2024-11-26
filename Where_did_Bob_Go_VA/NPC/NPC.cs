@@ -28,6 +28,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         public string[] NPCidentifiers;
         public string NPCID;
         public string CurrentNPC;
+        public string NPCriskLevel;
 
         public NPC(string name)
         {
