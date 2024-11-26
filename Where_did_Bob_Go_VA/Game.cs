@@ -76,5 +76,15 @@ namespace Where_did_Bob_Go_VA
                 Update_TextBox_Main("Game Over 😥");
             }
         }
+        public void Introduction() //laver en metode ved navn Introduction
+        {
+            Update_TextBox_Main(""); //første tekst boks
+            Console.ReadLine(); // når man trykker enter, så går den videre til næste del af teksten
+            Update_TextBox_Main("");
+        }
+        public void GameOver()
+        {
+            Update_TextBox_Main("You have lost all your health boohoo");
+        }
     }
 }
