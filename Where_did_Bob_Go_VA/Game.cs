@@ -16,7 +16,7 @@ using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 //   
 //   
 //   
-namespace Where_did_Bob_Go_VA.Game_NS
+namespace Where_did_Bob_Go_VA
 {
 
 
@@ -50,21 +50,33 @@ namespace Where_did_Bob_Go_VA.Game_NS
         {
             Update_TextBox_Main("Welcome to the World of Zuul!");
 
-
-
             InitRegistry();
             context.GetCurrent().Welcome();
+
+            //Ny context 
+            context = new Context(world.GetEntry(), world); //Her har world og context klassen kontakt
 
             while (context.IsDone() == false)
             {
                 Console.Write("> ");
                 string? line = Console.ReadLine();
-                if (line != null) registry.Dispatch(line);
-                //Tjek om NPCcount er null
+                if (line != null)
+                    registry.Dispatch(line);
             }
             Update_TextBox_Main("Game Over 😥");
         }
     }
+    public Context();
+    //Tjek om NPCcount er null
+    if (context.NPCleft() == 0)
+       {
+           Update_TextBox_Main("Tillykke! Du har gennemført spillet");
+               break;
+        }
+                    if (context.NPCleft() != 0)
+{
+    Update_TextBox_Main("Game over");
+}
 
 
 }

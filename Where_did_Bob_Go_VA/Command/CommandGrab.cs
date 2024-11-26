@@ -13,7 +13,7 @@ using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 
 namespace Where_did_Bob_Go_VA.Command_NS
 {
-	public class CommandGrab : BaseCommand, ICommand
+    public class CommandGrab : BaseCommand, ICommand
 	{
         Registry registry;
 

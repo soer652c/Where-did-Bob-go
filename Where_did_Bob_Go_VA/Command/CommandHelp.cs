@@ -44,9 +44,11 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // present list of commands
             Update_TextBox_Main("Commands:");
             foreach (String commandName in commandNames)
+            // Denne overskriver nuværende tekst i comand boxen
             {
                 string description = registry.GetCommand(commandName).GetDescription();
-                Console.WriteLine(" - {0,-" + max + "} " + description, commandName);
+                Console.WriteLine(" - {0,-" + max + "} " + description, commandName); 
+                // Skal dette ikke skrives i comand boxen
             }
         }
     }

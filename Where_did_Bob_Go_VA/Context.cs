@@ -24,7 +24,14 @@ namespace Where_did_Bob_Go_VA.Game_NS
     {
         Space current;
         bool done = false;
+        World world; //Referere til Klassen-word
 
+       public Context(Space node, World world)
+        {
+            current = node;
+            this.world = world; //Her gemmes World referencen så den kan bruges i context
+            //klassen
+        }
         public Context(Space node)
         {
             current = node;
@@ -37,19 +44,19 @@ namespace Where_did_Bob_Go_VA.Game_NS
 
         public void Transition(string direction)
         {
+
             Space next = current.FollowEdge(direction);
-            if (string.IsNullOrEmpty(direction) && char.IsUpper(direction[0]))
+            if (string.IsNullOrEmpty(direction) && char.IsLower(direction[0]))
+            {
+                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
+            }
+            else
             {
                 current.Goodbye();
                 current = next;
                 current.Welcome();
             }
-            else
-            {
-                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
-            }
         }
- 
 
         public void MakeDone()
         {
@@ -59,6 +66,12 @@ namespace Where_did_Bob_Go_VA.Game_NS
         public bool IsDone()
         {
             return done;
+        }
+
+        //NPCLeft()-metoden kalder MPCleft i Worldklasen
+        public int NPCleft()
+        {
+            return world.NPCLeft(); //World.klassen i NPCleft
         }
     }
 
