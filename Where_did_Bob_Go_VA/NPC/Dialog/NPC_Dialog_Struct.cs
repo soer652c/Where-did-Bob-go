@@ -37,42 +37,24 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
 
 
-        public NPC_Dialog_Options1 D00_01_01;
+        public NPC_Dialog_Options0 D00_01_01;
 
-        public NPC_Dialog_Options1 D00_01_02;
-
-
-
-        public NPC_Dialog_Options1 D00_02_01;
-
-        public NPC_Dialog_Options1 D00_02_02;
+        public NPC_Dialog_Options0 D00_01_02;
 
 
 
-        public NPC_Dialog_Options1 D00_03_01;
+        public NPC_Dialog_Options0 D00_02_01;
 
-        public NPC_Dialog_Options1 D00_03_02;
-
-
+        public NPC_Dialog_Options0 D00_02_02;
 
 
 
+        public NPC_Dialog_Options0 D00_03_01;
 
-        public NPC_Dialog_Options0 D00_01_01_01;
-
-        public NPC_Dialog_Options0 D00_01_02_01;
-
-
-
-        public NPC_Dialog_Options0 D00_02_01_01;
-
-        public NPC_Dialog_Options0 D00_02_02_01;
+        public NPC_Dialog_Options0 D00_03_02;
 
 
 
-        public NPC_Dialog_Options0 D00_03_01_01;
-
-        public NPC_Dialog_Options0 D00_03_02_01;
 
 
     }
@@ -99,18 +81,11 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
     }
 
 
-    public struct NPC_Dialog_Options1
-    {
-        public string[] text;
-
-        public string[] Options_1;
-    }
-
-
     public struct NPC_Dialog_Options0
     {
         public string[] text;
     }
+
 
 
 }

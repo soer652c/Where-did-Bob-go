@@ -85,29 +85,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
 
 
-        private string Dialog_00_01_01_01_Start = "<D00.01.01.01";
-        private string Dialog_00_01_01_01_Stop = "</D00.01.01.01";
-
-        private string Dialog_00_01_02_01_Start = "<D00.01.02.01";
-        private string Dialog_00_01_02_01_Stop = "</D00.01.02.01";
-
-
-
-        private string Dialog_00_02_01_01_Start = "<D00.02.01.01";
-        private string Dialog_00_02_01_01_Stop = "</D00.02.01.01";
-
-        private string Dialog_00_02_02_01_Start = "<D00.02.02.01";
-        private string Dialog_00_02_02_01_Stop = "</D00.02.02.01";
-
-
-
-        private string Dialog_00_03_01_01_Start = "<D00.03.01.01";
-        private string Dialog_00_03_01_01_Stop = "</D00.03.01.01";
-
-        private string Dialog_00_03_02_01_Start = "<D00.03.02.01";
-        private string Dialog_00_03_02_01_Stop = "</D00.03.02.01";
-
-
         public NPC_Dialog_Struct NPC_DialogTree;
 
 
@@ -187,21 +164,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
             return npc_Dialog_Options2_Data;
         }
 
-        private NPC_Dialog_Options1 Extract_Dialog_Options1(string init_data_StartMarker, string init_data_StopMarker)
-        {
-            // .   
-            NPC_Dialog_Options1 npc_Dialog_Options1_Data = new NPC_Dialog_Options1();
-
-            // . 
-            npc_Dialog_Options1_Data.text = Extract_Data((init_data_StartMarker + Dialog_Text_Marker), (init_data_StopMarker + Dialog_Text_Marker));
-
-            // . 
-            npc_Dialog_Options1_Data.Options_1 = Extract_Data((init_data_StartMarker + Dialog_Option_1), (init_data_StopMarker + Dialog_Option_1));
-
-            // .   
-            return npc_Dialog_Options1_Data;
-        }
-
         private NPC_Dialog_Options0 Extract_Dialog_Options0(string init_data_StartMarker, string init_data_StopMarker)
         {
             // .   
@@ -213,7 +175,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
             // .   
             return npc_Dialog_Options0_Data;
         }
-
 
 
 
@@ -236,6 +197,8 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
             // .   
             NPC_DialogTree.D00 = Extract_Dialog_Options3(Dialog_00_Start, Dialog_00_Stop);
 
+
+
             // .   
             NPC_DialogTree.D00_01 = Extract_Dialog_Options2(Dialog_00_01_Start, Dialog_00_01_Stop);
             NPC_DialogTree.D00_02 = Extract_Dialog_Options2(Dialog_00_02_Start, Dialog_00_02_Stop);
@@ -244,31 +207,16 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
 
             // .   
-            NPC_DialogTree.D00_01_01 = Extract_Dialog_Options1(Dialog_00_01_01_Start, Dialog_00_01_01_Stop);
-            NPC_DialogTree.D00_01_02 = Extract_Dialog_Options1(Dialog_00_01_02_Start, Dialog_00_01_02_Stop);
+            NPC_DialogTree.D00_01_01 = Extract_Dialog_Options0(Dialog_00_01_01_Start, Dialog_00_01_01_Stop);
+            NPC_DialogTree.D00_01_02 = Extract_Dialog_Options0(Dialog_00_01_02_Start, Dialog_00_01_02_Stop);
 
             // .   
-            NPC_DialogTree.D00_02_01 = Extract_Dialog_Options1(Dialog_00_02_01_Start, Dialog_00_02_01_Stop);
-            NPC_DialogTree.D00_02_02 = Extract_Dialog_Options1(Dialog_00_02_02_Start, Dialog_00_02_02_Stop);
+            NPC_DialogTree.D00_02_01 = Extract_Dialog_Options0(Dialog_00_02_01_Start, Dialog_00_02_01_Stop);
+            NPC_DialogTree.D00_02_02 = Extract_Dialog_Options0(Dialog_00_02_02_Start, Dialog_00_02_02_Stop);
 
             // .   
-            NPC_DialogTree.D00_03_01 = Extract_Dialog_Options1(Dialog_00_03_01_Start, Dialog_00_03_01_Stop);
-            NPC_DialogTree.D00_03_02 = Extract_Dialog_Options1(Dialog_00_03_02_Start, Dialog_00_03_02_Stop);
-
-
-
-
-            // .   
-            NPC_DialogTree.D00_01_01_01 = Extract_Dialog_Options0(Dialog_00_01_01_01_Start, Dialog_00_01_01_01_Stop);
-            NPC_DialogTree.D00_01_02_01 = Extract_Dialog_Options0(Dialog_00_01_02_01_Start, Dialog_00_01_02_01_Stop);
-
-            // .   
-            NPC_DialogTree.D00_02_01_01 = Extract_Dialog_Options0(Dialog_00_02_01_01_Start, Dialog_00_02_01_01_Stop);
-            NPC_DialogTree.D00_02_02_01 = Extract_Dialog_Options0(Dialog_00_02_02_01_Start, Dialog_00_02_02_01_Stop);
-
-            // .   
-            NPC_DialogTree.D00_03_01_01 = Extract_Dialog_Options0(Dialog_00_03_01_01_Start, Dialog_00_03_01_01_Stop);
-            NPC_DialogTree.D00_03_02_01 = Extract_Dialog_Options0(Dialog_00_03_02_01_Start, Dialog_00_03_02_01_Stop);
+            NPC_DialogTree.D00_03_01 = Extract_Dialog_Options0(Dialog_00_03_01_Start, Dialog_00_03_01_Stop);
+            NPC_DialogTree.D00_03_02 = Extract_Dialog_Options0(Dialog_00_03_02_Start, Dialog_00_03_02_Stop);
 
 
             // .   
