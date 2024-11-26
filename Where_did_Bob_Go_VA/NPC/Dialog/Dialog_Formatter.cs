@@ -124,10 +124,10 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
 
         // .    
-        private NPC_Dialog_Options3 Extract_Dialog_Options3(string init_data_StartMarker, string init_data_StopMarker)
+        private NPC_Dialog_Options Extract_Dialog_Options3(string init_data_StartMarker, string init_data_StopMarker)
         {
             // .   
-            NPC_Dialog_Options3 npc_Dialog_Options3_Data = new NPC_Dialog_Options3();
+            NPC_Dialog_Options npc_Dialog_Options3_Data = new NPC_Dialog_Options();
 
             // . 
             npc_Dialog_Options3_Data.text = Extract_Data((init_data_StartMarker + Dialog_Text_Marker), (init_data_StopMarker + Dialog_Text_Marker));
@@ -146,10 +146,10 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
         }
 
 
-        private NPC_Dialog_Options2 Extract_Dialog_Options2(string init_data_StartMarker, string init_data_StopMarker)
+        private NPC_Dialog_Options Extract_Dialog_Options2(string init_data_StartMarker, string init_data_StopMarker)
         {
             // .   
-            NPC_Dialog_Options2 npc_Dialog_Options2_Data = new NPC_Dialog_Options2();
+            NPC_Dialog_Options npc_Dialog_Options2_Data = new NPC_Dialog_Options();
 
             // . 
             npc_Dialog_Options2_Data.text = Extract_Data((init_data_StartMarker + Dialog_Text_Marker), (init_data_StopMarker + Dialog_Text_Marker));
@@ -164,10 +164,10 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
             return npc_Dialog_Options2_Data;
         }
 
-        private NPC_Dialog_Options0 Extract_Dialog_Options0(string init_data_StartMarker, string init_data_StopMarker)
+        private NPC_Dialog_Options Extract_Dialog_Options0(string init_data_StartMarker, string init_data_StopMarker)
         {
             // .   
-            NPC_Dialog_Options0 npc_Dialog_Options0_Data = new NPC_Dialog_Options0();
+            NPC_Dialog_Options npc_Dialog_Options0_Data = new NPC_Dialog_Options();
 
             // . 
             npc_Dialog_Options0_Data.text = Extract_Data((init_data_StartMarker + Dialog_Text_Marker), (init_data_StopMarker + Dialog_Text_Marker));

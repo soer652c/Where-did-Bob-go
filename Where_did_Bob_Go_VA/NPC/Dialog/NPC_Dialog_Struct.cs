@@ -20,38 +20,38 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
 
 
-        public NPC_Dialog_Options3 D00;
+        public NPC_Dialog_Options D00;
 
 
 
 
 
-        public NPC_Dialog_Options2 D00_01;
+        public NPC_Dialog_Options D00_01;
 
-        public NPC_Dialog_Options2 D00_02;
+        public NPC_Dialog_Options D00_02;
 
-        public NPC_Dialog_Options2 D00_03;
-
-
+        public NPC_Dialog_Options D00_03;
 
 
 
 
-        public NPC_Dialog_Options0 D00_01_01;
-
-        public NPC_Dialog_Options0 D00_01_02;
 
 
+        public NPC_Dialog_Options D00_01_01;
 
-        public NPC_Dialog_Options0 D00_02_01;
-
-        public NPC_Dialog_Options0 D00_02_02;
+        public NPC_Dialog_Options D00_01_02;
 
 
 
-        public NPC_Dialog_Options0 D00_03_01;
+        public NPC_Dialog_Options D00_02_01;
 
-        public NPC_Dialog_Options0 D00_03_02;
+        public NPC_Dialog_Options D00_02_02;
+
+
+
+        public NPC_Dialog_Options D00_03_01;
+
+        public NPC_Dialog_Options D00_03_02;
 
 
 
@@ -59,7 +59,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
     }
 
-    public struct NPC_Dialog_Options3
+    public struct NPC_Dialog_Options
     {
         public string[] text;
 
@@ -68,24 +68,9 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
         public string[] Options_2;
 
         public string[] Options_3;
+
+        public string[] Options_4;
     }
-
-
-    public struct NPC_Dialog_Options2
-    {
-        public string[] text;
-
-        public string[] Options_1;
-
-        public string[] Options_2;
-    }
-
-
-    public struct NPC_Dialog_Options0
-    {
-        public string[] text;
-    }
-
 
 
 }
