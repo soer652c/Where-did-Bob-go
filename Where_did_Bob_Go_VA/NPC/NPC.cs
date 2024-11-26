@@ -29,6 +29,14 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         public string NPCID;
         public string CurrentNPC;
         public string NPCriskLevel;
+        public bool StartStop;
+
+        private Dictionary<string, NPC_Dialog_Options> DialogOptionsTree;
+
+        // .  
+        private string file_location = "\\DialogFolder";
+        private string file_name;
+
 
         public NPC(string name)
         {
@@ -53,27 +61,116 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         //        // Return false if there are no warning signs
         //    }
         //}
-
+      
         public void StartConversation()
         {
-            string[] TextBox = { "1. Greetings friend, How are you doing today?", "2. Sup nerd hows it hangin?", "3. Nevermind, i got somewhere else to be!" };
-            Update_TextBox_Main(TextBox);
-            // Short term code, to test if our conversation works in the first place, Gonna be revised later on
+           StartStop = true;
+            NPC_Dialog_Options initial_conversation = DialogOptionsTree["D00"];
+            string next_conversation = "D00";
+            while (StartStop == true && NPCvisibility == true)
+            {
+                if (next_conversation == "D00")
+                {
+                    // While loop kalder en metoden Converstaion
+                    next_conversation = next_conversation + Conversation_Options3(initial_conversation);
+                }
+                else if ((next_conversation == "D00.01") || (next_conversation == "DOO.02") || (next_conversation == "D00.03"))
+                {
+                    next_conversation = next_conversation + Conversation_Options2(DialogOptionsTree[next_conversation]);
+                }
+                else if ((next_conversation == "D00.01.01") || (next_conversation == "DOO.01.02") || (next_conversation == "D00.02.01") || (next_conversation == "D00.02.02") || (next_conversation == "DOO.03.01") || (next_conversation == "D00.03.02"))
+                {
+                    next_conversation = next_conversation + Conversation_Options0(DialogOptionsTree[next_conversation]);
 
+                }
+                  // Nested if, som har en valgmulighed i nr. 4. som modificere at vi kan gå tilbage i dialogtræet
 
-            String[] Textbox = { "I am doign very well thank you, What are you doing today?.", "Im Skibidi Rizz Fam, Whats the sitch?" };
-            Update_TextBox_Options(TextBox);
+            }
+
+            // Boolean StartConversaion (true)
+            // While loop, der tjekker om NPCvisibulity og er StartConversion sat til true
+            // While loop kalder en metoden Converstaion
+            // når stop conversation flipper til false. så skal startConveration lukke while loop
 
         }
-        public void StopConversation()
-        {
 
-        }
+            // metode string Conversation (NPC_Dialog_Options)
+            private string Conversation_Options3(NPC_Dialog_Options dialog1)
+            {
+                Change_TextBox_Main(dialog1.text);
 
-        //public void UseMonocle(Moncle monocle)
-        //{
+                string[] temper = new string[dialog1.Options_1.Length + dialog1.Options_2.Length + dialog1.Options_3.Length + 1];
 
-        //}
+                int k = 0;
+                for (int i = 0; i < dialog1.Options_1.Length; i++)
+                {
+                            temper[k] = dialog1.Options_1[i];
+                    k++;
+                }
+
+                for (int i = 0; i < dialog1.Options_2.Length; i++)
+                    {
+                    temper[k] = dialog1.Options_2[i];
+                    k++;
+                }
+
+                for (int i = 0; i < dialog1.Options_3.Length; i++)
+                {
+                    temper[k] = dialog1.Options_3[i];
+                    k++;
+                }
+
+                temper[k] = "Retrun to previous";
+
+                Change_TextBox_Options(temper);
+                Update_GUI();
+
+                string answer= Console.ReadLine();
+
+                switch (answer)
+                {
+                    case "1":
+                        // Handle option 1
+                        return ".01";
+                        break;
+
+                    case "2":
+                        // Handle option 2
+                        return ".02";
+                        break;
+
+                    case "3":
+                        // Handle option 3
+                        return ".03";
+                        break;
+
+                    case "4":
+                    //Go back
+                    break;
+
+                    default:
+                        Console.WriteLine("There no options here containg this")
+                            // Handle invalid input
+                        break;
+                }
+            }
+
+                                // hvis du vælger 1, skal den hente teksten fra 1 i dialogtræret. Ved hjælp af Chase/break;
+                                // returner tilbage til StartConversation. Der giver nye parameter, der gør det muligt at navigere i dialogtræet
+
+                                //metode string Conversation (NPC_Dialog_OPtions2)
+
+                                //metode string Conversation (NPC_Dialog_Options0)
+       public void StopConversation()
+       {
+                    // If statemat flipper boolean StartConversiation(false)
+       }
+                    
+
+                    //public void UseMonocle(Moncle monocle)
+                    //{
+
+                    //}
 
         private void NPC_identifiers(string NPCName, int NPCage, string NPCgender)
         {
@@ -111,34 +208,8 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         }
 
 
-
-        private static void PickOption(string userChoice)
-        // choice is passed as a parameter
-        {
-            //string userChoice = Console.ReadLine();
-            // Read user input
-
-            PickOption(userChoice);
-            // Pass the input to the method
-
-            switch (userChoice)
-            {
-                case "1":
-                    // Handle option 1
-                    break;
-
-                case "2":
-                    // Handle option 2
-                    break;
-
-                case "3":
-                    // Handle option 3
-                    break;
-
-                default:
-                    // Handle invalid input
-                    break;
-            }
+       
+          
         }
 
     }
