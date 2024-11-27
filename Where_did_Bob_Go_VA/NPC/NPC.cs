@@ -10,6 +10,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static Where_did_Bob_Go_VA.NPC_NS.Dialog_NS.NPC_DialogTree;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 
@@ -31,18 +32,45 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         public string NPCriskLevel;
         public bool StartStop;
 
+        private NPC_Dialog_Struct npc_Dialog_Structt;
         private Dictionary<string, NPC_Dialog_Options> DialogOptionsTree;
+        
 
         // .  
         private string file_location = "\\DialogFolder";
         private string file_name;
 
 
-        public NPC(string name)
+        public NPC(string name, string init_file_loation, string init_file_name)
         {
             // .
             NPCname = name;
         }
+
+
+        public void Extract_DialogTree(string init_file_loation, string init_file_name)
+        {
+            // .   
+            npc_Dialog_Structt = Get_NPC_DialogTree(init_file_loation, init_file_name);
+
+            // . 
+            DialogOptionsTree.Add("D00", npc_Dialog_Structt.D00);
+            DialogOptionsTree.Add("D00.01", npc_Dialog_Structt.D00_01);
+            DialogOptionsTree.Add("D00.02", npc_Dialog_Structt.D00_02);
+            DialogOptionsTree.Add("D00.03", npc_Dialog_Structt.D00_03);
+
+            DialogOptionsTree.Add("D00.01.01", npc_Dialog_Structt.D00_01_01);
+            DialogOptionsTree.Add("D00.01.02", npc_Dialog_Structt.D00_01_02);
+
+            DialogOptionsTree.Add("D00.02.01", npc_Dialog_Structt.D00_02_01);
+            DialogOptionsTree.Add("D00.02.02", npc_Dialog_Structt.D00_02_02);
+
+            DialogOptionsTree.Add("D00.03.01", npc_Dialog_Structt.D00_03_01);
+            DialogOptionsTree.Add("D00.03.02", npc_Dialog_Structt.D00_03_02);
+
+        }
+
+
 
         //public bool SuicideRisk(bool warningSigns)
         //{
@@ -61,7 +89,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         //        // Return false if there are no warning signs
         //    }
         //}
-      
+
         public void StartConversation()
         {
            StartStop = true;
