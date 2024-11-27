@@ -18,7 +18,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
     {
         public Food_Item(string name, string description) : base(name, description)
         {
-            // .
+            Removeable = true;
         }
 
         public override string Use()

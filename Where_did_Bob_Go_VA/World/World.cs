@@ -46,10 +46,11 @@ namespace Where_did_Bob_Go_VA.World_NS
             Temp_NPC_List.Add("Nina", new NPC("Nina", "", "")); 
            
 
-            Item Banana = new Item("Banana", "a long one");
+            Item Banana = new Food_Item("Banana", "a long one");
+            Item Mirror = new MirrorOfReflection();
 
 
-            Space home = new Space("home", "Its cozy and you feel comfortable", Temp_NPC_List, Banana);
+            Space home = new Space("home", "Its cozy and you feel comfortable", Temp_NPC_List, Mirror);
             Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Temp_NPC_List, Banana);
             Space subway = new Space("subway", "there are a lot of people rushing by", Temp_NPC_List);
             Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Temp_NPC_List);
