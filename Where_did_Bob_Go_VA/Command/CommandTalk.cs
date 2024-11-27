@@ -27,7 +27,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public NPC ?current_NPC;
 
         // Making the constructor for the class CommandTalk
-        public CommandTalk(Registry registry)
+        public CommandTalk()
         {
             //this.registry = registry;
             this.description = "This command allows you to interact with a NPC in your current room";

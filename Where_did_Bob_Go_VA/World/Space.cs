@@ -94,7 +94,9 @@ namespace Where_did_Bob_Go_VA.World_NS
                 Item_Number++;
             }
 
-            Change_TextBox_Main(welcome_description);
+            string welcome_description_str = string.Join("\n", welcome_description);
+
+            Change_TextBox_Main(welcome_description_str);
 
 
 
@@ -206,7 +208,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         //+ Display_Rooms() displayer description i textbox main
         public void Display_Room()
         {
-            Update_TextBox_Main(description);
+            Welcome();
         }
 
 

@@ -40,10 +40,10 @@ namespace Where_did_Bob_Go_VA
             registry.Register("bye", cmdExit);
             registry.Register("go", new CommandGo());
             registry.Register("help", new CommandHelp(registry));
-            registry.Register("talk", new CommandTalk(registry));
-            registry.Register("leave", new CommandLeave(registry));
-            registry.Register("use", new CommandUse(registry));
-            registry.Register("grab", new CommandGrab(registry));
+            registry.Register("talk", new CommandTalk());
+            registry.Register("leave", new CommandLeave());
+            registry.Register("use", new CommandUse());
+            registry.Register("grab", new CommandGrab());
             registry.Register("guess", new CommandGuess());
         }
 
