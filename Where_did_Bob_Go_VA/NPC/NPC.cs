@@ -340,7 +340,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                 break;
 
                 case "4":
-                return // "back"
+                    return "back";
                 //Go back
                 break;
 
@@ -353,26 +353,26 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                         // Handle invalid input
                     break;
             }
-        return "";
+            return "";
         }
 
                                 
-    // hvis du vælger 1, skal den hente teksten fra 1 i dialogtræret. Ved hjælp af Chase/break;
-// returner tilbage til StartConversation. Der giver nye parameter, der gør det muligt at navigere i dialogtræet
+        // hvis du vælger 1, skal den hente teksten fra 1 i dialogtræret. Ved hjælp af Chase/break;
+        // returner tilbage til StartConversation. Der giver nye parameter, der gør det muligt at navigere i dialogtræet
 
-//metode string Conversation (NPC_Dialog_OPtions2)
+        //metode string Conversation (NPC_Dialog_OPtions2)
 
-//metode string Conversation (NPC_Dialog_Options0)
-       public void StopConversation()
-       {
+        //metode string Conversation (NPC_Dialog_Options0)
+        public void StopConversation()
+        {
             StartStop = false;
-       }
+        }
                     
 
-    //public void UseMonocle(Moncle monocle)
-    //{
+        //public void UseMonocle(Moncle monocle)
+        //{
 
-    //}
+        //}
 
         private void NPC_identifiers(string NPCName, int NPCage, string NPCgender)
         {
@@ -412,9 +412,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
        
           
-        }
-
     }
-
 }
 
