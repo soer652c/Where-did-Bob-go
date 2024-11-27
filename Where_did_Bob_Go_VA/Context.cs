@@ -56,7 +56,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
             }
             else
             {
-                Space next = current.FollowEdge(direction);
+                Space Next = current.FollowEdge(direction);
                 current.Goodbye();
                 current = next;
                 current.Welcome();
