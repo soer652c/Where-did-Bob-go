@@ -34,26 +34,26 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public Dictionary<string, NPC> NPCMap = new Dictionary<string, NPC>();
         public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
-        public Space(String name, string description, Dictionary<string, NPC> NPCList) : base(name)
+        public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap) : base(name)
         {
             this.description = description;
-            this.NPCMap = NPCList;
+            this.NPCMap = Init_NPCMap;
             this.name = name;
         }
 
-        public Space(String name, string description, Dictionary<string, NPC> NPCList, Dictionary<string, Item> ItemList) : base(name)
+        public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap, Dictionary<string, Item> Init_ItemMap) : base(name)
         {
             this.description = description;
-            this.NPCMap = NPCList;
-            this.ItemMap = ItemList;
+            this.NPCMap = Init_NPCMap;
+            this.ItemMap = Init_ItemMap;
             this.name=name;
         }
 
-        public Space(String name, string description, Dictionary<string, NPC> NPCList, Item ItemKartoffel) : base(name)
+        public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap, Item Init_Item) : base(name)
         {
             this.description = description;
-            this.NPCMap = NPCList;
-            this.ItemMap.Add(ItemKartoffel.Name,ItemKartoffel);
+            this.NPCMap = Init_NPCMap;
+            this.ItemMap.Add(Init_Item.Name,Init_Item);
             this.name = name;
         }
 

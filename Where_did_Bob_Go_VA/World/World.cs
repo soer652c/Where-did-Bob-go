@@ -40,10 +40,10 @@ namespace Where_did_Bob_Go_VA.World_NS
 
 
 
-            Temp_NPC_List.Add("Karen", new NPC("Karen")); 
-            Temp_NPC_List.Add("Bo", new NPC("Bo")); 
-            Temp_NPC_List.Add("Tim", new NPC("Tim")); 
-            Temp_NPC_List.Add("Nina", new NPC("Nina")); 
+            Temp_NPC_List.Add("Karen", new NPC("Karen", "", "")); 
+            Temp_NPC_List.Add("Bo", new NPC("Bo", "", "")); 
+            Temp_NPC_List.Add("Tim", new NPC("Tim", "", "")); 
+            Temp_NPC_List.Add("Nina", new NPC("Nina", "", "")); 
            
 
             Item Banana = new Item("Banana", "a long one");
