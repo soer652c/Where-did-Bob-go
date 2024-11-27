@@ -58,10 +58,11 @@ namespace Where_did_Bob_Go_VA.World_NS
             Space community = new Space("community", "you feel at ease here", Temp_NPC_List);
             Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Temp_NPC_List);
             Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Temp_NPC_List);
-            Space bar = new Space("bar", "the music is playing in the background and people are drinking diverse alcoholic beverages", Temp_NPC_List);
+            Space bar = new Space("bar", "The music is playing in the background and people are drinking", Temp_NPC_List);
 
 
             home.AddEdge("outside", outside);
+            outside.AddEdge("home", home);
             outside.AddEdge("subway", subway);
             outside.AddEdge("school", school);
             outside.AddEdge("park", park);
@@ -105,7 +106,7 @@ namespace Where_did_Bob_Go_VA.World_NS
                 //Kig i Space, og find NPSList;
                 Space currentSpace = SpaceMap[v];
                 // FOR LOOP
-                foreach (KeyValuePair<string, NPC> npcEntry in currentSpace.NPCMap)
+                foreach (KeyValuePair<string, NPC> npcEntry in currentSpace.NPC_Map)
                 {
                     NPC nPC = npcEntry.Value;
 

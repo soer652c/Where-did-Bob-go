@@ -20,13 +20,13 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         //private Context context;
 
-        Space current_location;
+        public Space current_location;
 
-        NPC current_NPC;
+        public NPC current_NPC;
 
-        public CommandGuess(Registry registry)
+        public CommandGuess()
         {
-            //this.context = context;
+            description = "Follow an exit";
         }
 
         public void Execute(Context context, string commandName, string[] args)
@@ -37,29 +37,33 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             if (args.Length == 0 || args.Length != 2)
             {
-                Update_TextBox_Main("Please specify the name AND risk value");
+                Console.WriteLine("Please specify the name AND risk value");
                 return;
             }
+
 
             string npcName = args[0];
             // NPC npc = Game.npcList.FirstOrDefault(n => n.NPCname.Equals(npcName, StringComparison.OrdinalIgnoreCase) && n.Place == context.CurrentRoom);
 
+
             if (npcName == null)
             {
-                Update_TextBox_Main($"No NPC named {npcName} is in this room.");
+                Console.WriteLine($"No NPC named {npcName} is in this room.");
                 return;
             }
-           
-            if(false == (current_location.NPCMap.TryGetValue(npcName, out current_NPC)))  // Gets NPC from NPCMap in current room by name then outputs fetced NPC
+            
+
+            if(false == (current_location.NPC_Map.TryGetValue(npcName, out current_NPC)))  // Gets NPC from NPCMap in current room by name then outputs fetced NPC
             {
-                Update_TextBox_Main($"No NPC named {npcName} is in this room. Maybe try a different location");
+                Console.WriteLine($"No NPC named {npcName} is in this room. Maybe try a different location");
                 return;
             }
 
 
-            if (false == (args[1] == current_NPC.NPCriskLevel))
+            if (false == (args[1] == current_NPC.NPC_RiskLevel))
             {
-                Update_TextBox_Main($"Guess is not the right risklevel");
+                Console.WriteLine($"Guess is not the right risklevel");
+                Game.player.LoseHealth();
                 return;
             }
 

@@ -37,7 +37,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // Tjek om argumentet er korrekt
             if (GuardEq(args, 1))
             {
-                Update_TextBox_Main("Invalid. Please specify an item to use. Item not found");
+                Console.WriteLine("Invalid. Please specify an item to use. Item not found");
                 return;
             }
 

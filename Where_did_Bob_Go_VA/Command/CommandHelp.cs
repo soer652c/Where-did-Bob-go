@@ -42,7 +42,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             }
 
             // present list of commands
-            Update_TextBox_Main("Commands:");
+            Console.WriteLine("Commands:");
             foreach (String commandName in commandNames)
             // Denne overskriver nuværende tekst i comand boxen
             {

@@ -18,7 +18,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
     public class CommandTalk : BaseCommand, ICommand
     {
         // .  Defining the Attribute registry
-        Registry registry;
+        //Registry registry;
+
+        // . 
+        Space current_location;
 
         // .  making a second attribute current_NPC, and allowing it to be a Null value
         public NPC ?current_NPC;
@@ -26,7 +29,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         // Making the constructor for the class CommandTalk
         public CommandTalk(Registry registry)
         {
-            this.registry = registry;
+            //this.registry = registry;
             this.description = "This command allows you to interact with a NPC in your current room";
         }
 
@@ -39,10 +42,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
             string npcName = parameters[0];
 
             // .  Making a if statement to check if the NPCMap is not empty and if the NPC is visible
-            if ( (current_location.NPCMap.Count != 0) && (current_location.NPCMap[npcName].NPCvisibility) )
+            if ( (current_location.NPC_Map.Count != 0) && (current_location.NPC_Map[npcName].NPCvisibility) )
             {
                 // .  Set the current npc to the npc in the NPCMap
-                current_NPC = current_location.NPCMap[npcName];
+                current_NPC = current_location.NPC_Map[npcName];
 
                 // .  Use the method Move_to_NPC to initiate the interaction with the NPC
                 current_location.Move_to_NPC(npcName);
@@ -50,7 +53,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             else
             {
                 // .  Print that the there is no npc in the curren location with said name
-                Update_TextBox_Main("There is no one named " + npcName + " here.");
+                Console.WriteLine("There is no one named " + npcName + " here.");
             }
          
         }

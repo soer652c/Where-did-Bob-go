@@ -23,8 +23,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
         public override string Use()
         {
-            //RestoreHealth();
-
+            Game.player.RestoreHealth();
             return "You got +1 health";
         }
         public override string ToString()
