@@ -51,7 +51,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                 Game.inventory.Add(item);
             }
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
             (Game.context.GetCurrent()).DisplayRoom();
         }

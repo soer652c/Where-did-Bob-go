@@ -52,9 +52,12 @@ namespace Where_did_Bob_Go_VA.Item_NS
                 if (ItemMap.ContainsKey(name))
                 {
                     string temp_text = "";
-                    temp_text = "You have used the item " + name + "\n" + ItemMap[name].Use();
+                    temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
                     Update_TextBox_Main(temp_text);
-                    Remove(name);
+                    if (ItemMap[name].Removeable)
+                    {
+                        Remove(name);
+                    }
                 }
                 else
                 {

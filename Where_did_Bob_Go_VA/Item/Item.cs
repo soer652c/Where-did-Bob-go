@@ -19,6 +19,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
         // Attributes 
         public string Name;
         public string Description;
+        public bool Removeable;
 
         // Constructor 
         public Item(string name, string description)
