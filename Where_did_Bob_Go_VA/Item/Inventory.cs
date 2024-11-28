@@ -99,15 +99,15 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             Update_TextBox_Options("Inventorylist");
 
-            string[] cocoon = new string[ItemMap.Count];
+            string[] inventorylist = new string[ItemMap.Count];
             int interger = 0;
 
             foreach (KeyValuePair<string, Item> item in ItemMap)
             {
-                cocoon[interger] = item.Value.Name + ": " + item.Value.Description ;
+                inventorylist[interger] = item.Value.Name + ": " + item.Value.Description ;
                 interger++;
             }
-            Update_TextBox_Options(cocoon);
+            Update_TextBox_Options(inventorylist);
         }
     }
 }
