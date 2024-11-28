@@ -64,8 +64,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
         }
         public string GetAdvice()
-        {
-
+        { 
             string temp_text = reflection[counter];
             counter++;
             return temp_text;

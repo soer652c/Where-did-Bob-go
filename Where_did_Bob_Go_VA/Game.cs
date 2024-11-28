@@ -12,6 +12,11 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.VisualBasic;
+using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
 
 //   
 //   
@@ -49,7 +54,7 @@ namespace Where_did_Bob_Go_VA
 
         public Game(/*string[] args*/)
         {
-            Update_TextBox_Main("Welcome to the World of Zuul!");
+            Introduction ();
 
             InitRegistry();
             context.GetCurrent().Welcome();
@@ -79,16 +84,26 @@ namespace Where_did_Bob_Go_VA
         }
         public void Introduction() //laver en metode ved navn Introduction
         {
-            Update_TextBox_Main("Welcome to Where did Bob go. \n A text-based narrative game where every word carries weight \n every choice could save a life. \n Inspired by the classic World of ZUUL \n this game takes you on an emotional journey through the mysterious town \n where your sharp mind and empathetic heart will be your greatest tools."); 
-                //første tekst boks
+            Update_TextBox_Main("Welcome to Where did Bob go. \n A text-based narrative game where every word carries weight \n every choice could save a life. \n Inspired by the classic World of ZUUL \n this game takes you on an emotional journey through the mysterious town \n where your sharp mind and empathetic heart will be your greatest tools"); 
             Console.ReadLine(); // når man trykker enter, så går den videre til næste del af teksten
-            Update_TextBox_Main("The Story of the game \r\n You’ve just arrived in XXXX, a quaint town shrouded in secrets.\n You’ll meet 12 unique NPCs, each with their own stories and challenges.\n Some may hold clues to what the NPC's are struggling with. \n It’s up to you to connect with them, ask the right questions, and decide how best to help. \r\n But be warned: not everyone needs saving, and not everyone can be saved.\r\n");
+            Update_TextBox_Main("The Story of the game \n You’ve just arrived to the town shrouded in secrets.\n You’ll meet 12 unique NPCs \n each with their own stories and challenges.\n Some may hold clues to what the NPC's are struggling with. \n It’s up to you to connect with them \n ask the right questions \n and decide how best to help");
             Console.ReadLine();
-            Update_TextBox_Main("How to Play \r\n Where did Bob go is a text-based terminal game. \n You’ll explore the town and interact with NPCs entirely through text commands. \n Your choices will shape the story as you navigate through branching dialogue trees.\n Here's how it works:\r\n 1.Navigate the World: \r\n Use simple text commands like 'go outside', to look around to move through the game’s location \r\n Explore key areas like the school or park, each holding unique characters and clues. \r\n Engage in Dialogue:\r\n When you meet an NPC, initiate a conversation with commands like “talk” or “leave”. \r\n Choose the responses by typing 1, 2, or 3 to steer the conversation.\r\nGather Clues:\r\nPay close attention to the NPCs' words and behavior. \n Subtle hints could reveal their emotional state.\r\n Make Critical Choices:\r\n Each decision affects the story. Will you dig deeper, or let things slide? \n Some paths may close forever depending on your responses.\r\n");
+            Update_TextBox_Main("But be warned: not everyone needs saving, and not everyone can be saved");
             Console.ReadLine();
-            Update_TextBox_Main("Why It Matters \r\n XXXX’s inhabitants have lives as complex as the world around them. By choosing the right words and actions, you could make a real difference – or miss the chance entirely. Will you be the one to find Bob and help those who need it most? Or will the weight of your choices leave unanswered questions behind? \r\n ");
+            Update_TextBox_Main("How to Play \n Where did Bob go is a text-based terminal game.\n You’ll explore the town \n and interact with NPCs entirely through text commands. \n Your choices will shape the story \n as you navigate through dialogues.");
             Console.ReadLine();
-            Update_TextBox_Main("The Journey Begins \r\n XXXX is waiting. Type your first command and step into a story of mystery, connection, and empathy. Where did Bob go? The answer is in your hands.\r\n ");
+            Update_TextBox_Main("Here's how it works:\n 1.Navigate the World: \n Use simple text commands like 'go outside' \n to look around \n to move through the game’s location \n Explore key areas like the school or park \n each holding unique characters and clues."); 
+            Console.ReadLine();
+            Update_TextBox_Main("Engage in Dialogue:\n When you meet an NPC \n initiate a conversation with commands like “talk” or “leave”. \n Choose the responses by typing 1, 2, or 3 \n this steer the conversation."); 
+            Console.ReadLine();
+            Update_TextBox_Main("Gather Clues:\n Pay close attention to the NPCs' words and behavior. \n Subtle hints could reveal their emotional state.\n Make Critical Choices:\n Each decision affects the story.Will you dig deeper, or let things slide ? \n Some paths may close forever depending on your responses.");
+            Console.ReadLine();
+            Update_TextBox_Main("Why It Matters \n the towns inhabitants have lives as complex as the world around them. \n By choosing the right words and actions \n you could make a real difference \n or miss the chance entirely. \n Will you be the one to help those who need it the most? \n Or will the weight of your choices leave unanswered questions behind?");
+            Console.ReadLine();
+            Update_TextBox_Main("The Journey Begins \n they are waiting. \n Type your first command \n and step into a story of mystery, connection, and empathy.\n  Where did Bob go? The answer is in your hands.");
+            Console.ReadLine();
+            Update_TextBox_Main("Enjoy the Game");
+            Console.ReadLine();
         }
         public void GameOver()
         {
