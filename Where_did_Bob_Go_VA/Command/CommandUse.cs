@@ -23,10 +23,11 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         Registry registry;
 
+        Space current_location;
+
         //Konstruktor der tager ser i regersty 
-        public CommandUse(Registry registry)
+        public CommandUse()
         {
-            this.registry = registry;
             this.description = "This is an item";
         }
 
@@ -46,6 +47,13 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             // Hent spillerens inventory
             Game.inventory.Use(itemName);
+
+            // . Grapping the current location from the context data
+            current_location = Game.context.GetCurrent();
+
+            Console.ReadLine();
+
+            current_location.Welcome();
 
             return;
         }

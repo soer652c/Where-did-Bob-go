@@ -15,11 +15,8 @@ namespace Where_did_Bob_Go_VA.Command_NS
 {
     public class CommandGrab : BaseCommand, ICommand
 	{
-        Registry registry;
-
-        public CommandGrab(Registry registry)
+        public CommandGrab()
         {
-            this.registry = registry;
             this.description = "Use grab to pick up items/food items in certain rooms";
         }
 
@@ -52,7 +49,11 @@ namespace Where_did_Bob_Go_VA.Command_NS
 			else
 			{
                 Game.inventory.Add(item);
-			}
-		}
+            }
+
+            //Console.ReadLine();
+
+            (Game.context.GetCurrent()).DisplayRoom();
+        }
 	}
 }

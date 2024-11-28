@@ -18,13 +18,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
     public class CommandLeave : BaseCommand, ICommand
     {
 
-        // .  
-        Registry registry;
-
         // 
-        public CommandLeave(Registry registry)
+        public CommandLeave()
         {
-            this.registry = registry;
             this.description = "Display a help message";
         }
 

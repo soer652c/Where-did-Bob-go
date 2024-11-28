@@ -40,10 +40,16 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public virtual Node FollowEdge(string direction)
         {
-            return edges[direction];
-
-
+            if (edges.ContainsKey(direction))
+            {
+                return edges[direction];
+            }
+            else
+            {
+                throw new Exception("No edge with that name.");
+            }
         }
+
         //+ Display_Rooms(): vi skal lave rum færdig
         public void DisplayRoom()
         {

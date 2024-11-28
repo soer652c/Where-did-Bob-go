@@ -83,6 +83,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     break;
             }
             current_NPC.NPCvisibility = false;
+
+            Console.ReadLine();
+
+            (Game.context.GetCurrent()).DisplayRoom();
             return;
         }
 

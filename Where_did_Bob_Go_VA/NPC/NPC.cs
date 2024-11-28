@@ -139,6 +139,10 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                     }
                 }
             }
+
+            Console.ReadLine();
+
+            (Game.context.GetCurrent()).DisplayRoom();
         }
 
 

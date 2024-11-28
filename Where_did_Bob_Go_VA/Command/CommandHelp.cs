@@ -47,9 +47,15 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // Denne overskriver nuværende tekst i comand boxen
             {
                 string description = registry.GetCommand(commandName).GetDescription();
-                Console.WriteLine(" - {0,-" + max + "} " + description, commandName); 
+                Console.WriteLine(" - {0,-" + max + "} " + description, commandName);
                 // Skal dette ikke skrives i comand boxen
             }
+
+            Console.ReadLine();
+
+            (Game.context.GetCurrent()).DisplayRoom();
+
+
         }
     }
 

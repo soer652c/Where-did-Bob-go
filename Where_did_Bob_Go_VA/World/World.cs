@@ -1,17 +1,5 @@
-using System;
-using Where_did_Bob_Go_VA.Command_NS;
-using Where_did_Bob_Go_VA.GUI_NS;
 using Where_did_Bob_Go_VA.Item_NS;
 using Where_did_Bob_Go_VA.NPC_NS;
-using Where_did_Bob_Go_VA.NPC_NS.Dialog_NS;
-using Where_did_Bob_Go_VA.Player_NS;
-using Where_did_Bob_Go_VA.Proc_Gen_NS;
-using Where_did_Bob_Go_VA.World_NS;
-using Where_did_Bob_Go_VA.Game_NS;
-
-using static Where_did_Bob_Go_VA.GUI_NS.GUI;
-using System.Security.Cryptography.X509Certificates;
-using System.ComponentModel;
 
 namespace Where_did_Bob_Go_VA.World_NS
 {
@@ -36,29 +24,59 @@ namespace Where_did_Bob_Go_VA.World_NS
             //NPC[] TempNPCList = { Karen, Bo, Tim, Jay };
             //NPC[] EmptyTempNPCList = { Empty, Empty, Empty, Empty };
 
-            Dictionary<string, NPC> Temp_NPC_List = new Dictionary<string, NPC>();
+            Dictionary<string, NPC> Init_NPCMap = new Dictionary<string, NPC>();
 
 
+            NPC Alex = new NPC("Alex", "", "");
+            NPC Sophie = new NPC("Sophie", "", "");
+            NPC Liam = new NPC("Liam", "", "");
+            NPC Clara = new NPC("Clara", "", "");
+            NPC Jack = new NPC("Jack", "", "");
+            NPC Emma = new NPC("Emma", "", "");
+            NPC Steen = new NPC("Steen", "", "");
+            NPC Thomas = new NPC("Thomas", "", "");
+            NPC Sarah = new NPC("Sarah", "", "");
+            NPC Ben = new NPC("Ben", "", "");
+            NPC Lily = new NPC("Lily", "", "");
+            NPC James = new NPC("James", "", "");
+            NPC Mia = new NPC("Mia", "", "");
 
-            Temp_NPC_List.Add("Karen", new NPC("Karen", "", "")); 
-            Temp_NPC_List.Add("Bo", new NPC("Bo", "", "")); 
-            Temp_NPC_List.Add("Tim", new NPC("Tim", "", "")); 
-            Temp_NPC_List.Add("Nina", new NPC("Nina", "", "")); 
-           
 
-            Item Banana = new Item("Banana", "a long one");
+            // The NPC's located around the world of Bob
+            Init_NPCMap.Add("Liam", Liam);
+            Init_NPCMap.Add("Clara",Clara);
+            Init_NPCMap.Add("Jack", Jack);
+            Init_NPCMap.Add("Emma", Emma);
+            Init_NPCMap.Add("Steen", Steen);
+            Init_NPCMap.Add("Thomas", Thomas);
+            Init_NPCMap.Add("Sarah", Sarah);
+            Init_NPCMap.Add("Ben", Ben);
+            Init_NPCMap.Add("Lily", Lily);
+            Init_NPCMap.Add("James", James);
+            Init_NPCMap.Add("Mia", Mia);
+            Init_NPCMap.Add("Alex", Alex);
+            //-----------------------------------------------------
+
+            //NPC_Options(Sophie, Liam, Clara, Jack, Emma, Steen, Thomas, Sarah, Ben, Lily, James, Mia, Alex)
 
 
-            Space home = new Space("home", "Its cozy and you feel comfortable", Temp_NPC_List, Banana);
-            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Temp_NPC_List, Banana);
-            Space subway = new Space("subway", "there are a lot of people rushing by", Temp_NPC_List);
-            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Temp_NPC_List);
-            Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Temp_NPC_List);
-            Space school = new Space("school", "Children are playing around on the playground", Temp_NPC_List);
-            Space community = new Space("community", "you feel at ease here", Temp_NPC_List);
-            Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Temp_NPC_List);
-            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Temp_NPC_List);
-            Space bar = new Space("bar", "The music is playing in the background and people are drinking", Temp_NPC_List);
+            // The Food items located around the world of Bob
+            Item Banana = new Food_Item("Banana", "a long yellow one");
+            Item Apple = new Food_Item("Apple", "a red one");
+            Item Pear = new Food_Item("Pear", "a green one");
+            Item Mirror = new MirrorOfReflection();
+            // ----------------------------------------------
+
+            Space home = new Space("home", "Its cozy and you feel comfortable", Mirror);
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Clara, Banana);
+            Space subway = new Space("subway", "there are a lot of people rushing by", Jack, Mia);
+            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma, Apple);
+            Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen);
+            Space school = new Space("school", "Children are playing around on the playground", Thomas, Alex);
+            Space community = new Space("community", "you feel at ease here", Sarah, Liam);
+            Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Ben);
+            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Lily, Pear);
+            Space bar = new Space("bar", "The music is playing in the background and people are drinking", James);
 
 
             home.AddEdge("outside", outside);
@@ -100,7 +118,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         public int NPCLeft()
         {
             int NPCVisualbilitiCounter = 0;
-            for (int k=0; SpaceMap.Count > 0; k++)
+            for (int k = 0; SpaceMap.Count > 0; k++)
             {
                 string v = Convert.ToString(k);
                 //Kig i Space, og find NPSList;
@@ -118,9 +136,9 @@ namespace Where_did_Bob_Go_VA.World_NS
                         NPCVisualbilitiCounter++;
                     }
                 }
-                
-            }    
-                return NPCVisualbilitiCounter;
+
+            }
+            return NPCVisualbilitiCounter;
         }
     }
 

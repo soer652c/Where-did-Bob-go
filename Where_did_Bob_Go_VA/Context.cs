@@ -46,12 +46,17 @@ namespace Where_did_Bob_Go_VA.Game_NS
         {
 
             Space next = current.FollowEdge(direction);
-            if (string.IsNullOrEmpty(direction) && char.IsLower(direction[0]))
+            if (string.IsNullOrEmpty(direction))
             {
                 Update_TextBox_Main("You are confused, and walk in a circle looking for + direction");
             }
+            else if (char.IsLower(direction[0]))
+            {
+
+            }
             else
             {
+                Space Next = current.FollowEdge(direction);
                 current.Goodbye();
                 current = next;
                 current.Welcome();
