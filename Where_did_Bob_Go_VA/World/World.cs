@@ -15,15 +15,6 @@ namespace Where_did_Bob_Go_VA.World_NS
         public World()
         {
 
-            //NPC Empty = new NPC("");
-            //NPC Karen = new NPC("Karen");
-            //NPC Bo = new NPC("Bo");
-            //NPC Tim = new NPC("Tim");
-            //NPC Jay = new NPC("Jay"); 
-
-            //NPC[] TempNPCList = { Karen, Bo, Tim, Jay };
-            //NPC[] EmptyTempNPCList = { Empty, Empty, Empty, Empty };
-
             Dictionary<string, NPC> Init_NPCMap = new Dictionary<string, NPC>();
 
 
@@ -63,20 +54,20 @@ namespace Where_did_Bob_Go_VA.World_NS
             // The Food items located around the world of Bob
             Item Banana = new Food_Item("Banana", "a long yellow one");
             Item Apple = new Food_Item("Apple", "a red one");
-            Item Pear = new Food_Item("Pear", "a green one");
+            Item Sandwich = new Food_Item("Sandwich", "a tasty one");
             Item Mirror = new MirrorOfReflection();
             // ----------------------------------------------
 
-            Space home = new Space("home", "Its cozy and you feel comfortable", Mirror);
-            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Clara, Banana);
-            Space subway = new Space("subway", "there are a lot of people rushing by", Jack, Mia);
-            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma, Apple);
-            Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen);
-            Space school = new Space("school", "Children are playing around on the playground", Thomas, Alex);
-            Space community = new Space("community", "you feel at ease here", Sarah, Liam);
+            Space home = new Space("home", "Its cozy and you feel comfortable");
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze");
+            Space subway = new Space("subway", "there are a lot of people rushing by", Jack, Mia, Banana);
+            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma);
+            Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen, Thomas, Mirror);
+            Space school = new Space("school", "Children are playing around on the playground", Clara, Liam, Apple);
+            Space community = new Space("community", "you feel at ease here", Sarah);
             Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Ben);
-            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Lily, Pear);
-            Space bar = new Space("bar", "The music is playing in the background and people are drinking", James);
+            Space playground = new Space("playground", "Children are playing\naround and some parents are camped on the benches nearby", Lily, James);
+            Space bar = new Space("bar", "The music is playing in the background and people are drinking", Alex, Sandwich);
 
 
             home.AddEdge("outside", outside);
