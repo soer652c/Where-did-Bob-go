@@ -353,10 +353,6 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             StartStop_Talk = false;
         }
         
-
-
-
-
         public bool NPC_visibility(bool visibility)
         // changes depending if the NPC is visible
         {
@@ -364,10 +360,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             // else NPC is hidden
             return visibility;
         }
-
-
-       
-          
+         
     }
 }
 

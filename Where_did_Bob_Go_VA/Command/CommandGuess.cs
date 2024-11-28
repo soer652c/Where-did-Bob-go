@@ -37,7 +37,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             if (args.Length == 0 || args.Length != 2)
             {
-                Console.WriteLine("Please specify the name AND risk value");
+                Console.WriteLine("Please specify the name AND their risk");
                 return;
             }
 

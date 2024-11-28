@@ -28,10 +28,6 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public Dictionary<string, NPC> NPC_Map = new Dictionary<string, NPC>();
         public Dictionary<string, Item> Item_Map = new Dictionary<string, Item>();
-
-
-
-
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap) : base(name)
         {
             this.description = description;
@@ -68,7 +64,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
             welcome_description[2] = "";
-            welcome_description[3] = "You see the following individuals: ";
+            welcome_description[3] = "You see the following NPCs: ";
 
 
             int NPC_Number = 4;
