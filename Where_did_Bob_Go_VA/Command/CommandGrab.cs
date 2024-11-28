@@ -23,7 +23,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 		// If you try to pick up an item thats not there, or if the item was taken before, the console will write "Grab what?"
         public void Execute(Context context, string command, string[] parameters)
         {
-			if (string.IsNullOrEmpty(parameters[0]))
+			if ( (parameters.Length == 0) || (String.IsNullOrEmpty(parameters[0])) )
 			{
 				Console.WriteLine("Grab what?");
 				return;
