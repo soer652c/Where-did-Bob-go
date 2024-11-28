@@ -25,9 +25,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         Space current_location;
 
 
-        public CommandUse()
+        public CommandShow()
         {
-            this.description = "  ....   ";
+            this.description = "Displays inventory";
         }
 
         // Metode til at udføre "Use"-kommandoen
@@ -43,10 +43,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // Hent item-navnet fra argumenterne
             string thing_to_Show = args[0];
 
-            ProcessCommand(thing_to_Show);
-
             // . Grapping the current location from the context data
-            current_location = Game.context.GetCurrent();
+            Space current_location = Game.context.GetCurrent();
+
+            ProcessCommand(thing_to_Show, current_location);
 
             Console.ReadLine();
 
@@ -54,45 +54,30 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             return;
         }
-        public void ProcessCommand(string command)
+
+
+
+        public void ProcessCommand(string thing_to_Show, Space current_location)
         {
-            switch (command.ToLower()) // To ensure that the text is always lowercase 
+            switch (thing_to_Show.ToLower()) // To ensure that the text is always lowercase 
             {
-                case "Show location":
-                    Update_TextBox_Main(currentSpace.Description);
+                case "location":
+                    current_location.Welcome();
                     break;
-                case "Show inventory":
-                    player.Inventory.Display(); // Calls the Display method
+                case "inventory":
+                    Game.inventory.Display(); // Calls the Display method
                     break;
                 /*case "use":
                     Update_TextBox_Main("What item would you like to use?");
                     string itemName = Console.ReadLine();
                     player.Inventory.Use(itemName); // Uses the item from inventory
                     break;*/
-                case "Show items"
-                    Update_TextBox_Main(currentSpace.Description)
-                    break;
                 default:
-                    Update_TextBox_Main("I don't understand that command.");
+                    Console.WriteLine("I don't understand that command.");
                     break;
             }
+
+            return;
         }
-            public void ShowItemsInCurrentRoom()
-            {
-            Update_TextBox_Main("Items in this space:");
-
-            if (Player.CurrentSpace.Items.Count == 0)
-            {
-                Update_TextBox_Main("There are no items here.");
-                return;
-            }
-
-            foreach (string item in Player.CurrentSpace.Items)
-            {
-                Update_TextBox_Main(item.Name: item.Description);
-            }
-            }  
-        
-
     }
 }
