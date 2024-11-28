@@ -171,15 +171,15 @@ namespace Where_did_Bob_Go_VA.World_NS
         
 
         //+ Move_to_NPC(NPC):
-        public void Move_to_NPC(NPC npc)
+        public void Move_to_NPC(Context context, NPC npc)
         {
-            NPC_Map[npc.NPC_Name].StartConversation();
+            NPC_Map[npc.NPC_Name].StartConversation(context);
         }
 
 
-        public void Move_to_NPC(string name)
+        public void Move_to_NPC(Context context, string name)
         {
-            NPC_Map[name].StartConversation();
+            NPC_Map[name].StartConversation(context); ;
         }
 
         //public void Execute(Context context, string command, string[] parameters)
@@ -276,13 +276,22 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             if (Item_Map.ContainsKey(item))
             {
-                return Item_Map[item];
+                Item temp_item = Item_Map[item];
+                Item_Map.Remove(item);
+                return temp_item;
             }
             else
             {
                 return null;
             }
-        }     
+        }
+
+
+        //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
+        public bool CheckFor_Item(string item)
+        {
+            return Item_Map.ContainsKey(item);
+        }
     }
 
 }

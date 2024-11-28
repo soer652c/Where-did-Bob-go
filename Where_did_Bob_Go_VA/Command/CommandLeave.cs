@@ -17,10 +17,12 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
     public class CommandLeave : BaseCommand, ICommand
     {
+        Registry registry;
 
         // 
-        public CommandLeave()
+        public CommandLeave(ref Registry registry)
         {
+            this.registry = registry;
             this.description = "Display a help message";
         }
 
@@ -38,10 +40,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // .  
 
             // . 
-            if (((CommandTalk)Game.registry.GetCommand("talk")).current_NPC != null)
+            if (((CommandTalk)registry.GetCommand("talk")).current_NPC != null)
             {
                 // .  
-                ((CommandTalk)Game.registry.GetCommand("talk")).current_NPC.StopConversation();
+                ((CommandTalk)registry.GetCommand("talk")).current_NPC.StopConversation();
             }
             else
             {

@@ -31,7 +31,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
         public void Execute(Context context, string commandName, string[] args)
         {
-            current_location = Game.context.GetCurrent();
+            current_location = context.GetCurrent();
 
             // current_NPC = CommandTalk.current_NPC;
 
@@ -86,7 +86,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             Console.ReadLine();
 
-            (Game.context.GetCurrent()).DisplayRoom();
+            (context.GetCurrent()).DisplayRoom();
             return;
         }
 

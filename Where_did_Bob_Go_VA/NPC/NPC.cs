@@ -38,7 +38,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
 
 
-        public NPC(string init_name, string init_file_loation, string init_file_name)
+        public NPC( string init_name, string init_file_loation, string init_file_name)
         {
             // .
             this.NPC_Name = init_name;
@@ -71,7 +71,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
 
 
-        public void StartConversation()
+        public void StartConversation(Context context)
         {
             StartStop_Talk = true;
             NPC_Dialog_Options initial_conversation = DialogOptionsTree["D00"];
@@ -142,7 +142,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
             Console.ReadLine();
 
-            (Game.context.GetCurrent()).DisplayRoom();
+            (context.GetCurrent()).DisplayRoom();
         }
 
 

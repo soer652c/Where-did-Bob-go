@@ -36,7 +36,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public void Execute(Context context, string command, string[] parameters)
         {
             // . Grapping the current location from the context data
-            Space current_location = Game.context.GetCurrent();
+            Space current_location = context.GetCurrent();
 
             // .  Set the npc name to the first parameter
             string npcName = parameters[0];
@@ -48,7 +48,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                 current_NPC = current_location.NPC_Map[npcName];
 
                 // .  Use the method Move_to_NPC to initiate the interaction with the NPC
-                current_location.Move_to_NPC(npcName);
+                current_location.Move_to_NPC(context, npcName);
             }
             else
             {

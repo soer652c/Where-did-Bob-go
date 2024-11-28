@@ -49,7 +49,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             Game.inventory.Use(itemName);
 
             // . Grapping the current location from the context data
-            current_location = Game.context.GetCurrent();
+            current_location = context.GetCurrent();
 
             Console.ReadLine();
 
