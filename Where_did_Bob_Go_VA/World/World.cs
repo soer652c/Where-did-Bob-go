@@ -69,13 +69,13 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             Space home = new Space("home", "Its cozy and you feel comfortable", Liam, Mirror);
             Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Clara, Banana);
-            Space subway = new Space("subway", "there are a lot of people rushing by", Jack);
-            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma, Mia, Apple);
+            Space subway = new Space("subway", "there are a lot of people rushing by", Jack, Mia);
+            Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma, Apple);
             Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen);
-            Space school = new Space("school", "Children are playing around on the playground", Thomas);
+            Space school = new Space("school", "Children are playing around on the playground", Thomas, Alex);
             Space community = new Space("community", "you feel at ease here", Sarah);
             Space park = new Space("park", "The weather is plesant and you feel the joyfull atmosphere", Ben);
-            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Lily, Alex, Pear);
+            Space playground = new Space("playground", "Children are playing around and some parents are camped on the benches nearby", Lily, Pear);
             Space bar = new Space("bar", "The music is playing in the background and people are drinking", James);
 
 
