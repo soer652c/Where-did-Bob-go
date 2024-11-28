@@ -74,7 +74,12 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.Item_Map.Add(Init_Item.Name,Init_Item);
             this.name = name;
         }
-
+        public Space(String name, string description, Item Init_Item) : base(name)
+        {
+            this.description = description;
+            this.Item_Map.Add(Init_Item.Name, Init_Item);
+            this.name = name;
+        }
 
         public void Welcome()
         {
