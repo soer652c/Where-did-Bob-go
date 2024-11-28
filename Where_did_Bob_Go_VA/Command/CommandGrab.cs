@@ -25,7 +25,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
 			if (string.IsNullOrEmpty(parameters[0]))
 			{
-				Console.WriteLine("Grab what?");
+                Update_TextBox_Main ("Grab what?");
 				return;
 			}
 
@@ -35,7 +35,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 			if (current_space.Take_Item(parameters[0]) == null)
 			{
 
-				Console.WriteLine("There is no item here, try");
+				Update_TextBox_Main ("There is no item here, try");
 			}
 			
 			// If there is an item it will add it to if not console writeline will say "There is no...". 
@@ -44,7 +44,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
 			if (item == null)
 			{
-				Console.WriteLine($"There is no {parameters[0]} here.");
+                Update_TextBox_Main ($"There is no {parameters[0]} here.");
 			}
 			else
 			{
