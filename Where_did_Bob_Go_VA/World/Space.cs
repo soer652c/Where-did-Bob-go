@@ -38,7 +38,13 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.NPC_Map = Init_NPCMap;
             this.name = name;
         }
-
+        public Space(String name, string description, NPC Init_NPC, Item Init_Item) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+            this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
+            this.Item_Map.Add(Init_Item.Name, Init_Item);
+        }
 
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap, Dictionary<string, Item> Init_ItemMap) : base(name)
         {

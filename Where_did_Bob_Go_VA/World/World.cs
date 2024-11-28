@@ -27,20 +27,33 @@ namespace Where_did_Bob_Go_VA.World_NS
             Dictionary<string, NPC> Init_NPCMap = new Dictionary<string, NPC>();
 
 
+            NPC Alex = new NPC("Alex", "", "");
+            NPC Sophie = new NPC("Sophie", "", "");
+            NPC Liam = new NPC("Liam", "", "");
+            NPC Clara = new NPC("Clara", "", "");
+            NPC Jack = new NPC("Jack", "", "");
+            NPC Emma = new NPC("Emma", "", "");
+            NPC Steen = new NPC("Steen", "", "");
+            NPC Thomas = new NPC("Thomas", "", "");
+            NPC Sarah = new NPC("Sarah", "", "");
+            NPC Ben = new NPC("Ben", "", "");
+            NPC Lily = new NPC("Lily", "", "");
+            NPC James = new NPC("James", "", "");
+            NPC Mia = new NPC("Mia", "", "");
+
 
             // The NPC's located around the world of Bob
-            Init_NPCMap.Add("Liam", new NPC("Liam", "", ""));
-            Init_NPCMap.Add("Clara", new NPC("Clara", "", ""));
-            Init_NPCMap.Add("Jack", new NPC("Jack", "", ""));
-            Init_NPCMap.Add("Emma", new NPC("Emma", "", ""));
-            Init_NPCMap.Add("Steen", new NPC("Steen", "", ""));
-            Init_NPCMap.Add("Thomas", new NPC("Thomas", "", ""));
-            Init_NPCMap.Add("Sarah", new NPC("Sarah", "", ""));
-            Init_NPCMap.Add("Ben", new NPC("Ben", "", ""));
-            Init_NPCMap.Add("Lily", new NPC("Lily", "", ""));
-            Init_NPCMap.Add("James", new NPC("James", "", ""));
-            Init_NPCMap.Add("Mia", new NPC("Mia", "", ""));
-            NPC Alex = new NPC("Alex", "", "");
+            Init_NPCMap.Add("Liam", Liam);
+            Init_NPCMap.Add("Clara",Clara);
+            Init_NPCMap.Add("Jack", Jack);
+            Init_NPCMap.Add("Emma", Emma);
+            Init_NPCMap.Add("Steen", Steen);
+            Init_NPCMap.Add("Thomas", Thomas);
+            Init_NPCMap.Add("Sarah", Sarah);
+            Init_NPCMap.Add("Ben", Ben);
+            Init_NPCMap.Add("Lily", Lily);
+            Init_NPCMap.Add("James", James);
+            Init_NPCMap.Add("Mia", Mia);
             Init_NPCMap.Add("Alex", Alex);
             //-----------------------------------------------------
 
@@ -54,8 +67,8 @@ namespace Where_did_Bob_Go_VA.World_NS
             Item Mirror = new MirrorOfReflection();
             // ----------------------------------------------
 
-            Space home = new Space("home", "Its cozy and you feel comfortable",Init_NPCMap, Mirror);
-            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Init_NPCMap, Banana);
+            Space home = new Space("home", "Its cozy and you feel comfortable", Alex, Mirror);
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze", Liam, Banana);
             Space subway = new Space("subway", "there are a lot of people rushing by", Init_NPCMap);
             Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Init_NPCMap, Apple);
             Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Init_NPCMap);
