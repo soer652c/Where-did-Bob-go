@@ -104,7 +104,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
             welcome_description[2] = "";
-            welcome_description[3] = "You see the following individuals: ";
+            welcome_description[3] = "You see the following NPCs: ";
 
 
             int NPC_Number = 4;

@@ -46,7 +46,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             else
             {
                 // .  
-                throw new Exception("Not currently talking with an NPC with that name. ");
+                throw new Exception("Not currently talking with an NPC with that name.");
             }
         }
     }
