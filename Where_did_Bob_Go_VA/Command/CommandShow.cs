@@ -44,7 +44,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             string thing_to_Show = args[0];
 
             // . Grapping the current location from the context data
-            Space current_location = Game.context.GetCurrent();
+            Space current_location = context.GetCurrent();
 
             ProcessCommand(thing_to_Show, current_location);
 
