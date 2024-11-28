@@ -24,7 +24,6 @@ namespace Where_did_Bob_Go_VA
 
 
 
-
         // static void Main(string[] arg)
         // Jetbrain just straight up use the commands "dotnet build" and "dotnet run".
         // In the dotnet frame-work the compiler looks for any class methods called "public static void Main",

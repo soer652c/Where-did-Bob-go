@@ -53,11 +53,12 @@ namespace Where_did_Bob_Go_VA.Item_NS
                 {
                     string temp_text = "";
                     temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
-                    Update_TextBox_Main(temp_text);
+                    Change_TextBox_Main(temp_text);
                     if (ItemMap[name].Removeable)
                     {
                         Remove(name);
                     }
+                    Update_GUI();
                 }
                 else
                 {

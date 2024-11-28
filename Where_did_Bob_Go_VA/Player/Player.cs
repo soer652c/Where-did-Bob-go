@@ -1,4 +1,5 @@
 using System;
+using Where_did_Bob_Go_VA;
 using Where_did_Bob_Go_VA.Command_NS;
 using Where_did_Bob_Go_VA.GUI_NS;
 using Where_did_Bob_Go_VA.Item_NS;
@@ -27,14 +28,21 @@ namespace Where_did_Bob_Go_VA.Player_NS
         //metode
         public void LoseHealth()
         {
-            Health = Health--;
+            Health = Health-1;
+            this.HealthTopLeft();
             return;
         }
 
         public void RestoreHealth()
         {
-            Health = Health++;
+            Health = Health+1;
+            this.HealthTopLeft();
             return;
+        }
+        public void HealthTopLeft()
+        {
+            string playerString = Health.ToString();
+            Change_TextBox_TopLeft("Lives: " + playerString);
         }
     }
 
