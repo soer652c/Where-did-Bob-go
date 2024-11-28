@@ -50,6 +50,12 @@ namespace Where_did_Bob_Go_VA.World_NS
             }
         }
 
+        // . 
+        public bool CheckEdge(string direction)
+        {
+            return edges.ContainsKey(direction);
+        }
+
         //+ Display_Rooms(): vi skal lave rum færdig
         public void DisplayRoom()
         {
