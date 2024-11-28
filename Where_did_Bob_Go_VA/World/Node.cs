@@ -57,7 +57,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         }
 
         //+ Display_Rooms(): vi skal lave rum færdig
-        public void DisplayRoom()
+        public virtual void DisplayRoom()
         {
             /* Display here */
         }

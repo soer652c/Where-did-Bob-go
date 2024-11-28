@@ -44,11 +44,11 @@ namespace Where_did_Bob_Go_VA.Command_NS
             string thing_to_Show = args[0];
 
             // . Grapping the current location from the context data
-            Space current_location = context.GetCurrent();
+            current_location = context.GetCurrent();
 
             ProcessCommand(thing_to_Show, current_location);
 
-            Console.ReadLine();
+            current_location = context.GetCurrent();
 
             current_location.Welcome();
 
@@ -62,12 +62,13 @@ namespace Where_did_Bob_Go_VA.Command_NS
             switch (thing_to_Show.ToLower()) // To ensure that the text is always lowercase 
             {
                 case "location":
-                    current_location.Welcome();
+                    // . 
                     break;
                 case "inventory":
                     Game.inventory.Display(); // Calls the Display method
+                    Console.ReadLine();
                     break;
-                /*case "use":
+                    /*case "use":
                     Update_TextBox_Main("What item would you like to use?");
                     string itemName = Console.ReadLine();
                     player.Inventory.Use(itemName); // Uses the item from inventory

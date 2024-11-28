@@ -242,7 +242,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
 
         //+ Display_Rooms() displayer description i textbox main
-        public void Display_Room()
+        public override void DisplayRoom()
         {
             Welcome();
         }

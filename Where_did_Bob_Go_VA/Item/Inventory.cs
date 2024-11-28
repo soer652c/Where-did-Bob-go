@@ -33,12 +33,12 @@ namespace Where_did_Bob_Go_VA.Item_NS
         {
             if (!ItemMap.ContainsKey(item.Name))
             {
-                ItemMap[item.Name] = item;
-                Update_TextBox_Options(item.Name +" Has been added to the inventory");
+                ItemMap.Add(item.Name, item);
+                Update_TextBox_Main(item.Name +" has been added to the inventory.");
             }
             else
             {
-                Update_TextBox_Options(item.Name + " already in inventroy");
+                Console.WriteLine(item.Name + " already in inventroy.");
             }
 
             return;
@@ -97,17 +97,19 @@ namespace Where_did_Bob_Go_VA.Item_NS
         //display inventory 
         public void Display()
         {
-            Update_TextBox_Options("Inventorylist");
 
-            string[] inventorylist = new string[ItemMap.Count];
-            int interger = 0;
+            string inventory_Description;
+
+            inventory_Description = "Inventory: \n";
 
             foreach (KeyValuePair<string, Item> item in ItemMap)
             {
-                inventorylist[interger] = item.Value.Name + ": " + item.Value.Description ;
-                interger++;
+                inventory_Description = inventory_Description + "\n";
+                inventory_Description = inventory_Description + item.Value.Name + ": \n";
+                inventory_Description = inventory_Description + item.Value.Description + "\n";
             }
-            Update_TextBox_Options(inventorylist);
+
+            Update_TextBox_Main(inventory_Description);
         }
     }
 }
