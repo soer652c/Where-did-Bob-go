@@ -22,6 +22,8 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         protected string description = "Undocumented";
 
+        public string[]? command_use_text;
+
         protected bool GuardEq(string[] parameters, int bound)
         {
             return parameters.Length != bound;
@@ -30,6 +32,11 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public String GetDescription()
         {
             return description;
+        }
+
+        public string[] Get_CommandUse_Text()
+        {
+            return command_use_text;
         }
     }
 

@@ -24,6 +24,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
             this.registry = registry;
             this.description = "Display a help message";
+
+            command_use_text = new string[1];
+            command_use_text[0] = "leave";
         }
 
         public void Execute(Context context, string command, string[] parameters)

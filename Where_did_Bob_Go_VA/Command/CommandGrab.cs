@@ -18,6 +18,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandGrab()
         {
             this.description = "Use grab to pick up items/food items in certain rooms";
+
+            command_use_text = new string[1];
+            command_use_text[0] = "grab [item]";
         }
 
 		// If you try to pick up an item thats not there, or if the item was taken before, the console will write "Grab what?"

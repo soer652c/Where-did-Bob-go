@@ -31,6 +31,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
             //this.registry = registry;
             this.description = "This command allows you to interact with a NPC in the current room";
+
+            command_use_text = new string[1];
+            command_use_text[0] = "talk [name]";
         }
 
         public void Execute(Context context, string command, string[] parameters)

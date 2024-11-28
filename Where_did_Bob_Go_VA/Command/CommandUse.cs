@@ -29,6 +29,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandUse()
         {
             this.description = "This is an item";
+
+            command_use_text = new string[1];
+            command_use_text[0] = "use [item]";
         }
 
 

@@ -28,13 +28,18 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
         }
 
+
         //Metode Add.Item
         public void Add(Item item)
         {
             if (!ItemMap.ContainsKey(item.Name))
             {
                 ItemMap.Add(item.Name, item);
-                Update_TextBox_Main(item.Name +" has been added to the inventory.");
+                Change_TextBox_Main(item.Name +" has been added to the inventory.");
+                Change_TextBox_Options("Press Enter...");
+
+                Display_Inventory_Textbox(1);
+                Update_GUI();
             }
             else
             {
@@ -44,57 +49,76 @@ namespace Where_did_Bob_Go_VA.Item_NS
             return;
         }
 
+
         // metode til use.int
         public void Use(string name)
         {
-            if (name != null)
+            if (name.Length != 0)
             {
                 if (ItemMap.ContainsKey(name))
                 {
                     string temp_text = "";
                     temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
-                    Change_TextBox_Main(temp_text);
+                    Change_TextBox_Main(temp_text); Change_TextBox_Options("Press Enter...");
                     if (ItemMap[name].Removeable)
                     {
                         Remove(name);
                     }
-                    Update_GUI();
                 }
                 else
                 {
-                    Update_TextBox_Options(name + " not found on the list in Inventory");
+                    Console.WriteLine(name + " not found in the inventory.");
                 }
 
             }
             else
             {
-                Update_TextBox_Main("item had no name");
+                Console.WriteLine("Couldn't find a Item, without a name.");
             }
+
+            Display_Inventory_Textbox(1);
+            Update_GUI();
         }
+
+
+
+
         //metode til Remove.int 
         public void Remove(string name)
         {
             if ( ItemMap.Remove(name) )
             {
-
+                Change_TextBox_Options("Press Enter...");
             }
             else
             {
-                Update_TextBox_Options(name + " not found in the inventory.");
+                Console.WriteLine(name + " couldn't be removed from the inventory.");
             }
+
+            Display_Inventory_Textbox(1);
+            Update_GUI();
         }
+
+
+
         //Remove Item 
         public void Remove(Item item)
         {
             if (ItemMap.Remove(item.Name))
             {
-                Update_TextBox_Options(item.Name + " removed from the inventory.");
+                Change_TextBox_Options(item.Name + " removed from the inventory.");
             }
             else
             {
-                Update_TextBox_Options(item.Name + " not found in the inventory.");
+                Change_TextBox_Options(item.Name + " not found in the inventory.");
             }
+
+            Display_Inventory_Textbox(1);
+            Update_GUI();
         }
+
+
+
         //display inventory 
         public void Display()
         {
@@ -110,7 +134,34 @@ namespace Where_did_Bob_Go_VA.Item_NS
                 inventory_Description = inventory_Description + item.Value.Description + "\n";
             }
 
-            Update_TextBox_Main(inventory_Description);
+            Change_TextBox_Main(inventory_Description);
+            Change_TextBox_Options("Press Enter...");
+
+            Display_Inventory_Textbox(1);
+            Update_GUI();
         }
+
+
+
+        public void Display_Inventory_Textbox(int mode = 0)
+        {
+
+            string inventory_Description = "";
+
+            foreach (KeyValuePair<string, Item> item in ItemMap)
+            {
+                inventory_Description = inventory_Description + item.Value.Name + " \n";
+            }
+
+            if (mode == 0)
+            {
+                Update_TextBox_Inventory(inventory_Description);
+            }
+            else if (mode == 1)
+            {
+                Change_TextBox_Inventory(inventory_Description);
+            }
+        }
+
     }
 }

@@ -27,6 +27,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandGuess()
         {
             description = "Follow an exit";
+
+            command_use_text = new string[1];
+            command_use_text[0] = "guess [name] [risk]";
         }
 
         public void Execute(Context context, string commandName, string[] args)

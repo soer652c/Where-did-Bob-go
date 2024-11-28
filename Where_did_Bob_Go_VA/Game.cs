@@ -41,8 +41,6 @@ namespace Where_did_Bob_Go_VA
         {
             ICommand cmdExit = new CommandExit();
             registry.Register("exit", cmdExit);
-            registry.Register("quit", cmdExit);
-            registry.Register("bye", cmdExit);
             registry.Register("go", new CommandGo());
             registry.Register("help", new CommandHelp(ref registry));
             registry.Register("talk", new CommandTalk());
@@ -57,7 +55,9 @@ namespace Where_did_Bob_Go_VA
         {
             Introduction ();
             player.HealthTopLeft();
+            inventory.Display_Inventory_Textbox();
             InitRegistry();
+            CommandList_Box_Update();
             context.GetCurrent().Welcome();
 
             //Ny context 
@@ -82,7 +82,9 @@ namespace Where_did_Bob_Go_VA
         }
         public void Introduction() //laver en metode ved navn Introduction
         {
-            Update_TextBox_Main("Welcome to Where did Bob go. \n A text-based narrative game where every word carries weight \n every choice could save a life. \n Inspired by the classic World of ZUUL \n this game takes you on an emotional journey through the mysterious town \n where your sharp mind and empathetic heart will be your greatest tools"); 
+            Change_TextBox_Main("Welcome to Where did Bob go. \n A text-based narrative game where every word carries weight \n every choice could save a life. \n Inspired by the classic World of ZUUL \n this game takes you on an emotional journey through the mysterious town \n where your sharp mind and empathetic heart will be your greatest tools");
+            Change_TextBox_Options("Press Enter...");
+            Update_GUI();
             Console.ReadLine(); // når man trykker enter, så går den videre til næste del af teksten
             Update_TextBox_Main("The Story of the game \n You’ve just arrived to the town shrouded in secrets.\n You’ll meet 12 unique NPCs \n each with their own stories and challenges.\n Some may hold clues to what the NPC's are struggling with. \n It’s up to you to connect with them \n ask the right questions \n and decide how best to help");
             Console.ReadLine();
@@ -103,9 +105,42 @@ namespace Where_did_Bob_Go_VA
             Update_TextBox_Main("Enjoy the Game");
             Console.ReadLine();
         }
+
+
         public void GameOver()
         {
             Update_TextBox_Main("You have lost all your health boohoo");
+        }
+
+
+        public void CommandList_Box_Update()
+        {
+            string[] command_Names = registry.GetCommandNames();
+            Array.Sort(command_Names);
+
+            List<string> complete_commandList = new List<string>();
+            int command_List_length = 0;
+
+            foreach (string commandName in command_Names)
+            // Denne overskriver nuværende tekst i comand boxen
+            {
+                BaseCommand temp_command = (BaseCommand) registry.GetCommand(commandName);
+                command_List_length = (temp_command.Get_CommandUse_Text()).Length;
+                string[] temp_string = new string[command_List_length];
+                temp_string = ((BaseCommand) registry.GetCommand(commandName)).Get_CommandUse_Text();
+                for (int i = 0; i < temp_string.Length; i++)
+                {
+                    complete_commandList.Add(temp_string[i]);
+                }
+            }
+
+            string[] complete_commandList_strings = new string[complete_commandList.Count];
+
+            complete_commandList_strings = complete_commandList.ToArray();
+
+            Change_TextBox_Commands(complete_commandList_strings);
+
+            return;
         }
 
 
