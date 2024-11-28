@@ -69,7 +69,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         ////////////////////////////////////////////////////////////////////////    
         ///////////////        TextBox_BottomBoxes_Height        ///////////////    
-        private const uint TextBox_BottomBoxes_Height = 8;
+        private const uint TextBox_BottomBoxes_Height = 9;
 
         ///////////////////////////////////////////////////////////////////////////////////    
         ///////////////        TextBox_BottomBoxes_Spacing_TopBottom        ///////////////    

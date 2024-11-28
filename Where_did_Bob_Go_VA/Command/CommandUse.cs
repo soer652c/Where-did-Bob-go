@@ -49,14 +49,12 @@ namespace Where_did_Bob_Go_VA.Command_NS
             string itemName = args[0];
 
             // Hent spillerens inventory
-            Game.inventory.Use(itemName);
-
-            // . Grapping the current location from the context data
-            current_location = context.GetCurrent();
-
-            Console.ReadLine();
-
-            current_location.Welcome();
+            if (Game.inventory.Use(itemName))
+            {
+                // . Grapping the current location from the context data
+                current_location = context.GetCurrent();
+                current_location.Welcome();
+            }
 
             return;
         }

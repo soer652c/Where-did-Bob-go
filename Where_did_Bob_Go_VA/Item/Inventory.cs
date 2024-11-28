@@ -20,7 +20,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 {
     public class Inventory
     {
-        public Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
+        private Dictionary<string, Item> ItemMap = new Dictionary<string, Item>();
 
         //constructor
         public Inventory()
@@ -30,7 +30,7 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
 
         //Metode Add.Item
-        public void Add(Item item)
+        public bool Add(Item item)
         {
             if (!ItemMap.ContainsKey(item.Name))
             {
@@ -40,30 +40,44 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
                 Display_Inventory_Textbox(1);
                 Update_GUI();
+
+                Console.ReadLine();
+
+                return true;
             }
             else
             {
                 Console.WriteLine(item.Name + " already in inventroy.");
             }
 
-            return;
+            return false;
         }
 
 
         // metode til use.int
-        public void Use(string name)
+        public bool Use(string name)
         {
             if (name.Length != 0)
             {
                 if (ItemMap.ContainsKey(name))
                 {
-                    string temp_text = "";
-                    temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
-                    Change_TextBox_Main(temp_text); Change_TextBox_Options("Press Enter...");
                     if (ItemMap[name].Removeable)
                     {
                         Remove(name);
                     }
+
+                    string temp_text = "";
+                    temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
+                    Change_TextBox_Main(temp_text); 
+                    Change_TextBox_Options("Press Enter...");
+
+
+                    Display_Inventory_Textbox(1);
+                    Update_GUI();
+
+                    Console.ReadLine();
+
+                    return true;
                 }
                 else
                 {
@@ -76,51 +90,58 @@ namespace Where_did_Bob_Go_VA.Item_NS
                 Console.WriteLine("Couldn't find a Item, without a name.");
             }
 
-            Display_Inventory_Textbox(1);
-            Update_GUI();
+            return false;
         }
 
 
 
 
         //metode til Remove.int 
-        public void Remove(string name)
+        public bool Remove(string name)
         {
             if ( ItemMap.Remove(name) )
             {
                 Change_TextBox_Options("Press Enter...");
+
+                Display_Inventory_Textbox(1);
+                Update_GUI();
+
+                return true;
             }
             else
             {
                 Console.WriteLine(name + " couldn't be removed from the inventory.");
             }
 
-            Display_Inventory_Textbox(1);
-            Update_GUI();
+            return false;
         }
 
 
 
         //Remove Item 
-        public void Remove(Item item)
+        public bool Remove(Item item)
         {
             if (ItemMap.Remove(item.Name))
             {
-                Change_TextBox_Options(item.Name + " removed from the inventory.");
+                Change_TextBox_Main(item.Name + " removed from the inventory.");
+
+                Display_Inventory_Textbox(1);
+                Update_GUI();
+
+                return true;
             }
             else
             {
                 Change_TextBox_Options(item.Name + " not found in the inventory.");
             }
 
-            Display_Inventory_Textbox(1);
-            Update_GUI();
+            return false;
         }
 
 
 
         //display inventory 
-        public void Display()
+        public bool Display()
         {
 
             string inventory_Description;
@@ -139,11 +160,15 @@ namespace Where_did_Bob_Go_VA.Item_NS
 
             Display_Inventory_Textbox(1);
             Update_GUI();
+
+            Console.ReadLine();
+
+            return true;
         }
 
 
 
-        public void Display_Inventory_Textbox(int mode = 0)
+        public bool Display_Inventory_Textbox(int mode = 0)
         {
 
             string inventory_Description = "";
@@ -161,6 +186,8 @@ namespace Where_did_Bob_Go_VA.Item_NS
             {
                 Change_TextBox_Inventory(inventory_Description);
             }
+
+            return true;
         }
 
     }

@@ -61,16 +61,17 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
 
 
-        public void ProcessCommand(string thing_to_Show, Space current_location)
+        public bool ProcessCommand(string thing_to_Show, Space current_location)
         {
             switch (thing_to_Show.ToLower()) // To ensure that the text is always lowercase 
             {
                 case "location":
                     // . 
+                    return true;
                     break;
                 case "inventory":
                     Game.inventory.Display(); // Calls the Display method
-                    Console.ReadLine();
+                    return true;
                     break;
                     /*case "use":
                     Update_TextBox_Main("What item would you like to use?");
@@ -82,7 +83,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     break;
             }
 
-            return;
+            return false;
         }
     }
 }

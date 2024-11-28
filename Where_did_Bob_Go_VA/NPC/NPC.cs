@@ -147,17 +147,19 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
 
 
-        private string Conversation_Options0(NPC_Dialog_Options dialog0)
+        private string Conversation_Options0(NPC_Dialog_Options dialog_Input)
         {
-            Change_TextBox_Main(dialog0.text);
+            Change_TextBox_Main(dialog_Input.text);
             string[] backbox = { "Go back to previous conversation" };
-            string[] temper = new string[backbox.Length +2];
+            string[] leavebox = { "Leave conversation" };
+            string[] temper = new string[backbox.Length + leavebox.Length + 2];
 
-            temper[0] = "Type 4 to pick option back: ";
+            temper[0] = "Type \"4\" or \"5\" to pick options:";
             temper[1] = "";
 
             int k = 2;
 
+            backbox[0] = "4. " + backbox[0];
             for (int i = 0; i < backbox.Length; i++)
             {
                 temper[k] = backbox[i];
@@ -165,7 +167,16 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                 k++;
 
             }
-            
+
+            leavebox[0] = "5. " + leavebox[0];
+            for (int i = 0; i < leavebox.Length; i++)
+            {
+                temper[k] = leavebox[i];
+
+                k++;
+
+            }
+
             Change_TextBox_Options(temper);
             Update_GUI();
 
@@ -177,12 +188,12 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                     return "back";
                     //Go back
                     break;
-                case "leave":
-                    Game.registry.GetCommand("leave");
+                case "5":
+                    Game.registry.Dispatch("leave");
                     break;
 
                 default:
-                    Console.WriteLine("There no options here containg this");
+                    Console.WriteLine("There no options here containing " + answer);
                     // Handle invalid input
                     break;
             }
@@ -197,35 +208,44 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         // While loop, der tjekker om NPCvisibulity og er StartConversion sat til true
         // While loop kalder en metoden Converstaion
         // når stop conversation flipper til false. så skal startConveration lukke while loop
-        private string Conversation_Options2(NPC_Dialog_Options dialog2)
+        private string Conversation_Options2(NPC_Dialog_Options dialog_Input)
         {
-            Change_TextBox_Main(dialog2.text);
+            Change_TextBox_Main(dialog_Input.text);
             string[] backbox = { "Go back to previous conversation" };
-            string[] temper = new string[dialog2.Options_1.Length + dialog2.Options_2.Length + backbox.Length +2];
+            string[] leavebox = { "Leave conversation" };
+            string[] temper = new string[dialog_Input.Options_1.Length + dialog_Input.Options_2.Length + backbox.Length + leavebox.Length + 2];
 
-            temper[0] = "Type 1, 2 or 4, to pick options: ";
+            temper[0] = "Type \"1\", \"2\", \"4\" or \"5\" to pick options: ";
             temper[1] = "";
 
             int k = 2;
-
-            for (int i = 0; i < dialog2.Options_1.Length; i++)
+            dialog_Input.Options_1[0] = "1. " + dialog_Input.Options_1[0];
+            for (int i = 0; i < dialog_Input.Options_1.Length; i++)
             {
-                temper[k] = dialog2.Options_1[i];
-
+                temper[k] = dialog_Input.Options_1[i];
                 k++;
             }
 
-            for (int i = 0; i < dialog2.Options_2.Length; i++)
+            dialog_Input.Options_2[0] = "2. " + dialog_Input.Options_2[0];
+            for (int i = 0; i < dialog_Input.Options_2.Length; i++)
             {
-                temper[k] = dialog2.Options_2[i];
-
+                temper[k] = dialog_Input.Options_2[i];
                 k++;
-
             }
 
+            backbox[0] = "4. " + backbox[0];
             for (int i = 0; i < backbox.Length; i++)
             {
                 temper[k] = backbox[i];
+
+                k++;
+
+            }
+
+            leavebox[0] = "5. " + leavebox[0];
+            for (int i = 0; i < leavebox.Length; i++)
+            {
+                temper[k] = leavebox[i];
 
                 k++;
 
@@ -252,12 +272,12 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                     return "back";
                     //Go back
                     break;
-                case "leave":
-                    Game.registry.GetCommand("leave");
+                case "5":
+                    Game.registry.Dispatch("leave");
                     break;
 
                 default:
-                    Console.WriteLine("There no options containing " + answer);
+                    Console.WriteLine("There no options here containing " + answer);
                     // Handle invalid input
                     break;
             }
@@ -269,38 +289,52 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
 
         // metode string Conversation (NPC_Dialog_Options)
-        private string Conversation_Options3(NPC_Dialog_Options dialog1)
+        private string Conversation_Options3(NPC_Dialog_Options dialog_Input)
         {
-            Change_TextBox_Main(dialog1.text);
+            Change_TextBox_Main(dialog_Input.text);
             string[] backbox = { "Go back to previous conversation" };
-            string[] temper = new string[dialog1.Options_1.Length + dialog1.Options_2.Length + dialog1.Options_3.Length + backbox.Length +2];
+            string[] leavebox = { "Leave conversation" };
+            string[] temper = new string[dialog_Input.Options_1.Length + dialog_Input.Options_2.Length + dialog_Input.Options_3.Length + backbox.Length + leavebox.Length + 2];
 
 
-            temper[0] = "Type 1,2,3 or 4 to pick options: ";
+            temper[0] = "Type \"1\", \"2\", \"3\", \"4\" or \"5\" to pick options: ";
             temper[1] = "";
 
             int k = 2;
-
-            for (int i = 0; i < dialog1.Options_1.Length; i++)
+            dialog_Input.Options_1[0] = "1. " + dialog_Input.Options_1[0];
+            for (int i = 0; i < dialog_Input.Options_1.Length; i++)
             {
-                temper[k] = dialog1.Options_1[i];
+                temper[k] = dialog_Input.Options_1[i];
                 k++;
             }
 
-            for (int i = 0; i < dialog1.Options_2.Length; i++)
+            dialog_Input.Options_2[0] = "2. " + dialog_Input.Options_2[0];
+            for (int i = 0; i < dialog_Input.Options_2.Length; i++)
             {
-                temper[k] = dialog1.Options_2[i];
+                temper[k] = dialog_Input.Options_2[i];
                 k++;
             }
 
-            for (int i = 0; i < dialog1.Options_3.Length; i++)
+            dialog_Input.Options_3[0] = "3. " + dialog_Input.Options_3[0];
+            for (int i = 0; i < dialog_Input.Options_3.Length; i++)
             {
-                temper[k] = dialog1.Options_3[i];
+                temper[k] = dialog_Input.Options_3[i];
                 k++;
             }
+
+            backbox[0] = "4. " + backbox[0];
             for (int i = 0; i < backbox.Length; i++)
             {
                 temper[k] = backbox[i];
+
+                k++;
+
+            }
+
+            leavebox[0] = "5. " + leavebox[0];
+            for (int i = 0; i < leavebox.Length; i++)
+            {
+                temper[k] = leavebox[i];
 
                 k++;
 
@@ -333,12 +367,12 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                 //Go back
                 break;
 
-                case "leave":
-                Game.registry.GetCommand("leave");
-                break;
+                case "5":
+                    Game.registry.Dispatch("leave");
+                    break;
 
             default:
-                Console.WriteLine("There no options here containg this");
+                Console.WriteLine("There no options here containing " + answer);
                         // Handle invalid input
                     break;
             }
