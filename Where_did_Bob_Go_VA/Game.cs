@@ -56,7 +56,7 @@ namespace Where_did_Bob_Go_VA
         public Game(/*string[] args*/)
         {
             Introduction ();
-
+            HealthTopLeft();
             InitRegistry();
             context.GetCurrent().Welcome();
 
@@ -70,7 +70,7 @@ namespace Where_did_Bob_Go_VA
                 if (line != null)
                     registry.Dispatch(line);
 
-
+                HealthTopLeft();
 
             }
             Update_TextBox_Main("Game Over 😥");
@@ -109,6 +109,12 @@ namespace Where_did_Bob_Go_VA
         public void GameOver()
         {
             Update_TextBox_Main("You have lost all your health boohoo");
+        }
+
+        public void HealthTopLeft()
+        {
+            string playerString = player.Health.ToString();
+            Change_TextBox_TopLeft("Lives: " + playerString);
         }
     }
 }
