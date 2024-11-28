@@ -46,7 +46,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
         {
             if (string.IsNullOrEmpty(direction))
             {
-                Update_TextBox_Main("You are confused, and walk in a circle looking for '" + direction + "'. In the end you give up 😩");
+                Update_TextBox_Main("You are confused, and walk in a circle looking for + direction");
             }
             else if (char.IsLower(direction[0]) && current.CheckEdge(direction))
             {

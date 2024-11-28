@@ -28,17 +28,32 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public Dictionary<string, NPC> NPC_Map = new Dictionary<string, NPC>();
         public Dictionary<string, Item> Item_Map = new Dictionary<string, Item>();
-
-
-
-
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap) : base(name)
         {
             this.description = description;
             this.NPC_Map = Init_NPCMap;
             this.name = name;
         }
-
+        public Space(String name, string description, NPC Init_NPC, Item Init_Item) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+            this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
+            this.Item_Map.Add(Init_Item.Name, Init_Item);
+        }
+        public Space(String name, string description, NPC Init_NPC) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+            this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
+        }
+        public Space(String name, string description, NPC Init_NPC, NPC Init_NPC2) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+            this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
+            this.NPC_Map.Add(Init_NPC2.NPC_Name, Init_NPC2);
+        }
 
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap, Dictionary<string, Item> Init_ItemMap) : base(name)
         {
@@ -55,7 +70,12 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.Item_Map.Add(Init_Item.Name,Init_Item);
             this.name = name;
         }
-
+        public Space(String name, string description, Item Init_Item) : base(name)
+        {
+            this.description = description;
+            this.Item_Map.Add(Init_Item.Name, Init_Item);
+            this.name = name;
+        }
 
         public void Welcome()
         {
@@ -68,7 +88,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             welcome_description[0] = "You are now at " + name;
             welcome_description[1] = description;
             welcome_description[2] = "";
-            welcome_description[3] = "You see the following individuals: ";
+            welcome_description[3] = "You see the following NPCs: ";
 
 
             int NPC_Number = 4;
