@@ -28,6 +28,14 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public Dictionary<string, NPC> NPC_Map = new Dictionary<string, NPC>();
         public Dictionary<string, Item> Item_Map = new Dictionary<string, Item>();
+
+
+
+        public Space(String name, string description) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+        }
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap) : base(name)
         {
             this.description = description;
@@ -53,6 +61,14 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.name = name;
             this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
             this.NPC_Map.Add(Init_NPC2.NPC_Name, Init_NPC2);
+        }
+        public Space(String name, string description, NPC Init_NPC, NPC Init_NPC2, Item Init_Item) : base(name)
+        {
+            this.description = description;
+            this.name = name;
+            this.NPC_Map.Add(Init_NPC.NPC_Name, Init_NPC);
+            this.NPC_Map.Add(Init_NPC2.NPC_Name, Init_NPC2);
+            this.Item_Map.Add(Init_Item.Name, Init_Item);
         }
 
         public Space(String name, string description, Dictionary<string, NPC> Init_NPCMap, Dictionary<string, Item> Init_ItemMap) : base(name)
