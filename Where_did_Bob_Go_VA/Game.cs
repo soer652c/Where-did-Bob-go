@@ -50,7 +50,7 @@ namespace Where_did_Bob_Go_VA
             registry.Register("use", new CommandUse());
             registry.Register("grab", new CommandGrab());
             registry.Register("guess", new CommandGuess());
-            registry.Register("Show", new CommandShow());
+            registry.Register("show", new CommandShow());
         }
 
         public Game(/*string[] args*/)
