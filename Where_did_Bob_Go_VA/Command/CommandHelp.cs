@@ -22,7 +22,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         Registry registry;
 
-        public CommandHelp(Registry registry)
+        public CommandHelp(ref Registry registry)
         {
             this.registry = registry;
             this.description = "Display a help message";
@@ -53,7 +53,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             Console.ReadLine();
 
-            (Game.context.GetCurrent()).DisplayRoom();
+            (context.GetCurrent()).DisplayRoom();
 
 
         }

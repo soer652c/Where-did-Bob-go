@@ -25,35 +25,37 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
 			if ( (parameters.Length == 0) || (String.IsNullOrEmpty(parameters[0])) )
 			{
-                Update_TextBox_Main ("Grab what?");
+				Console.WriteLine("Grab what?");
 				return;
 			}
 
             // Takes the space and grabs it. Defining what space/room ur in at the momement. 
-            Space current_space = Game.context.GetCurrent();
+            Space current_space = context.GetCurrent();
 
-			if (current_space.Take_Item(parameters[0]) == null)
-			{
+            if (current_space.CheckFor_Item(parameters[0]))
+            {
 
-				Console.WriteLine("There is no item here, try another command");
-			}
-			
-			// If there is an item it will add it to the inventory if not console writeline will say "There is no...". 
-			// If theres no item and you write take "item" it will return null instead of crashing the game.
-            Item item = current_space.Take_Item(parameters[0]);
+                // If there is an item it will add it to the inventory if not console writeline will say "There is no...". 
+                // If theres no item and you write take "item" it will return null instead of crashing the game.
+                Item item = current_space.Take_Item(parameters[0]);
 
-			if (item == null)
-			{
-                Update_TextBox_Main ($"There is no {parameters[0]} here.");
-			}
-			else
-			{
-                Game.inventory.Add(item);
+                if (item.Name != parameters[0])
+                {
+                    Console.WriteLine($"Couldn't grab the {parameters[0]} here.");
+                }
+                else
+                {
+                    Game.inventory.Add(item);
+                }
+
+                //Console.ReadLine();
+
+                (context.GetCurrent()).DisplayRoom();
             }
-
-            //Console.ReadLine();
-
-            (Game.context.GetCurrent()).DisplayRoom();
+            else
+            {
+                Console.WriteLine($"Couldn't grab the {parameters[0]} at this location.");
+            }
         }
 	}
 }
