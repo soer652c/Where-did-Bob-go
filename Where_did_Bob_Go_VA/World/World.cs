@@ -24,25 +24,26 @@ namespace Where_did_Bob_Go_VA.World_NS
     {
         Space entry;
         public Dictionary<string, Space> SpaceMap = new Dictionary<string, Space>();
-        public World()
+
+        public World(NPC_DialogID[] npc_DialogID_Arr)
         {
 
             Dictionary<string, NPC> Init_NPCMap = new Dictionary<string, NPC>();
 
 
-            NPC Alex = new NPC("Alex", "", "");
-            NPC Sophie = new NPC("Sophie", "", "");
-            NPC Liam = new NPC("Liam", "", "");
-            NPC Clara = new NPC("Clara", "", "");
-            NPC Jack = new NPC("Jack", "", "");
-            NPC Emma = new NPC("Emma", "", "");
-            NPC Steen = new NPC("Steen", "", "");
-            NPC Thomas = new NPC("Thomas", "", "");
-            NPC Sarah = new NPC("Sarah", "", "");
-            NPC Ben = new NPC("Ben", "", "");
-            NPC Lily = new NPC("Lily", "", "");
-            NPC James = new NPC("James", "", "");
-            NPC Mia = new NPC("Mia", "", "");
+            NPC Alex = new NPC(npc_DialogID_Arr[0], "Alex");
+            NPC Sophie = new NPC(npc_DialogID_Arr[1], "Sophie");
+            NPC Liam = new NPC(npc_DialogID_Arr[2], "Liam");
+            NPC Clara = new NPC(npc_DialogID_Arr[3], "Clara");
+            NPC Jack = new NPC(npc_DialogID_Arr[4], "Jack");
+            NPC Emma = new NPC(npc_DialogID_Arr[5], "Emma");
+            NPC Steen = new NPC(npc_DialogID_Arr[6], "Steen");
+            NPC Thomas = new NPC(npc_DialogID_Arr[7], "Thomas");
+            NPC Sarah = new NPC(npc_DialogID_Arr[8], "Sarah");
+            NPC Ben = new NPC(npc_DialogID_Arr[9], "Ben");
+            NPC Lily = new NPC(npc_DialogID_Arr[10], "Lily");
+            NPC James = new NPC(npc_DialogID_Arr[11], "James");
+            NPC Mia = new NPC(npc_DialogID_Arr[12], "Mia");
 
 
             // The NPC's located around the world of Bob
@@ -118,6 +119,8 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             return entry;
         }
+
+
         public int NPCLeft()
         {
             int NPCVisualbilitiCounter = 0;

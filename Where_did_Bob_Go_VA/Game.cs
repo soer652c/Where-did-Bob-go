@@ -30,12 +30,24 @@ namespace Where_did_Bob_Go_VA
 
     public class Game
     {
-        static private World world = new World();
-        static private Context context = new Context(world.GetEntry());
-        static public ICommand fallback = new CommandUnknown();
-        static public Registry registry = new Registry(context, fallback);
-        static public Inventory inventory = new Inventory();
-        static public Player player = new Player(3);
+        static private World world;
+        static private Context context;
+        static public ICommand fallback;
+        static public Registry registry;
+        static public Inventory inventory;
+        static public Player player;
+
+        private static void Game_Setup(NPC_DialogID[] npc_DialogID_Arr)
+        {
+            world = new World(npc_DialogID_Arr);
+            context = new Context(world.GetEntry());
+            fallback = new CommandUnknown();
+            registry = new Registry(context, fallback);
+            inventory = new Inventory();
+            player = new Player(3);
+
+            InitRegistry();
+        }
 
         private static void InitRegistry()
         {
@@ -51,12 +63,14 @@ namespace Where_did_Bob_Go_VA
             registry.Register("show", new CommandShow());
         }
 
-        public Game(/*string[] args*/)
+        public Game(NPC_DialogID[] npc_DialogID_Arr)
         {
+            Game_Setup(npc_DialogID_Arr);
+
             Introduction ();
             player.HealthTopLeft();
             inventory.Display_Inventory_Textbox();
-            InitRegistry();
+
             CommandList_Box_Update();
             context.GetCurrent().Welcome();
 

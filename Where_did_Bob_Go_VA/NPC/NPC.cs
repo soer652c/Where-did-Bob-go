@@ -24,8 +24,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         private Dictionary<string, NPC_Dialog_Options> DialogOptionsTree;
 
 
-        private string file_location = "\\DialogFolder";
-        private string file_name;
+        private NPC_DialogID npc_DialogID;
 
 
         public string Place;
@@ -38,12 +37,34 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
 
 
-        public NPC( string init_name, string init_file_loation, string init_file_name)
+        public NPC(NPC_DialogID init_npc_DialogID, string init_name)
         {
             // .
             this.NPC_Name = init_name;
-            this.file_location = init_file_loation;
-            this.file_name = init_file_name;
+            this.npc_DialogID = init_npc_DialogID;
+        }
+
+
+        public void Extract_DialogTree()
+        {
+            // .   
+            npc_Dialog_Struct = Get_NPC_DialogTree(npc_DialogID.File_Location, npc_DialogID.File_Name);
+
+            // . 
+            DialogOptionsTree.Add("D00", npc_Dialog_Struct.D00);
+            DialogOptionsTree.Add("D00.01", npc_Dialog_Struct.D00_01);
+            DialogOptionsTree.Add("D00.02", npc_Dialog_Struct.D00_02);
+            DialogOptionsTree.Add("D00.03", npc_Dialog_Struct.D00_03);
+
+            DialogOptionsTree.Add("D00.01.01", npc_Dialog_Struct.D00_01_01);
+            DialogOptionsTree.Add("D00.01.02", npc_Dialog_Struct.D00_01_02);
+
+            DialogOptionsTree.Add("D00.02.01", npc_Dialog_Struct.D00_02_01);
+            DialogOptionsTree.Add("D00.02.02", npc_Dialog_Struct.D00_02_02);
+
+            DialogOptionsTree.Add("D00.03.01", npc_Dialog_Struct.D00_03_01);
+            DialogOptionsTree.Add("D00.03.02", npc_Dialog_Struct.D00_03_02);
+
         }
 
 

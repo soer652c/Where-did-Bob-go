@@ -54,9 +54,8 @@ namespace Where_did_Bob_Go_VA.Command_NS
                 // . Grapping the current location from the context data
                 current_location = context.GetCurrent();
                 current_location.Welcome();
+                return;
             }
-
-            return;
         }
     }
 }

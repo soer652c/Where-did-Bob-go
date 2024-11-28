@@ -22,6 +22,12 @@ namespace Where_did_Bob_Go_VA
 
         public Main_Class() { }
 
+        //private NPC_DialogID[] npc_DialogID_Arr;
+        static public NPC_DialogID[] RandomGame_Generator(NPC_DialogID[] npc_DialogID_Arr)
+        {
+            return npc_DialogID_Arr;
+        }
+
 
 
         // static void Main(string[] arg)
@@ -30,9 +36,14 @@ namespace Where_did_Bob_Go_VA
         // and uses is the Main, to control the order of sekvenses run. 
         public static void Main()
         {
-            
+            NPC_DialogID[] npc_DialogID_Arr;
+
+            npc_DialogID_Arr = new NPC_DialogID[15];
+
+            npc_DialogID_Arr = RandomGame_Generator(npc_DialogID_Arr);
+
             // . 
-            Game game = new Game();
+            Game game = new Game(npc_DialogID_Arr);
 
         }
 

@@ -48,14 +48,14 @@ namespace Where_did_Bob_Go_VA.Command_NS
                 }
                 else
                 {
-                    Game.inventory.Add(item);
+                    if (Game.inventory.Add(item))
+                    {
+                        // . Grapping the current location from the context data
+                        current_space = context.GetCurrent();
+                        current_space.DisplayRoom();
+                        return;
+                    }
                 }
-
-                current_space = context.GetCurrent();
-
-                Console.ReadLine();
-
-                current_space.DisplayRoom();
             }
             else
             {

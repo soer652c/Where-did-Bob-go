@@ -50,13 +50,13 @@ namespace Where_did_Bob_Go_VA.Command_NS
             // . Grapping the current location from the context data
             current_location = context.GetCurrent();
 
-            ProcessCommand(thing_to_Show, current_location);
-
-            current_location = context.GetCurrent();
-
-            current_location.Welcome();
-
-            return;
+            if (ProcessCommand(thing_to_Show, current_location))
+            {
+                // . Grapping the current location from the context data
+                current_location = context.GetCurrent();
+                current_location.DisplayRoom();
+                return;
+            }
         }
 
 

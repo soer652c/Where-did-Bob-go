@@ -61,13 +61,13 @@ namespace Where_did_Bob_Go_VA.Item_NS
             {
                 if (ItemMap.ContainsKey(name))
                 {
+                    string temp_text = "";
+                    temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
                     if (ItemMap[name].Removeable)
                     {
                         Remove(name);
                     }
 
-                    string temp_text = "";
-                    temp_text = "You have used " + name + "\n" + ItemMap[name].Use();
                     Change_TextBox_Main(temp_text); 
                     Change_TextBox_Options("Press Enter...");
 
