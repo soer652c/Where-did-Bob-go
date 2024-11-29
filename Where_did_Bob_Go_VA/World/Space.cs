@@ -92,6 +92,70 @@ namespace Where_did_Bob_Go_VA.World_NS
             this.Item_Map.Add(Init_Item.Name, Init_Item);
             this.name = name;
         }
+        public void Welcome(string PreviousName)
+        {
+            // .
+            HashSet<string> exits = edges.Keys.ToHashSet();
+
+            // .
+            string[] welcome_description = new string[7 + NPC_Map.Count + Item_Map.Count];
+
+            welcome_description[0] = "You are now at " + name;
+            welcome_description[1] = description;
+            welcome_description[2] = "";
+            welcome_description[3] = "You see the following NPCs: ";
+
+
+            int NPC_Number = 4;
+            foreach (KeyValuePair<string, NPC> npc in NPC_Map)
+            {
+                if (npc.Value.NPCvisibility)
+                {
+                    welcome_description[NPC_Number] = npc.Value.NPC_Name;
+                    NPC_Number++;
+                }
+            }
+
+            welcome_description[NPC_Number] = "";
+            NPC_Number++;
+
+
+            welcome_description[NPC_Number] = "You see the following items: ";
+
+            int Item_Number = NPC_Number + 1;
+            foreach (KeyValuePair<string, Item> item in Item_Map)
+            {
+                welcome_description[Item_Number] = item.Value.Name;
+                Item_Number++;
+            }
+
+            string welcome_description_str = string.Join("\n", welcome_description);
+
+            Change_TextBox_Main(welcome_description_str);
+
+
+
+            // .   
+            // .   
+            string[] exits_string = new string[(exits.Count() + 1)];
+
+            exits_string[0] = ("Current exits are:");
+
+            // .   
+            for (int i = 0; i < exits.Count(); i++)
+            {
+                exits_string[i + 1] = (" - " + exits.ElementAt(i));
+            }
+
+            // .  
+            Change_TextBox_Options(exits_string);
+
+            // .
+            Change_TextBox_TopMiddle( PreviousName + " --> " + name );
+
+            // . 
+            Update_GUI();
+        }
 
         public void Welcome()
         {

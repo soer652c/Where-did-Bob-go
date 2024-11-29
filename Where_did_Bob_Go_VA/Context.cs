@@ -25,6 +25,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
         Space current;
         bool done = false;
         World world; //Referere til Klassen-word
+        string PreviousName;
 
        public Context(Space node, World world)
         {
@@ -42,6 +43,11 @@ namespace Where_did_Bob_Go_VA.Game_NS
             return current;
         }
 
+        public string GetPreviousName()
+        {
+            return PreviousName;
+        }
+
         public void Transition(string direction)
         {
             if (string.IsNullOrEmpty(direction))
@@ -50,17 +56,19 @@ namespace Where_did_Bob_Go_VA.Game_NS
             }
             else if (char.IsLower(direction[0]) && current.CheckEdge(direction))
             {
+                PreviousName = (current).name;
                 Space next = current.FollowEdge(direction);
                 current.Goodbye();
                 current = next;
-                current.Welcome();
+                current.Welcome(PreviousName);
             }
             else if (char.IsUpper(direction[0]) && current.CheckEdge(direction))
             {
+                PreviousName = (current).name;
                 Space next = current.FollowEdge(direction);
                 current.Goodbye();
                 current = next;
-                current.Welcome();
+                current.Welcome(PreviousName);
             }
             else
             {

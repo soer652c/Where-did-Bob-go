@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Skkg\\.nuget\\packages\\": {}
+    "C:\\Users\\Søren Raun Bomberg\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj",
+      "projectUniqueName": "C:\\Users\\Søren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj",
       "projectName": "Where_did_Bob_Go_VA",
-      "projectPath": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj",
-      "packagesPath": "C:\\Users\\Skkg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\obj\\",
+      "projectPath": "C:\\Users\\Søren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj",
+      "packagesPath": "C:\\Users\\Søren Raun Bomberg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Søren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Skkg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Søren Raun Bomberg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -44,8 +49,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -66,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

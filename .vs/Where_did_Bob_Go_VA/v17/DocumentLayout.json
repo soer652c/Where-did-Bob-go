@@ -1,62 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\",
+  "WorkspaceRootPath": "C:\\Users\\S\u00F8ren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\gui\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\s\u00F8ren raun bomberg\\riderprojects\\where-did-bob-go\\where_did_bob_go_va\\gui\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\gui\\gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\world\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\world\\space.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\world\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\world\\world.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\npc\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\npc\\npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\gui\\textbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\s\u00F8ren raun bomberg\\riderprojects\\where-did-bob-go\\where_did_bob_go_va\\gui\\textbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\gui\\textbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\npc\\dialog\\dialog_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\npc\\dialog\\dialog_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\npc\\dialog\\dialog_formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\npc\\dialog\\dialog_formatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\npc\\dialog\\dialogfile_reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\npc\\dialog\\dialogfile_reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\item\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\item\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\item\\food_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\item\\food_item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|c:\\users\\skkg\\onedrive\\dokumenter\\github\\where_did_bob_go\\soer652c\\where-did-bob-go\\where_did_bob_go_va\\item\\moncle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D719289D-BFF8-4EFC-8F23-404047814C20}|Where_did_Bob_Go_VA\\Where_did_Bob_Go_VA.csproj|solutionrelative:where_did_bob_go_va\\item\\moncle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,193 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Item.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Item.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Item\\Item.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Item.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Item\\Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:07:30.446Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Game.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Game.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Game.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Game.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:38:19.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Program.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Program.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Program.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:37:34.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "World.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\World\\World.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\World\\World.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\World\\World.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\World\\World.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAWwBsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:27:55.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Space.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\World\\Space.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\World\\Space.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\World\\Space.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\World\\Space.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:19:40.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dialog_NPC.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_NPC.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_NPC.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_NPC.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_NPC.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:19:21.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Dialog_Formatter.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_Formatter.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_Formatter.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_Formatter.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\NPC\\Dialog\\Dialog_Formatter.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:19:14.857Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GUI.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\GUI.cs",
+              "DocumentMoniker": "C:\\Users\\S\u00F8ren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\GUI.cs",
               "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\GUI\\GUI.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\GUI.cs",
+              "ToolTip": "C:\\Users\\S\u00F8ren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\GUI.cs",
               "RelativeToolTip": "Where_did_Bob_Go_VA\\GUI\\GUI.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAADwv78AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAK4BAAAAAAAAAAAowMMBAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:11:29.234Z",
+              "WhenOpened": "2024-11-29T11:58:04.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DialogFile_Reader.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\DialogFile_Reader.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\NPC\\Dialog\\DialogFile_Reader.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\Dialog\\DialogFile_Reader.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\NPC\\Dialog\\DialogFile_Reader.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:16:57.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "TextBox.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
+              "DocumentMoniker": "C:\\Users\\S\u00F8ren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
               "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
+              "ToolTip": "C:\\Users\\S\u00F8ren Raun Bomberg\\RiderProjects\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
               "RelativeToolTip": "Where_did_Bob_Go_VA\\GUI\\TextBox.cs",
-              "ViewState": "AgIAAK8BAAAAAAAAAAArwLkBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAPwDAAAAAAAAAAAwwPkDAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:11:32.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Food_Item.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Food_Item.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Item\\Food_Item.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Food_Item.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Item\\Food_Item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:07:32.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Inventory.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Item\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Inventory.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Item\\Inventory.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAwwE8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:07:31.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Moncle.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Moncle.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\Item\\Moncle.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\Item\\Moncle.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\Item\\Moncle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:07:05.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NPC.cs",
-              "DocumentMoniker": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\NPC.cs",
-              "RelativeDocumentMoniker": "Where_did_Bob_Go_VA\\NPC\\NPC.cs",
-              "ToolTip": "C:\\Users\\Skkg\\OneDrive\\Dokumenter\\GitHub\\Where_did_Bob_go\\soer652c\\Where-did-Bob-go\\Where_did_Bob_Go_VA\\NPC\\NPC.cs",
-              "RelativeToolTip": "Where_did_Bob_Go_VA\\NPC\\NPC.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:03:44.308Z"
+              "WhenOpened": "2024-11-05T08:11:32.769Z",
+              "EditorCaption": ""
             }
           ]
         }

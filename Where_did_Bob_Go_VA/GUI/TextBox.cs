@@ -2242,5 +2242,3 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
     }
 }
-
-

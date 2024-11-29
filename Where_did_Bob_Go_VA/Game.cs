@@ -69,6 +69,7 @@ namespace Where_did_Bob_Go_VA
 
             Introduction ();
             player.HealthTopLeft();
+            world.NPCTopRight();
             inventory.Display_Inventory_Textbox();
 
             CommandList_Box_Update();
