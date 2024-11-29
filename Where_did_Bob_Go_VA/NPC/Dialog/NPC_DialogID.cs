@@ -15,7 +15,13 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
 
         public string File_ID;
 
-        public string Risk;
+        public string NPC_Name;
+
+        public string NPC_Location;
+
+        public string NPC_ID;
+
+        public string NPC_Risk;
     }
 
 

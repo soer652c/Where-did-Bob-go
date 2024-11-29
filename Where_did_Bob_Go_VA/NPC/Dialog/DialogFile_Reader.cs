@@ -105,6 +105,13 @@ namespace Where_did_Bob_Go_VA.NPC_NS.Dialog_NS
         public void LoadData_fromFile(string init_data_StartMarker, string init_data_StopMarker)
         {
             // .   
+            this.data_StartMarker = init_data_StartMarker;
+            this.data_StopMarker = init_data_StopMarker;
+
+            // .  
+            file_Data.Clear();
+
+            // .   
             OpenFile_ReadMode();
 
             // Here we call StreamReader, so we .   

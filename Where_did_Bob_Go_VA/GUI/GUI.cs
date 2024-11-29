@@ -41,7 +41,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         ///////////////////////////////////////////////////////////////    
         ///////////////        TextBox_TopMiddle        ///////////////  
-        private static TextBox TextBox_TopMiddle = new TextBox(50, TextBox_TopBoxes_Height, "||", "##", 1, TextBox_TopBoxes_Spacing_TopBottom);
+        private static TextBox TextBox_TopMiddle = new TextBox(62, TextBox_TopBoxes_Height, "||", "##", 1, TextBox_TopBoxes_Spacing_TopBottom);
 
         //////////////////////////////////////////////////////////////    
         ///////////////        TextBox_TopRight        ///////////////    
@@ -59,7 +59,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         //////////////////////////////////////////////////////////    
         ///////////////        TextBox_Main        ///////////////   
-        private static TextBox TextBox_Main = new TextBox(78, TextBox_MiddleBoxes_Height, "||", "##", 1, TextBox_MiddleBoxes_Spacing_TopBottom, "Main");
+        private static TextBox TextBox_Main = new TextBox(90, TextBox_MiddleBoxes_Height, "||", "##", 1, TextBox_MiddleBoxes_Spacing_TopBottom, "Main");
 
         //////////////////////////////////////////////////////////////    
         ///////////////        TextBox_Commands        ///////////////    
@@ -77,7 +77,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         /////////////////////////////////////////////////////////////    
         ///////////////        TextBox_Options        ///////////////
-        private static TextBox TextBox_Options = new TextBox(78, TextBox_BottomBoxes_Height, "||", "##", 1, TextBox_BottomBoxes_Spacing_TopBottom, "Options");
+        private static TextBox TextBox_Options = new TextBox(90, TextBox_BottomBoxes_Height, "||", "##", 1, TextBox_BottomBoxes_Spacing_TopBottom, "Options");
 
         ///////////////////////////////////////////////////////////////    
         ///////////////        TextBox_Inventory        ///////////////

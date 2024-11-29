@@ -42,6 +42,9 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             // .
             this.NPC_Name = init_name;
             this.npc_DialogID = init_npc_DialogID;
+            npc_Dialog_Struct = new NPC_Dialog_Struct();
+            DialogOptionsTree = new Dictionary<string, NPC_Dialog_Options>();
+            Extract_DialogTree();
         }
 
 
@@ -104,13 +107,13 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                 if (next_conversation == "D00")
                 {
                     // While loop kalder en metoden Converstaion
-                    next_conversation = next_conversation + Conversation_Options3(initial_conversation);
+                    next_conversation = "D00" + Conversation_Options3(initial_conversation);
                 }
-                else if ((next_conversation == "D00.01") || (next_conversation == "DOO.02") || (next_conversation == "D00.03"))
+                else if ((next_conversation == "D00.01") || (next_conversation == "D00.02") || (next_conversation == "D00.03"))
                 {
                     ConversationOpstionreturn = Conversation_Options2(DialogOptionsTree[next_conversation]);
                     // inde i elseIf statamteten skal det som converstion2 returner gemmes i "Stringen" tjekke at det der returneres skal lægges til eller trækkes fra
-                    if ( ConversationOpstionreturn == "back")
+                    if (ConversationOpstionreturn == "back" || ConversationOpstionreturn == "Back" || ConversationOpstionreturn == "back ")
                     {
                         GoBack = next_conversation.Split(".");
                         next_conversation = "";
@@ -127,17 +130,17 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                             }
                         }
                     }
-                    else 
+                    else if (ConversationOpstionreturn == ".01" || ConversationOpstionreturn == ".02" )
                     {
-                        next_conversation = next_conversation + Conversation_Options2(DialogOptionsTree[next_conversation]);
+                        next_conversation = next_conversation + ConversationOpstionreturn;
                     }
                     
                 }
-                else if ((next_conversation == "D00.01.01") || (next_conversation == "DOO.01.02") || (next_conversation == "D00.02.01") || (next_conversation == "D00.02.02") || (next_conversation == "DOO.03.01") || (next_conversation == "D00.03.02"))
+                else if ((next_conversation == "D00.01.01") || (next_conversation == "D00.01.02") || (next_conversation == "D00.02.01") || (next_conversation == "D00.02.02") || (next_conversation == "D00.03.01") || (next_conversation == "D00.03.02"))
                 {
                     ConversationOpstionreturn = Conversation_Options0(DialogOptionsTree[next_conversation]);
                     // inde i elseIf statamteten skal det som converstion2 returner gemmes i "Stringen" tjekke at det der returneres skal lægges til eller trækkes fra
-                    if (ConversationOpstionreturn == "back")
+                    if (ConversationOpstionreturn == "back" || ConversationOpstionreturn == "Back" || ConversationOpstionreturn == "back ")
                     {
                         GoBack = next_conversation.Split(".");
                         next_conversation = "";
@@ -154,14 +157,12 @@ namespace Where_did_Bob_Go_VA.NPC_NS
                             }
                         }
                     }
-                    else
+                    else if (ConversationOpstionreturn == ".01" || ConversationOpstionreturn == ".02")
                     {
-                        next_conversation = next_conversation + Conversation_Options0(DialogOptionsTree[next_conversation]);
+                        next_conversation = next_conversation + ConversationOpstionreturn;
                     }
                 }
             }
-
-            Console.ReadLine();
 
             (context.GetCurrent()).DisplayRoom();
         }
@@ -170,7 +171,9 @@ namespace Where_did_Bob_Go_VA.NPC_NS
 
         private string Conversation_Options0(NPC_Dialog_Options dialog_Input)
         {
+
             Change_TextBox_Main(dialog_Input.text);
+
             string[] backbox = { "Go back to previous conversation" };
             string[] leavebox = { "Leave conversation" };
             string[] temper = new string[backbox.Length + leavebox.Length + 2];
@@ -179,45 +182,62 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             temper[1] = "";
 
             int k = 2;
-
-            backbox[0] = "4. " + backbox[0];
             for (int i = 0; i < backbox.Length; i++)
             {
-                temper[k] = backbox[i];
-
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "4. " + backbox[0];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = backbox[0];
+                    k++;
+                }
 
             }
 
-            leavebox[0] = "5. " + leavebox[0];
             for (int i = 0; i < leavebox.Length; i++)
             {
-                temper[k] = leavebox[i];
-
-                k++;
-
+                if (i == 0)
+                {
+                    temper[k] = "5. " + leavebox[0];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = leavebox[0];
+                    k++;
+                }
             }
 
             Change_TextBox_Options(temper);
             Update_GUI();
 
-            string answer = Console.ReadLine();
 
-            switch (answer)
+            while (true)
             {
-                case "4":
-                    return "back";
-                    //Go back
-                    break;
-                case "5":
-                    Game.registry.Dispatch("leave");
-                    break;
 
-                default:
-                    Console.WriteLine("There no options here containing " + answer);
-                    // Handle invalid input
-                    break;
+                    string answer = Console.ReadLine();
+
+                switch (answer)
+                {
+                    case "4":
+                        return "back";
+                        //Go back
+                        break;
+                    case "5":
+                        Game.registry.Dispatch("leave");
+                        return "";
+                        break;
+
+                    default:
+                        Console.WriteLine("There no options here containing " + answer);
+                        // Handle invalid input
+                        break;
+                }
             }
+
             return "";
         }
 
@@ -232,6 +252,7 @@ namespace Where_did_Bob_Go_VA.NPC_NS
         private string Conversation_Options2(NPC_Dialog_Options dialog_Input)
         {
             Change_TextBox_Main(dialog_Input.text);
+
             string[] backbox = { "Go back to previous conversation" };
             string[] leavebox = { "Leave conversation" };
             string[] temper = new string[dialog_Input.Options_1.Length + dialog_Input.Options_2.Length + backbox.Length + leavebox.Length + 2];
@@ -240,67 +261,98 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             temper[1] = "";
 
             int k = 2;
-            dialog_Input.Options_1[0] = "1. " + dialog_Input.Options_1[0];
             for (int i = 0; i < dialog_Input.Options_1.Length; i++)
             {
-                temper[k] = dialog_Input.Options_1[i];
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "1. " + dialog_Input.Options_1[i];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = dialog_Input.Options_1[i];
+                    k++;
+                }
             }
 
-            dialog_Input.Options_2[0] = "2. " + dialog_Input.Options_2[0];
+
             for (int i = 0; i < dialog_Input.Options_2.Length; i++)
             {
-                temper[k] = dialog_Input.Options_2[i];
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "2. " + dialog_Input.Options_2[i];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = dialog_Input.Options_2[i];
+                    k++;
+                }
             }
 
-            backbox[0] = "4. " + backbox[0];
             for (int i = 0; i < backbox.Length; i++)
             {
-                temper[k] = backbox[i];
-
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "4. " + backbox[0];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = backbox[0];
+                    k++;
+                }
 
             }
 
-            leavebox[0] = "5. " + leavebox[0];
             for (int i = 0; i < leavebox.Length; i++)
             {
-                temper[k] = leavebox[i];
-
-                k++;
-
+                if (i == 0)
+                {
+                    temper[k] = "5. " + leavebox[0];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = leavebox[0];
+                    k++;
+                }
             }
 
             Change_TextBox_Options(temper);
             Update_GUI();
 
-            string answer = Console.ReadLine();
-
-            switch (answer)
+            while (true)
             {
-                case "1":
-                    // Handle option 1
-                    return ".01";
-                    break;
 
-                case "2":
-                    // Handle option 2
-                    return ".02";
-                    break;
+                string answer = Console.ReadLine();
 
-                case "4":
-                    return "back";
-                    //Go back
-                    break;
-                case "5":
-                    Game.registry.Dispatch("leave");
-                    break;
+                switch (answer)
+                {
+                    case "1":
+                        // Handle option 1
+                        return ".01";
+                        break;
 
-                default:
-                    Console.WriteLine("There no options here containing " + answer);
-                    // Handle invalid input
-                    break;
+                    case "2":
+                        // Handle option 2
+                        return ".02";
+                        break;
+
+                    case "4":
+                        //Go back
+                        return "back";
+                        break;
+                    case "5":
+                        Game.registry.Dispatch("leave");
+                        return "";
+                        break;
+
+                    default:
+                        Console.WriteLine("There no options here containing " + answer);
+                        // Handle invalid input
+                        break;
+                }
             }
             return "";
         }
@@ -318,84 +370,103 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             string[] temper = new string[dialog_Input.Options_1.Length + dialog_Input.Options_2.Length + dialog_Input.Options_3.Length + backbox.Length + leavebox.Length + 2];
 
 
-            temper[0] = "Type \"1\", \"2\", \"3\", \"4\" or \"5\" to pick options: ";
+            temper[0] = "Type \"1\", \"2\", \"3\" or \"5\" to pick options: ";
             temper[1] = "";
 
             int k = 2;
-            dialog_Input.Options_1[0] = "1. " + dialog_Input.Options_1[0];
             for (int i = 0; i < dialog_Input.Options_1.Length; i++)
             {
-                temper[k] = dialog_Input.Options_1[i];
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "1. " + dialog_Input.Options_1[i];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = dialog_Input.Options_1[i];
+                    k++;
+                }
             }
 
-            dialog_Input.Options_2[0] = "2. " + dialog_Input.Options_2[0];
+
             for (int i = 0; i < dialog_Input.Options_2.Length; i++)
             {
-                temper[k] = dialog_Input.Options_2[i];
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "2. " + dialog_Input.Options_2[i];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = dialog_Input.Options_2[i];
+                    k++;
+                }
             }
 
-            dialog_Input.Options_3[0] = "3. " + dialog_Input.Options_3[0];
             for (int i = 0; i < dialog_Input.Options_3.Length; i++)
             {
-                temper[k] = dialog_Input.Options_3[i];
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "3. " + dialog_Input.Options_3[i];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = dialog_Input.Options_3[i];
+                    k++;
+                }
             }
 
-            backbox[0] = "4. " + backbox[0];
-            for (int i = 0; i < backbox.Length; i++)
-            {
-                temper[k] = backbox[i];
-
-                k++;
-
-            }
-
-            leavebox[0] = "5. " + leavebox[0];
             for (int i = 0; i < leavebox.Length; i++)
             {
-                temper[k] = leavebox[i];
-
-                k++;
+                if (i == 0)
+                {
+                    temper[k] = "5. " + leavebox[0];
+                    k++;
+                }
+                else
+                {
+                    temper[k] = leavebox[0];
+                    k++;
+                }
 
             }
 
             Change_TextBox_Options(temper);
             Update_GUI();
 
-            string answer= Console.ReadLine();
-
-            switch (answer)
+            while (true)
             {
-                case "1":
-                    // Handle option 1
-                    return ".01";
-                    break;
 
-                case "2":
-                    // Handle option 2
-                    return ".02";
-                    break;
+                    string answer = Console.ReadLine();
 
-                case "3":
-                    // Handle option 3
-                    return ".03";
-                break;
+                switch (answer)
+                {
+                    case "1":
+                        // Handle option 1
+                        return ".01";
+                        break;
 
-                case "4":
-                    return "back";
-                //Go back
-                break;
+                    case "2":
+                        // Handle option 2
+                        return ".02";
+                        break;
 
-                case "5":
-                    Game.registry.Dispatch("leave");
-                    break;
+                    case "3":
+                        // Handle option 3
+                        return ".03";
+                        break;
 
-            default:
-                Console.WriteLine("There no options here containing " + answer);
+                    case "5":
+                        Game.registry.Dispatch("leave");
+                        return "";
+                        break;
+
+                    default:
+                        Console.WriteLine("There no options here containing " + answer);
                         // Handle invalid input
-                    break;
+                        break;
+                }
             }
             return "";
         }

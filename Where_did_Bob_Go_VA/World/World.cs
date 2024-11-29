@@ -31,34 +31,33 @@ namespace Where_did_Bob_Go_VA.World_NS
             Dictionary<string, NPC> Init_NPCMap = new Dictionary<string, NPC>();
 
 
-            NPC Alex = new NPC(npc_DialogID_Arr[0], "Alex");
-            NPC Sophie = new NPC(npc_DialogID_Arr[1], "Sophie");
-            NPC Liam = new NPC(npc_DialogID_Arr[2], "Liam");
-            NPC Clara = new NPC(npc_DialogID_Arr[3], "Clara");
-            NPC Jack = new NPC(npc_DialogID_Arr[4], "Jack");
-            NPC Emma = new NPC(npc_DialogID_Arr[5], "Emma");
-            NPC Steen = new NPC(npc_DialogID_Arr[6], "Steen");
-            NPC Thomas = new NPC(npc_DialogID_Arr[7], "Thomas");
-            NPC Sarah = new NPC(npc_DialogID_Arr[8], "Sarah");
-            NPC Ben = new NPC(npc_DialogID_Arr[9], "Ben");
-            NPC Lily = new NPC(npc_DialogID_Arr[10], "Lily");
-            NPC James = new NPC(npc_DialogID_Arr[11], "James");
-            NPC Mia = new NPC(npc_DialogID_Arr[12], "Mia");
+            NPC Alex = new NPC(npc_DialogID_Arr[0], npc_DialogID_Arr[0].NPC_Name);
+            NPC Mia = new NPC(npc_DialogID_Arr[1], npc_DialogID_Arr[1].NPC_Name);
+            NPC Liam = new NPC(npc_DialogID_Arr[2], npc_DialogID_Arr[2].NPC_Name);
+            NPC Clara = new NPC(npc_DialogID_Arr[3], npc_DialogID_Arr[3].NPC_Name);
+            NPC Jack = new NPC(npc_DialogID_Arr[4], npc_DialogID_Arr[4].NPC_Name);
+            NPC Emma = new NPC(npc_DialogID_Arr[5], npc_DialogID_Arr[5].NPC_Name);
+            NPC Steen = new NPC(npc_DialogID_Arr[6], npc_DialogID_Arr[6].NPC_Name);
+            NPC Thomas = new NPC(npc_DialogID_Arr[7], npc_DialogID_Arr[7].NPC_Name);
+            NPC Sarah = new NPC(npc_DialogID_Arr[8], npc_DialogID_Arr[8].NPC_Name);
+            NPC Ben = new NPC(npc_DialogID_Arr[9], npc_DialogID_Arr[9].NPC_Name);
+            NPC Lily = new NPC(npc_DialogID_Arr[10], npc_DialogID_Arr[10].NPC_Name);
+            NPC James = new NPC(npc_DialogID_Arr[11], npc_DialogID_Arr[11].NPC_Name);
 
 
             // The NPC's located around the world of Bob
-            Init_NPCMap.Add("Liam", Liam);
-            Init_NPCMap.Add("Clara",Clara);
-            Init_NPCMap.Add("Jack", Jack);
-            Init_NPCMap.Add("Emma", Emma);
-            Init_NPCMap.Add("Steen", Steen);
-            Init_NPCMap.Add("Thomas", Thomas);
-            Init_NPCMap.Add("Sarah", Sarah);
-            Init_NPCMap.Add("Ben", Ben);
-            Init_NPCMap.Add("Lily", Lily);
-            Init_NPCMap.Add("James", James);
-            Init_NPCMap.Add("Mia", Mia);
-            Init_NPCMap.Add("Alex", Alex);
+            Init_NPCMap.Add(Liam.NPC_Name, Liam);
+            Init_NPCMap.Add(Clara.NPC_Name,Clara);
+            Init_NPCMap.Add(Jack.NPC_Name, Jack);
+            Init_NPCMap.Add(Emma.NPC_Name, Emma);
+            Init_NPCMap.Add(Steen.NPC_Name, Steen);
+            Init_NPCMap.Add(Thomas.NPC_Name, Thomas);
+            Init_NPCMap.Add(Sarah.NPC_Name, Sarah);
+            Init_NPCMap.Add(Ben.NPC_Name, Ben);
+            Init_NPCMap.Add(Lily.NPC_Name, Lily);
+            Init_NPCMap.Add(James.NPC_Name, James);
+            Init_NPCMap.Add(Mia.NPC_Name, Mia);
+            Init_NPCMap.Add(Alex.NPC_Name, Alex);
             //-----------------------------------------------------
 
             //NPC_Options(Sophie, Liam, Clara, Jack, Emma, Steen, Thomas, Sarah, Ben, Lily, James, Mia, Alex)
@@ -83,24 +82,24 @@ namespace Where_did_Bob_Go_VA.World_NS
             Space bar = new Space("bar", "The music is playing in the background and people are drinking", Alex, Sandwich);
 
 
-            home.AddEdge("outside", outside);
-            outside.AddEdge("home", home);
-            outside.AddEdge("subway", subway);
-            outside.AddEdge("school", school);
-            outside.AddEdge("park", park);
-            outside.AddEdge("bar", bar);
-            outside.AddEdge("hospital", hospital);
-            bar.AddEdge("outside", outside);
-            park.AddEdge("playground", playground);
-            playground.AddEdge("park", park);
-            park.AddEdge("outside", outside);
-            school.AddEdge("community", community);
-            community.AddEdge("school", school);
-            school.AddEdge("outside", outside);
-            subway.AddEdge("outside", outside);
-            hospital.AddEdge("psychiatry", psychiatry);
-            psychiatry.AddEdge("hospital", hospital);
-            hospital.AddEdge("outside", outside);
+            home.AddEdge(outside.name, outside);
+            outside.AddEdge(home.name, home);
+            outside.AddEdge(subway.name, subway);
+            outside.AddEdge(school.name, school);
+            outside.AddEdge(park.name, park);
+            outside.AddEdge(bar.name, bar);
+            outside.AddEdge(hospital.name, hospital);
+            bar.AddEdge(outside.name, outside);
+            park.AddEdge(playground.name, playground);
+            playground.AddEdge(park.name, park);
+            park.AddEdge(outside.name, outside);
+            school.AddEdge(community.name, community);
+            community.AddEdge(school.name, school);
+            school.AddEdge(outside.name, outside);
+            subway.AddEdge(outside.name, outside);
+            hospital.AddEdge(psychiatry.name, psychiatry);
+            psychiatry.AddEdge(hospital.name, hospital);
+            hospital.AddEdge(outside.name, outside);
 
             this.entry = home;
             SpaceMap.Add(home.name, home);
