@@ -25,6 +25,8 @@ namespace Where_did_Bob_Go_VA.World_NS
         Space entry;
         public Dictionary<string, Space> SpaceMap = new Dictionary<string, Space>();
 
+        int NPCVisualbilitiCounter;
+
         public World(NPC_DialogID[] npc_DialogID_Arr)
         {
 
@@ -123,28 +125,31 @@ namespace Where_did_Bob_Go_VA.World_NS
 
         public int NPCLeft()
         {
-            int NPCVisualbilitiCounter = 0;
-            for (int k = 0; SpaceMap.Count > 0; k++)
+            NPCVisualbilitiCounter = 0;
+            
+            foreach (KeyValuePair<string, Space> currentSpace in SpaceMap)
             {
-                string v = Convert.ToString(k);
-                //Kig i Space, og find NPSList;
-                Space currentSpace = SpaceMap[v];
-                // FOR LOOP
-                foreach (KeyValuePair<string, NPC> npcEntry in currentSpace.NPC_Map)
+                foreach (KeyValuePair<string, NPC> currentNPC in (currentSpace).Value.NPC_Map)
                 {
-                    NPC nPC = npcEntry.Value;
+                    NPC npc = currentNPC.Value;
 
                     //NPC's synlighed øg tælleren
                     //Går igennem NPC_Map og tjekker om hver NPC er synlig 
                     //IF NPC synlig tilføj til NPCVisualbilitiCounter;
-                    if (NPCVisualbilitiCounter > 0)
+                    if (npc.NPCvisibility)
                     {
                         NPCVisualbilitiCounter++;
                     }
                 }
-
             }
+
             return NPCVisualbilitiCounter;
+        }
+        public void NPCTopRight()
+        {
+            NPCLeft();
+            string? NPCString = NPCVisualbilitiCounter.ToString();
+            Change_TextBox_TopRight("NPC left: " + NPCString);
         }
     }
 
