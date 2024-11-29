@@ -40,7 +40,7 @@ namespace Where_did_Bob_Go_VA
         private static void Game_Setup(NPC_DialogID[] npc_DialogID_Arr)
         {
             world = new World(npc_DialogID_Arr);
-            context = new Context(world.GetEntry());
+            context = new Context(ref world);
             fallback = new CommandUnknown();
             registry = new Registry(context, fallback);
             inventory = new Inventory();
@@ -74,9 +74,6 @@ namespace Where_did_Bob_Go_VA
 
             CommandList_Box_Update();
             context.GetCurrent().Welcome();
-
-            //Ny context 
-            context = new Context(world.GetEntry(), world); //Her har world og context klassen kontakt
 
             while (context.IsDone() == false)
             {

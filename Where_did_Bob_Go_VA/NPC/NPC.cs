@@ -53,6 +53,11 @@ namespace Where_did_Bob_Go_VA.NPC_NS
             // .   
             npc_Dialog_Struct = Get_NPC_DialogTree(npc_DialogID.File_Location, npc_DialogID.File_Name);
 
+            NPC_Name = string.Join("", npc_Dialog_Struct.Name);
+            NPC_Location = string.Join("", npc_Dialog_Struct.Location);
+            NPC_ID = string.Join("", npc_Dialog_Struct.ID);
+            NPC_RiskLevel = string.Join("", npc_Dialog_Struct.Risk);
+
             // . 
             DialogOptionsTree.Add("D00", npc_Dialog_Struct.D00);
             DialogOptionsTree.Add("D00.01", npc_Dialog_Struct.D00_01);

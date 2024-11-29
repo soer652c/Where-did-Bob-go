@@ -27,9 +27,9 @@ namespace Where_did_Bob_Go_VA.Game_NS
         World world; //Referere til Klassen-word
         string PreviousName;
 
-       public Context(Space node, World world)
+       public Context(ref World world)
         {
-            current = node;
+            current = world.GetEntry();
             this.world = world; //Her gemmes World referencen så den kan bruges i context
             //klassen
         }
@@ -89,7 +89,7 @@ namespace Where_did_Bob_Go_VA.Game_NS
         //NPCLeft()-metoden kalder MPCleft i Worldklasen
         public int NPCleft()
         {
-            return world.NPCLeft(); //World.klassen i NPCleft
+            return world.NPCTopRight(); //World.klassen i NPCleft
         }
     }
 

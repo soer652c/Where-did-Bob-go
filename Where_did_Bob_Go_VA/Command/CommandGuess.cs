@@ -36,8 +36,6 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
             current_location = context.GetCurrent();
 
-            // current_NPC = CommandTalk.current_NPC;
-
             if (args.Length == 0 || args.Length != 2)
             {
                 Console.WriteLine("Please specify the name AND their risk");
@@ -56,38 +54,76 @@ namespace Where_did_Bob_Go_VA.Command_NS
             }
             
 
-            if(false == (current_location.NPC_Map.TryGetValue(npcName, out current_NPC)))  // Gets NPC from NPCMap in current room by name then outputs fetced NPC
+            if( (false == (current_location.CheckFor_NPC(npcName))) )  // Gets NPC from NPCMap in current room by name then outputs fetced NPC
             {
                 Console.WriteLine($"No NPC named {npcName} is in this room. Maybe try a different location");
                 return;
             }
-
-
-            if (false == (args[1] == current_NPC.NPC_RiskLevel))
+            else
             {
-                Console.WriteLine($"Guess is not the right risklevel");
-                Game.player.LoseHealth();
-                return;
+                current_NPC = current_location.NPC_Map[npcName]; ;
             }
 
             switch (args[1])
             {
                 case "low":
                 case "Low":
-                    Update_TextBox_Main($"{npcName} is at Low risk of suicide. Keep looking for other warning signs.");
+                    if (("low" == current_NPC.NPC_RiskLevel) || ("Low" == current_NPC.NPC_RiskLevel))
+                    {
+                        Change_TextBox_Main($"{npcName} is at Low risk of suicide. Keep looking for other warning signs.");
+                        current_NPC.NPCvisibility = false;
+                    }
+                    else
+                    {
+                        Change_TextBox_Main($"Guess is not the right risklevel");
+                        Game.player.LoseHealth();
+                        Update_GUI();
+                    }
+                    Change_TextBox_Options("Press Enter...");
+                    Update_GUI();
                     break;
-                case "medium":
-                case "Medium":
-                    Update_TextBox_Main($"{npcName} is at Medium risk of suicide. Pay attention and proceed with care.");
+                case "moderate":
+                case "Moderate":
+                    if (("moderate" == current_NPC.NPC_RiskLevel) || ("Moderate" == current_NPC.NPC_RiskLevel))
+                    {
+                        Change_TextBox_Main($"{npcName} is at Moderate risk of suicide. Pay attention and proceed with care.");
+                        current_NPC.NPCvisibility = false;
+                    }
+                    else
+                    {
+                        Change_TextBox_Main($"Guess is not the right risklevel");
+                        Game.player.LoseHealth();
+                        Update_GUI();
+                    }
+                    Change_TextBox_Options("Press Enter...");
+                    Update_GUI();
                     break;
                 case "High":
                 case "high":
-                    Update_TextBox_Main($"{npcName} is at High risk of suicide. You should act immediately to help them.");
+                    if (("high" == current_NPC.NPC_RiskLevel) || ("High" == current_NPC.NPC_RiskLevel))
+                    {
+                        Change_TextBox_Main($"{npcName} is at High risk of suicide. You should act immediately to help them.");
+                        current_NPC.NPCvisibility = false;
+                    }
+                    else
+                    {
+                        Change_TextBox_Main($"Guess is not the right risklevel");
+                        Game.player.LoseHealth();
+                        Update_GUI();
+                    }
+                    Change_TextBox_Options("Press Enter...");
+                    Update_GUI();
+                    break;
+
+                default:
+                    Console.WriteLine("Whoops, something was misspelled");
+                    return;
                     break;
             }
-            current_NPC.NPCvisibility = false;
 
             Console.ReadLine();
+
+            context.NPCleft();
 
             (context.GetCurrent()).DisplayRoom();
             return;
