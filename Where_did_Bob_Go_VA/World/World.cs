@@ -65,9 +65,9 @@ namespace Where_did_Bob_Go_VA.World_NS
 
 
             // The Food items located around the world of Bob
-            Item Banana = new Food_Item("Banana", "a long yellow one");
-            Item Apple = new Food_Item("Apple", "a red one");
-            Item Sandwich = new Food_Item("Sandwich", "a tasty one");
+            Item Banana = new Food_Item("Banana", "A Tasty Banana, can be eaten to gain 1 health");
+            Item Apple = new Food_Item("Apple", "A Tasty Apple, Can be eaten to gain 1 health");
+            Item Sandwich = new Food_Item("Sandwich", "A Tasty Sandwich, Can be eaten to gain 1 health");
             Item Mirror = new MirrorOfReflection();
             // ----------------------------------------------
 
