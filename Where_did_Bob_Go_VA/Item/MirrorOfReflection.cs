@@ -26,8 +26,8 @@ namespace Where_did_Bob_Go_VA.Item_NS
         string Advice_1 = "Mental health conditions are a clear risk factor e.g depression";
         string Advice_2 = "people showing signs of depression or other\nmood altering conditions are at a increased risk of suicide";
         string Advice_3 = "Repeated usage of substances to ease the day";
-        string Advice_4 = "If you are in a environment where suicide is often\nreferenced or is a occurs can spread its influence";
-        string Advice_5 = "Varying issues in the family such as childhood abuse,\nneglect and trauma has a negative effect and can lead to suidice attempts";
+        string Advice_4 = "If you are in an environment where suicide is often\nreferenced or frequently occurs can spread its influence";
+        string Advice_5 = "Varying issues in the family such as childhood abuse,\nneglect and trauma has a negative effect and can lead to suicide attempts";
         string Advice_6 = "Social stigma is a significant risk factor in suicide attempts";
         string Advice_7 = "being excluded due to culture or religion deems someone\ndifferent and by extension excludes them from their peers";
         string Advice_8 = "Being discriminated against is clear risk factor,\nsuch as LGBTQ persons or other minoiritis";
