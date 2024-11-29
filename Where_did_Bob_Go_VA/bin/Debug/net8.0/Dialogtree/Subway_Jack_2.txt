@@ -1,0 +1,111 @@
+<Location>
+Subway
+</Location>
+
+<Name>
+Jack
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+"Hey, I’m Jack. Things aren’t terrible, but they’re not great either."
+</D00.Text>
+
+<D00.OP01>
+"What’s been bothering you?"
+</D00.OP01>
+
+<D00.OP02>
+"How are you coping with everything?"
+</D00.OP02>
+
+<D00.OP03>
+"Would you like to talk about what’s going on?"
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I’m just stressed out all the time, and I don’t know how to deal with it."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That sounds exhausting. Have you tried to take breaks?"
+</D00.01.OP01>
+
+<D00.01.OP02>
+"How do you usually manage your stress?"
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"I’m trying to take it easier, but it’s hard."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"I like taking long hot baths."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"I’ve been keeping busy, but it’s not helping much."
+</D00.02.Text>
+
+<D00.02.OP01>
+"Sometimes staying busy can help, but are you taking time for yourself?"
+</D00.02.OP01>
+
+<D00.02.OP02>
+"What would make you feel better right now?"
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"I don’t know, I just keep going so I don’t have to think."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"I don’t know, maybe just some peace and quiet."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"I’ve been feeling kind of stuck, and I don’t know how to move forward."
+</D00.03.Text>
+
+<D00.03.OP01>
+"Feeling stuck can be really frustrating. Is there anything specific that’s making you feel this way?"
+</D00.03.OP01>
+
+<D00.03.OP02>
+"It’s okay to feel like that sometimes. What’s one small thing you could do for yourself today?"
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"I think it’s just everything piling up."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"I guess I could go for a walk or something."
+</D00.03.02.Text>
+</D00.03.02>

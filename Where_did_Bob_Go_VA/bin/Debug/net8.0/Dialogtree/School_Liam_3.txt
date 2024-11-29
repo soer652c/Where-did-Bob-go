@@ -1,0 +1,111 @@
+<Location>
+School
+</Location>
+
+<Name>
+Liam
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+"Hey, I’m Liam. Things are going pretty smoothly these days."
+</D00.Text>
+
+<D00.OP01>
+"That’s awesome! What’s been going well?"
+</D00.OP01>
+
+<D00.OP02>
+"It’s good to hear you’re doing well. Anything exciting happening?"
+</D00.OP02>
+
+<D00.OP03>
+"Sounds very nice. What have you been doing?"
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I’m getting into a good routine, and I feel more energized."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That’s great to hear! What’s your routine like?"
+</D00.01.OP01>
+
+<D00.01.OP02>
+"Sounds like you’re finding balance."
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"Yeah, I started to run for work. It really keeps my motivation up."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"Yeah, it’s really helping me stay on track."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"I’m spending more time with family and friends lately."
+</D00.02.Text>
+
+<D00.02.OP01>
+"That sounds wonderful! What do you all do together?"
+</D00.02.OP01>
+
+<D00.02.OP02>
+"It’s so important to have a strong support system."
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"Run, dances, eat, laugh."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"Yeah, they’re always there for me."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"I’ve been shopping for Christmas."
+</D00.03.Text>
+
+<D00.03.OP01>
+"Awe, that sounds like a lot of fun."
+</D00.03.OP01>
+
+<D00.03.OP02>
+"Lovely, sounds like you are looking forward to Christmas."
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"I love Christmas."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"I really enjoy Christmas."
+</D00.03.02.Text>
+</D00.03.02>

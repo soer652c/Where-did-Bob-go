@@ -1,0 +1,111 @@
+<Location>
+Community
+</Location>
+
+<Name>
+Sarah
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+"Hey, I’m Sarah. Life’s been pretty great lately, honestly."
+</D00.Text>
+
+<D00.OP01>
+"That’s awesome! What’s been going well?"
+</D00.OP01>
+
+<D00.OP02>
+"What’s been making things so good?"
+</D00.OP02>
+
+<D00.OP03>
+“What have you been doing as of late?”
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I’ve been focusing on my hobbies and spending time with my friends."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That sounds like a great way to unwind. What hobbies do you enjoy?"
+</D00.01.OP01>
+
+<D00.01.OP02>
+"I’m so glad you’re finding balance in your life!"
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"I have been swimming a lot. It really helps me feel good."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"Yeah, it’s been amazing to just relax and enjoy myself."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"I’ve been taking more time for myself, and it’s been making a difference."
+</D00.02.Text>
+
+<D00.02.OP01>
+"Self-care is so important! How do you take care of yourself?"
+</D00.02.OP01>
+
+<D00.02.OP02>
+"I’m glad you’re feeling good! Keep it up!"
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"Working out and eating well is the kicker. It makes me feel 100x better."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"Thanks! It’s been a big help."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"I have just been keeping up with life. Nothing special."
+</D00.03.Text>
+
+<D00.03.OP01>
+"You gotta have something making you this happy?"
+</D00.03.OP01>
+
+<D00.03.OP02>
+"Happy to hear it’s going well. Thank you for a great conversation."
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"I had a great time with my family last weekend, and I went out with my friends the day after."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"Thank you for coming by, it was great."
+</D00.03.02.Text>
+</D00.03.02>

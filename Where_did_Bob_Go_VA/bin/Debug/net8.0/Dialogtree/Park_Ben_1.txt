@@ -1,0 +1,73 @@
+<Location>
+Park
+</Location>
+
+<Name>
+Ben
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Ben. I don’t know how to keep going some days. It feels like everything’s falling apart.
+</D00.Text>
+<D00.OP01>
+What’s been happening? You don’t have to face it alone.
+</D00.OP01>
+<D00.OP02>
+Have you told anyone how you’re feeling?
+</D00.OP02>
+<D00.OP03>
+You look like someone who’s troubled.
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’m losing interest in everything I used to care about. It’s all so exhausting.
+</D00.01.Text>
+<D00.01.OP01>
+It’s okay to feel exhausted. Maybe you could talk to someone about it?
+</D00.01.OP01>
+<D00.01.OP02>
+What’s making you feel so drained?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+No, I don’t want to burden anyone. I’m just dealing with it on my own.
+</D00.02.Text>
+<D00.02.OP01>
+You don’t have to carry this burden alone, Ben. People care about you.
+</D00.02.OP01>
+<D00.02.OP02>
+Have you thought about reaching out for some support?
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Yeah, life has been stressing me out the last couple of weeks.
+</D00.03.Text>
+<D00.03.OP01>
+Have you tried to take a break away from everything?
+</D00.03.OP01>
+<D00.03.OP02>
+You should destress.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+Sure, I will figure something out.
+</D00.03.01.Text>
+</D00.03.01>
+

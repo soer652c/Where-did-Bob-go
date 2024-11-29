@@ -1,0 +1,73 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+Lily
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Lily. Things have been rough lately, but I’m trying to push through.
+</D00.Text>
+<D00.OP01>
+What’s been difficult for you?
+</D00.OP01>
+<D00.OP02>
+How have you been handling everything?
+</D00.OP02>
+<D00.OP03>
+Got any hobbies you enjoy?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+It feels like I’m just going through the motions, not really living.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds exhausting. Have you thought about taking some time off?
+</D00.01.OP01>
+<D00.01.OP02>
+Have you been able to find things that make you feel alive?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I keep myself busy, but it doesn’t seem to help much.
+</D00.02.Text>
+<D00.02.OP01>
+Maybe taking a break could help you find some clarity.
+</D00.02.OP01>
+<D00.02.OP02>
+Have you tried talking to a friend about how you’re feeling?
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Not right now. I have been focusing mainly on work.
+</D00.03.Text>
+<D00.03.OP01>
+I think taking a little break could help you out a lot, or maybe reaching out to your friends.
+</D00.03.OP01>
+<D00.03.OP02>
+I’m sure you could find some time off to enjoy life a bit.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+That does sound lovely. I’ll give it a go.
+</D00.03.01.Text>
+</D00.03.01>
+

@@ -1,0 +1,67 @@
+<Location>
+Psychiatry
+</Location>
+
+<Name>
+Thomas
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Thomas. I’ve had a great day today.
+</D00.Text>
+<D00.OP01>
+That’s awesome! What’s been going well?
+</D00.OP01>
+<D00.OP02>
+What’s making you feel so positive?
+</D00.OP02>
+<D00.OP03>
+That is nice to hear. What made it so good?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I've picked up a new hobby, and I'm liking it a lot.
+</D00.01.Text>
+<D00.01.OP01>
+That’s fantastic! What hobby is it?
+</D00.01.OP01>
+<D00.01.OP02>
+It sounds like you’ve been having a lot of fun.
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+When everything is going your way, it makes you feel great.
+</D00.02.Text>
+<D00.02.OP01>
+Oh, that sounds nice. How has it been going your way?
+</D00.02.OP01>
+<D00.02.OP02>
+Just doing what you love, or even doing something new that you might find interesting.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+That is a good question. Just been trying something new, and it has been going well.
+</D00.03.Text>
+<D00.03.OP01>
+That is great. What is it?
+</D00.03.OP01>
+<D00.03.OP02>
+Nice to hear. Have you felt bad before today?
+</D00.03.OP02>
+</D00.03>
+

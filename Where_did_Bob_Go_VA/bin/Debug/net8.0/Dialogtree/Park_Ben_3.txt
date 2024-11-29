@@ -1,0 +1,73 @@
+<Location>
+Park
+</Location>
+
+<Name>
+Ben
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Ben. Things have been pretty great lately, actually!
+</D00.Text>
+<D00.OP01>
+That’s great! What’s been making things so good?
+</D00.OP01>
+<D00.OP02>
+How are you feeling these days?
+</D00.OP02>
+<D00.OP03>
+Sounds amazing, any particular reason you are this happy?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been hanging out with friends more and doing things I enjoy.
+</D00.01.Text>
+<D00.01.OP01>
+Sounds like a great balance! What kinds of things do you do together?
+</D00.01.OP01>
+<D00.01.OP02>
+I’m glad to hear you’re enjoying your time.
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been focused on my health, and it’s been really paying off.
+</D00.02.Text>
+<D00.02.OP01>
+That’s awesome! What kinds of changes have you made?
+</D00.02.OP01>
+<D00.02.OP02>
+I’m so glad you’re feeling good!
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I have a pretty cool campaign going with my friends. It's really fun.
+</D00.03.Text>
+<D00.03.OP01>
+Now that’s pretty cool. Having fun with friends sure is a great time.
+</D00.03.OP01>
+<D00.03.OP02>
+Sounds like a great hobby to get into.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+You could join us one day if you get the time.
+</D00.03.01.Text>
+</D00.03.01>
+

@@ -1,0 +1,79 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+James
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m James. Things have been going really well, actually!
+</D00.Text>
+<D00.OP01>
+That’s awesome! What’s been going so well?
+</D00.OP01>
+<D00.OP02>
+How have you been feeling lately?
+</D00.OP02>
+<D00.OP03>
+Any interesting events happening as of late?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been getting a lot of positive feedback at work, and I’m feeling good about it.
+</D00.01.Text>
+<D00.01.OP01>
+That’s great! It sounds like your hard work is paying off.
+</D00.01.OP01>
+<D00.01.OP02>
+It’s always nice to get positive feedback. How does that feel?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been spending a lot of time with friends, and it’s been really fun.
+</D00.02.Text>
+<D00.02.OP01>
+That’s awesome! What have you guys been doing?
+</D00.02.OP01>
+<D00.02.OP02>
+It’s great that you’re staying connected. Spending time with people is so important.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I was promoted at work. I got a lot more responsibility on my plate. It’s great.
+</D00.03.Text>
+<D00.03.OP01>
+Happy to hear that, working your way up the corporate ladder.
+</D00.03.OP01>
+<D00.03.OP02>
+Sounds great! Hope you have time enough for the rest of your responsibilities.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+I gotta get used to the new role, but it's working out fine for now.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Reaching the top soon enough.
+</D00.03.02.Text>
+</D00.03.02>
+

@@ -1,0 +1,107 @@
+
+<Location>
+Bar
+</Location>
+
+<Name>
+Alex
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Alex. Things have been going really well for me lately!
+</D00.Text>
+<D00.OP01>
+That’s great to hear! What’s been going well for you?
+</D00.OP01>
+<D00.OP02>
+How have you been feeling recently?
+</D00.OP02>
+<D00.OP03>
+What have you been up to as of late?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been excelling at work and making time for my hobbies.
+</D00.01.Text>
+<D00.01.OP01>
+That’s fantastic! What hobbies have you been focusing on?
+</D00.01.OP01>
+<D00.01.OP02>
+It’s great to hear you’re balancing work and fun. How do you do it?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been spending time with family and enjoying life.
+</D00.02.Text>
+<D00.02.OP01>
+That’s so nice! What have you been doing with your family?
+</D00.02.OP01>
+<D00.02.OP02>
+It’s wonderful that you’re feeling so positive. What’s been the highlight?
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Just living life the best I can.
+</D00.03.Text>
+<D00.03.OP01>
+That’s great to hear. Thank you for the talk, it has been a very uplifting experience.
+</D00.03.OP01>
+<D00.03.OP02>
+Thank you! Hope you have a great day.
+</D00.03.OP02>
+<D00.03.OP03>
+Now that’s the correct approach.
+</D00.03.OP03>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I’m working on learning how to 3D print. It’s really fun and fulfilling.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I have been taking time out of my day to do the things I like to do.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Different kinds of events. I partook in a wedding the other day; it was beautiful.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+My brother’s wedding was a great event.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Well, yes, you’re either busy living or busy dying.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Thanks! It’s been a pleasure chatting.
+</D00.03.02.Text>
+</D00.03.02>
+

@@ -1,0 +1,67 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+James
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m James. I’ve been feeling a bit off lately, but I’m trying to keep going.
+</D00.Text>
+<D00.OP01>
+What’s been going on, James?
+</D00.OP01>
+<D00.OP02>
+How have you been coping with everything?
+</D00.OP02>
+<D00.OP03>
+Sounds like the right approach. I’m happy to help if you need.
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been feeling overwhelmed by work and responsibilities.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds stressful. Have you thought about delegating some tasks?
+</D00.01.OP01>
+<D00.01.OP02>
+What do you usually do when things get overwhelming?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I just keep pushing through, even though it’s getting harder.
+</D00.02.Text>
+<D00.02.OP01>
+Sometimes it’s okay to take a break. Have you had some time to rest?
+</D00.02.OP01>
+<D00.02.OP02>
+Maybe you should consider talking to someone about how you’re feeling.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+We could go for a walk and talk then?
+</D00.03.Text>
+<D00.03.OP01>
+Let us do so!
+</D00.03.OP01>
+<D00.03.OP02>
+You can call me anytime; I’ll happily help.
+</D00.03.OP02>
+</D00.03>
+

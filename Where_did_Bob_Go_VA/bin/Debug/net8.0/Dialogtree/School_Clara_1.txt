@@ -1,0 +1,111 @@
+<Location>
+School
+</Location>
+
+<Name>
+Clara
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+"Hi, I’m Clara. Sometimes, I feel like the weight of the world is too much for me."
+</D00.Text>
+
+<D00.OP01>
+"What makes you feel that way?"
+</D00.OP01>
+
+<D00.OP02>
+"Have you tried to talk to someone about it?"
+</D00.OP02>
+
+<D00.OP03>
+“How are you coping?”
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I just don’t know how to handle everything anymore."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That sounds really tough. I’m here to listen if you want to talk."
+</D00.01.OP01>
+
+<D00.01.OP02>
+"Have you thought about getting some support?"
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"No thanks. I just wanna get drunk."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"I don’t know if anyone can help."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"No, I just keep it to myself."
+</D00.02.Text>
+
+<D00.02.OP01>
+"Sometimes it helps to talk to someone you trust."
+</D00.02.OP01>
+
+<D00.02.OP02>
+"What would it take for you to feel okay about opening up?"
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"No, I really don’t feel like it. I really just wanna die."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"I’ll think about it."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"I can’t cope with this these days."
+</D00.03.Text>
+
+<D00.03.OP01>
+"Sometimes it is okay to just let things be as they are."
+</D00.03.OP01>
+
+<D00.03.OP02>
+"There must be something that makes your day good."
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"But I have been doing that for so long I feel like I am drowning."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"I don’t feel like coping anymore. I just want to let go and not be here anymore."
+</D00.03.02.Text>
+</D00.03.02>

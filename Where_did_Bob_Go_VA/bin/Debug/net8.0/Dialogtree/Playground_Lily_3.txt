@@ -1,0 +1,79 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+Lily
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Lily. Things are going well. I’m happy with how things are right now.
+</D00.Text>
+<D00.OP01>
+That’s great! What’s been going well for you?
+</D00.OP01>
+<D00.OP02>
+How are you feeling these days?
+</D00.OP02>
+<D00.OP03>
+Anything interesting going on as of late?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been focusing on my hobbies, and it’s been great!
+</D00.01.Text>
+<D00.01.OP01>
+That’s awesome! What hobbies have you been into lately?
+</D00.01.OP01>
+<D00.01.OP02>
+It’s so good to hear that you’re finding things to enjoy.
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been feeling good. Been getting enough rest and staying healthy.
+</D00.02.Text>
+<D00.02.OP01>
+That’s really good to hear. What’s been helping you stay healthy?
+</D00.02.OP01>
+<D00.02.OP02>
+It sounds like you’re really taking care of yourself.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Got a silver medal in the competition I joined.
+</D00.03.Text>
+<D00.03.OP01>
+Wow, that’s impressive! Got a goal for next time?
+</D00.03.OP01>
+<D00.03.OP02>
+Very nice! Must be a big accomplishment.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+Next time, I’ll get the gold!
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+For sure. Makes the effort I put in worth it.
+</D00.03.02.Text>
+</D00.03.02>
+
