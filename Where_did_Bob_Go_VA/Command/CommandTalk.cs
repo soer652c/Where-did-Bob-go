@@ -45,7 +45,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             string npcName = parameters[0];
 
             // .  Making a if statement to check if the NPCMap is not empty and if the NPC is visible
-            if ( (current_location.NPC_Map.Count != 0) && (current_location.NPC_Map[npcName].NPCvisibility) )
+            if ( (current_location.NPC_Map.Count != 0) && current_location.CheckFor_NPC(parameters[0]) && current_location.NPC_Map[npcName].NPCvisibility)
             {
                 // .  Set the current npc to the npc in the NPCMap
                 current_NPC = current_location.NPC_Map[npcName];

@@ -292,6 +292,13 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             return Item_Map.ContainsKey(item);
         }
+
+
+        //Metoden, skal kunne finde en item, Ved at lede item.map igennem. 
+        public bool CheckFor_NPC(string npc_name)
+        {
+            return NPC_Map.ContainsKey(npc_name);
+        }
     }
 
 }
