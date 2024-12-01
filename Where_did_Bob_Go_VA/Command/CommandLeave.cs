@@ -23,7 +23,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandLeave(ref Registry registry)
         {
             this.registry = registry;
-            this.description = "Display a help message";
+            this.description = "Lets you leave a conversation with a person.";
 
             command_use_text = new string[1];
             command_use_text[0] = "leave";

@@ -22,7 +22,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
     {
         public void Execute(Context context, string command, string[] parameters)
         {
-            Console.WriteLine("Woopsie, I don't understand '" + command + "' Try lower case instead");
+            Console.WriteLine("Woopsie, I don't understand '" + command + "'. Try lower case instead");
 
             command_use_text = new string[0];
         }

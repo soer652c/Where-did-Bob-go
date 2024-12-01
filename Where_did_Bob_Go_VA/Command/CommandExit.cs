@@ -24,8 +24,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandExit()
         {
 
+            description = "Quits the game.";
+
             command_use_text = new string[1];
-            command_use_text[0] = "Close";
+            command_use_text[0] = "quite";
         }
 
         public void Execute(Context context, string command, string[] parameters)

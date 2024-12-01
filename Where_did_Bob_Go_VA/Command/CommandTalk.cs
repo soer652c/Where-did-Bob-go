@@ -30,7 +30,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         public CommandTalk()
         {
             //this.registry = registry;
-            this.description = "This command allows you to interact with a NPC in the current room";
+            this.description = "This command allows you to start a conversation with a person at your current location.";
 
             command_use_text = new string[1];
             command_use_text[0] = "talk [name]";

@@ -28,7 +28,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         //Konstruktor der tager ser i regersty 
         public CommandUse()
         {
-            this.description = "This is an item";
+            this.description = "Allows you to use an item in your inventory.";
 
             command_use_text = new string[1];
             command_use_text[0] = "use [item]";

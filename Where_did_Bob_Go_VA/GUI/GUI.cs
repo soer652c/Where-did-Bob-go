@@ -45,7 +45,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         //////////////////////////////////////////////////////////////    
         ///////////////        TextBox_TopRight        ///////////////    
-        private static TextBox TextBox_TopRight = new TextBox(20, TextBox_TopBoxes_Height, "||", "##", 1, TextBox_TopBoxes_Spacing_TopBottom);
+        private static TextBox TextBox_TopRight = new TextBox(24, TextBox_TopBoxes_Height, "||", "##", 1, TextBox_TopBoxes_Spacing_TopBottom);
 
 
 
@@ -63,7 +63,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         //////////////////////////////////////////////////////////////    
         ///////////////        TextBox_Commands        ///////////////    
-        private static TextBox TextBox_Commands = new TextBox(20, TextBox_MiddleBoxes_Height, "||", "##", 1, TextBox_MiddleBoxes_Spacing_TopBottom, "Commands");
+        private static TextBox TextBox_Commands = new TextBox(24, TextBox_MiddleBoxes_Height, "||", "##", 1, TextBox_MiddleBoxes_Spacing_TopBottom, "Commands");
 
 
 
@@ -81,7 +81,7 @@ namespace Where_did_Bob_Go_VA.GUI_NS
 
         ///////////////////////////////////////////////////////////////    
         ///////////////        TextBox_Inventory        ///////////////
-        private static TextBox TextBox_Inventory = new TextBox(20, TextBox_BottomBoxes_Height, "||", "##", 1, TextBox_BottomBoxes_Spacing_TopBottom, "Inventory");
+        private static TextBox TextBox_Inventory = new TextBox(24, TextBox_BottomBoxes_Height, "||", "##", 1, TextBox_BottomBoxes_Spacing_TopBottom, "Inventory");
 
 
 

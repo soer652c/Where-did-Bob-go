@@ -27,11 +27,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
         public CommandShow()
         {
-            this.description = "Displays inventory";
+            this.description = "Allows you to take a closer look at your inventory.";
 
-            command_use_text = new string[2];
+            command_use_text = new string[1];
             command_use_text[0] = "show inventory";
-            command_use_text[1] = "show location";
         }
 
         // Metode til at udføre "Use"-kommandoen

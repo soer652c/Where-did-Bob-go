@@ -25,10 +25,12 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
         public CommandGuess()
         {
-            description = "Follow an exit";
+            description = "Makes a guess their risico level.";
 
-            command_use_text = new string[1];
-            command_use_text[0] = "guess [name] [risk]";
+            command_use_text = new string[3];
+            command_use_text[0] = "guess [name] None";
+            command_use_text[1] = "guess [name] Moderate";
+            command_use_text[2] = "guess [name] High";
         }
 
         public void Execute(Context context, string commandName, string[] args)
@@ -65,9 +67,9 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             switch (args[1])
             {
-                case "low":
-                case "Low":
-                    if (("low" == current_NPC.NPC_RiskLevel) || ("low" == current_NPC.NPC_RiskLevel))
+                case "none":
+                case "None":
+                    if (("None" == current_NPC.NPC_RiskLevel) || ("none" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at Low risk of suicide. Keep looking for other warning signs.");
                         current_NPC.NPCvisibility = false;
@@ -83,7 +85,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     break;
                 case "moderate":
                 case "Moderate":
-                    if (("moderate" == current_NPC.NPC_RiskLevel) || ("moderate" == current_NPC.NPC_RiskLevel))
+                    if (("Moderate" == current_NPC.NPC_RiskLevel) || ("moderate" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at Moderate risk of suicide. Pay attention and proceed with care.");
                         current_NPC.NPCvisibility = false;
@@ -96,10 +98,10 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     }
                     Change_TextBox_Options("Press Enter...");
                     Update_GUI();
-                    break;
+                    break; 
                 case "High":
                 case "high":
-                    if (("high" == current_NPC.NPC_RiskLevel) || ("high" == current_NPC.NPC_RiskLevel))
+                    if (("High" == current_NPC.NPC_RiskLevel) || ("high" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at High risk of suicide. You should act immediately to help them.");
                         current_NPC.NPCvisibility = false;

@@ -51,8 +51,7 @@ namespace Where_did_Bob_Go_VA
 
         private static void InitRegistry()
         {
-            ICommand cmdExit = new CommandExit();
-            registry.Register("exit", cmdExit);
+            registry.Register("quite", new CommandExit());
             registry.Register("go", new CommandGo());
             registry.Register("help", new CommandHelp(ref registry));
             registry.Register("talk", new CommandTalk());

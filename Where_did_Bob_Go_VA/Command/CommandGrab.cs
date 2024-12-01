@@ -17,7 +17,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 	{
         public CommandGrab()
         {
-            this.description = "Use grab to pick up items/food items in certain rooms";
+            this.description = "Use grab to pick up items at your current location.";
 
             command_use_text = new string[1];
             command_use_text[0] = "grab [item]";
