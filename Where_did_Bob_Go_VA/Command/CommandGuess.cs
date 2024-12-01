@@ -12,7 +12,6 @@ using Where_did_Bob_Go_VA.World_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
 
-
 namespace Where_did_Bob_Go_VA.Command_NS
 {
 
@@ -68,7 +67,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             {
                 case "low":
                 case "Low":
-                    if (("low" == current_NPC.NPC_RiskLevel) || ("none" == current_NPC.NPC_RiskLevel))
+                    if (("low" == current_NPC.NPC_RiskLevel) || ("low" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at Low risk of suicide. Keep looking for other warning signs.");
                         current_NPC.NPCvisibility = false;
