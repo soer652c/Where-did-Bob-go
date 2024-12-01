@@ -68,7 +68,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
             {
                 case "low":
                 case "Low":
-                    if (("low" == current_NPC.NPC_RiskLevel) || ("Low" == current_NPC.NPC_RiskLevel))
+                    if (("low" == current_NPC.NPC_RiskLevel) || ("none" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at Low risk of suicide. Keep looking for other warning signs.");
                         current_NPC.NPCvisibility = false;
@@ -84,7 +84,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     break;
                 case "moderate":
                 case "Moderate":
-                    if (("moderate" == current_NPC.NPC_RiskLevel) || ("Moderate" == current_NPC.NPC_RiskLevel))
+                    if (("moderate" == current_NPC.NPC_RiskLevel) || ("moderate" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at Moderate risk of suicide. Pay attention and proceed with care.");
                         current_NPC.NPCvisibility = false;
@@ -100,7 +100,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
                     break;
                 case "High":
                 case "high":
-                    if (("high" == current_NPC.NPC_RiskLevel) || ("High" == current_NPC.NPC_RiskLevel))
+                    if (("high" == current_NPC.NPC_RiskLevel) || ("high" == current_NPC.NPC_RiskLevel))
                     {
                         Change_TextBox_Main($"{npcName} is at High risk of suicide. You should act immediately to help them.");
                         current_NPC.NPCvisibility = false;

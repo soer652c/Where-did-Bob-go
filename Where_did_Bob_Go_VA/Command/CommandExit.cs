@@ -25,7 +25,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
         {
 
             command_use_text = new string[1];
-            command_use_text[0] = "exit";
+            command_use_text[0] = "Close";
         }
 
         public void Execute(Context context, string command, string[] parameters)
