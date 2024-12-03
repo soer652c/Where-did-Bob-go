@@ -69,15 +69,40 @@ I’ll gladly help you to a good day.
 </D00.03.OP03>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I have not reached out to anyone
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't think anyone can help
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I know there are people out there who care,
+but its hard to look past the shadows
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Maybebut i don't think it would change anything
+Thank you for reaching out though.
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-They are far in between for sure. Nothing is going my way as of late.
+Hopefully, this is just a pain to go through
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-No thank you, I have work things to get done today.
+No thank you, i have work related things i need to get done
 </D00.03.02.Text>
 </D00.03.02>
-
