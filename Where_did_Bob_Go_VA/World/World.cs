@@ -81,7 +81,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             Space community = new Space("community", "you feel at ease here", Sarah);
             Space park = new Space("park", "The park is covered in lush green grass and majestic trees. \nYou spot people relaxing at the fountain and in the shade. \nYou can hear  the sound of children having fun. \nYou can see the playground at the other end of the park.", Ben);
             Space playground = new Space("playground", "Children are playing\naround and some parents are camped on the benches nearby", Lily, James);
-            Space bar = new Space("bar", "The music is playing in the background and people are drinking \n you make the way to floor \n yuo zone in an dance the nigth away", Alex, Sandwich);
+            Space bar = new Space("bar", "The music is playing in the background and people are drinking \n you make the way to floor \n you zone in an dance the nigth away", Alex, Sandwich);
 
 
             home.AddEdge(outside.name, outside);
