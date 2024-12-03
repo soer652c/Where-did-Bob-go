@@ -80,15 +80,16 @@ namespace Where_did_Bob_Go_VA
                 string? line = Console.ReadLine();
                 if (line != null)
                     registry.Dispatch(line);
-            }
-            Update_TextBox_Main("Game Over 😥");
-            if (context.NPCleft() == 0)
-            {
-                Update_TextBox_Main("Tillykke! Du har gennemført spillet");
-            }
-            if (context.NPCleft() != 0)
-            {
-                Update_TextBox_Main("Game Over 😥");
+                if (player.Health <= 0)
+                {
+                    GameOver();
+                    break;
+                }
+                if (context.NPCleft() == 0)
+                {
+                    Win();
+                    break;
+                }
             }
         }
         public void Introduction() //laver en metode ved navn Introduction
@@ -121,6 +122,28 @@ namespace Where_did_Bob_Go_VA
         public void GameOver()
         {
             Update_TextBox_Main("You have lost all your health boohoo");
+            Update_TextBox_Options("Press 'Q' to quit");
+            char choice = Console.ReadKey().KeyChar;
+            if (choice == 'Q' || choice == 'q')
+            {
+                Exit();
+            }    
+        }
+
+        public void Win()
+        {
+            Update_TextBox_Main("You have won the game");
+            Update_TextBox_Options("Press 'Q' to quit");
+            char choice = Console.ReadKey().KeyChar;
+            if (choice == 'Q' || choice == 'q')
+            {
+                Exit();
+            }
+        }
+        
+        public void Exit()
+        {
+            Environment.Exit(0);
         }
 
 
