@@ -65,9 +65,39 @@ Sounds like a great hobby to get into.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I love going to the school in the afternoon
+with my friends and play boardgames
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+Just eating better and cutting off some junk i used to eat
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Yearh, it's been a really good time lately
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Thanks! Its been a great change
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-You could join us one day if you get the time.
+You should join us one day if you get the time
 </D00.03.01.Text>
 </D00.03.01>
 
+<D00.03.02>
+<D00.03.02.Text>
+It sure is
+</D00.03.02.Text>
+</D00.03.02>
