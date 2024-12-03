@@ -66,9 +66,38 @@ I’m sure you could find some time off to enjoy life a bit.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I have a lot of work to do, i'm not sure its feasible
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't know. i guess i need to focus on the things i enjoy more
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I'll that into consideration
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I'll try reaching out to someone
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-That does sound lovely. I’ll give it a go.
+Maybe i should find a hobby, That sounds like fun
 </D00.03.01.Text>
 </D00.03.01>
 
+<D00.03.02>
+<D00.03.02.Text>
+That does sound lovely, i'll give it a go
+</D00.03.02.Text>
+</D00.03.02>
