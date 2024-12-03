@@ -98,7 +98,7 @@ namespace Where_did_Bob_Go_VA
             Change_TextBox_Options("Press Enter...");
             Update_GUI();
             Console.ReadLine(); // når man trykker enter, så går den videre til næste del af teksten
-            Update_TextBox_Main("The Story of the game \n You’ve just arrived to the town shrouded in secrets.\n You’ll meet 12 unique peoples \n each with their own stories and challenges.\n Some may hold clues to what the person is struggling with. \n It’s up to you to connect with them \n ask the right questions \n and decide how best to help");
+            Update_TextBox_Main("The Story of the game \n You’ve just arrived to the town shrouded in secrets.\n You’ll meet 12 unique people \n each with their own stories and challenges.\n Some may hold clues to what the person is struggling with. \n It’s up to you to connect with them \n ask the right questions \n and decide how best to help");
             Console.ReadLine();
             Update_TextBox_Main("But be warned: not everyone needs saving, and not everyone can be saved");
             Console.ReadLine();
