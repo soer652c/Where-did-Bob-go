@@ -1,0 +1,105 @@
+<Location>
+Psychiatry
+</Location>
+
+<Name>
+Thomas
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Thomas. I usually feel great, but today I don't feel so good.
+</D00.Text>
+<D00.OP01>
+What’s making you feel bad?
+</D00.OP01>
+<D00.OP02>
+Have you tried doing something you like, to cheer you up?
+</D00.OP02>
+<D00.OP03>
+Oh, that doesn’t sound so good. Do you want someone to talk with?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+Usually everything goes according to my plan, 
+but today it has gone off the rails.
+</D00.01.Text>
+<D00.01.OP01>
+Oh, that sounds awful. Have you tried seeking help?
+</D00.01.OP01>
+<D00.01.OP02>
+Maybe you just need to take a break of schedule.
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+Maybe i'll talk to a friend about it
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I think you are right, i'll try to get some rest
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+I haven’t no.
+</D00.02.Text>
+<D00.02.OP01>
+Maybe you should do that?
+</D00.02.OP01>
+<D00.02.OP02>
+I suggest doing something fun, like gaming or playing a sport.
+</D00.02.OP02>
+<D00.02.01>
+<D00.02.01.Text>
+I don't know, i might do that
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I will go home and play some games to cheer me up
+</D00.02.02.Text>
+</D00.02.02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Well, who should I talk to?
+</D00.03.Text>
+<D00.03.OP01>
+You could talk to a friend.
+</D00.03.OP01>
+<D00.03.OP02>
+You could talk with me.
+</D00.03.OP02>
+<D00.03.OP03>
+Imma ask someone else.
+</D00.03.OP03>
+<D00.03.01>
+<D00.03.01.Text>
+Yearh... Maybe you are right about that. i will try that
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Imma ask someone else
+</D00.03.02.Text>
+</D00.03.02>
+</D00.03>
+

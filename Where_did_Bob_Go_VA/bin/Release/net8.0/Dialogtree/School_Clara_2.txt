@@ -1,0 +1,111 @@
+<Location>
+School
+</Location>
+
+<Name>
+Clara
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+"Hi, I’m Clara. Things haven’t been easy lately, but I’m managing."
+</D00.Text>
+
+<D00.OP01>
+"What’s been weighing on you?"
+</D00.OP01>
+
+<D00.OP02>
+"How have you been coping with everything?"
+</D00.OP02>
+
+<D00.OP03>
+“I’m glad to hear. Can I help manage even more?”
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I’ve been dealing with some personal issues."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That sounds challenging. Do you want to share more?"
+</D00.01.OP01>
+
+<D00.01.OP02>
+"Is there anyone you talk to about it?"
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"Maybe. Do you want to go for a walk and I can talk to you?"
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"I don’t know if anyone would understand, but I’ll try."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"I’ve been keeping busy with work and activities."
+</D00.02.Text>
+
+<D00.02.OP01>
+"It’s good to stay busy, but are you making time for yourself?"
+</D00.02.OP01>
+
+<D00.02.OP02>
+"How are you really feeling, though?"
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"I guess I haven’t thought about it. Maybe I should take a break."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"Been better. But definitely been worse."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"Having a hard time, but keeping up."
+</D00.03.Text>
+
+<D00.03.OP01>
+"Sounds tough, you wanna talk about it?"
+</D00.03.OP01>
+
+<D00.03.OP02>
+"Are you okay, do you want to do something this weekend?"
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"Yes, if you want to."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"Yes, it would be nice to get my mind off things."
+</D00.03.02.Text>
+</D00.03.02>

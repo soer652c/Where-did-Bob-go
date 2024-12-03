@@ -1,0 +1,108 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+James
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m James. Some days, I wonder if I can keep going. 
+Everything feels so pointless.
+</D00.Text>
+<D00.OP01>
+What’s been going on, James?
+</D00.OP01>
+<D00.OP02>
+Do you want to talk about how you’re feeling?
+</D00.OP02>
+<D00.OP03>
+Do you have good days too then?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+It just feels like nothing ever changes. I try, but nothing gets better.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds really hard. Have you talked to anyone about this?
+</D00.01.OP01>
+<D00.01.OP02>
+What’s been the hardest part for you lately?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I don’t think anyone can help. I’m just stuck.
+</D00.02.Text>
+<D00.02.OP01>
+You don’t have to keep it all inside, James. People care about you.
+</D00.02.OP01>
+<D00.02.OP02>
+I’m here to listen if you want to share.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+No, I don’t want to talk about it. It wouldn’t make a difference.
+</D00.03.Text>
+<D00.03.OP01>
+I’m betting it’s going to get better soon enough, just hang in there friend.
+</D00.03.OP01>
+<D00.03.OP02>
+Hopefully. This is just a pain to go through.
+</D00.03.OP02>
+<D00.03.OP03>
+I’ll gladly help you to a good day.
+</D00.03.OP03>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I have not reached out to anyone
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't think anyone can help
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I know there are people out there who care,
+but its hard to look past the shadows
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Maybebut i don't think it would change anything
+Thank you for reaching out though.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Hopefully, this is just a pain to go through
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+No thank you, i have work related things i need to get done
+</D00.03.02.Text>
+</D00.03.02>

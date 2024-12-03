@@ -1,0 +1,109 @@
+<Location>
+Bar
+</Location>
+
+<Name>
+Alex
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Alex. I’ve been feeling like everything’s pointless lately.
+</D00.Text>
+<D00.OP01>
+What’s been making you feel this way, Alex?
+</D00.OP01>
+<D00.OP02>
+Do you want to talk about it? I’m here for you.
+</D00.OP02>
+<D00.OP03>
+Have you been doing anything to make you feel better?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I just feel like no matter what I do, nothing ever works out.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds really hard. Have you thought about talking to someone about it?
+</D00.01.OP01>
+<D00.01.OP02>
+I don’t think anyone would be able to help me out of this mess I'm in.
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+Just the stress of it all, people annoy me 
+and rarely have the energy to talk to anyone.
+</D00.02.Text>
+<D00.02.OP01>
+What’s been the hardest thing to deal with recently?
+</D00.02.OP01>
+<D00.02.OP02>
+I don’t think talking about it will help. It’s just how I’ve been feeling.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I’m just trying to live, I don’t have either time or money to have fun.
+</D00.03.Text>
+<D00.03.OP01>
+Sometimes it helps just to slow down and talk to your friends or family.
+</D00.03.OP01>
+<D00.03.OP02>
+I honestly don’t think they want to help me with such silly stuff.
+</D00.03.OP02>
+<D00.03.OP03>
+Maybe it’s time to step back and think about yourself a bit.
+</D00.03.OP03>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+You don’t have to face this alone, Alex. There’s always support.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+Maybe it’s time to step back and think about yourself a bit.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Sometimes, sharing your feelings can make things feel lighter.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I don’t feel like talking about the bad stuff. 
+Thank you for reaching out though.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+I have thought about it, but stuff like that takes time and money 
+I don’t have.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+I don’t have time for that. I gotta get going soon.
+</D00.03.02.Text>
+</D00.03.02>
+

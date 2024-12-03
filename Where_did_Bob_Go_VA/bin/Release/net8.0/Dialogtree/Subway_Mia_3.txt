@@ -1,0 +1,103 @@
+<Location>
+Subway
+</Location>
+
+<Name>
+Mia
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+None
+</Risk>
+
+<D00>
+<D00.Text>
+Hi, I’m Mia. Things are going pretty well for me right now!
+</D00.Text>
+<D00.OP01>
+That’s awesome to hear! What’s been going well?
+</D00.OP01>
+<D00.OP02>
+How have you been feeling these days?
+</D00.OP02>
+<D00.OP03>
+What have you been doing as of late?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been doing really well in school and spending time with friends.
+</D00.01.Text>
+<D00.01.OP01>
+That’s great! What’s been your favorite thing to do with your friends?
+</D00.01.OP01>
+<D00.01.OP02>
+It sounds like you’re in a really good place. What’s your secret?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been feeling good, taking care of myself, and staying active.
+</D00.02.Text>
+<D00.02.OP01>
+That’s so important. What do you do to stay active?
+</D00.02.OP01>
+<D00.02.OP02>
+It’s great that you’re taking care of yourself. What’s been your routine?
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I’m just being social and working out a lot, eating healthy—the whole package.
+</D00.03.Text>
+<D00.03.OP01>
+It’s impressive you’re able to do all that.
+</D00.03.OP01>
+<D00.03.OP02>
+That’s great, I’m happy to hear you’re doing well.
+</D00.03.OP02>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+Just enjoying the weather with my girlfriends. It’s been great.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+Just been having some great days with friends and family.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I’m doing Pilates with my friends, and I run from time to time.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I just have some great friends to help me along.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Thanks for the encouragement. It feels good to reflect on this.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Thanks! It’s always nice to chat.
+</D00.03.02.Text>
+</D00.03.02>
+

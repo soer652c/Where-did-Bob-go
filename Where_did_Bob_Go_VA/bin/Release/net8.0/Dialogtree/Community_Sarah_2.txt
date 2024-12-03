@@ -1,0 +1,113 @@
+<Location>
+Community
+</Location>
+
+<Name>
+Sarah
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Sarah. Things aren’t terrible, 
+but I feel like I’m constantly juggling too much.
+</D00.Text>
+
+<D00.OP01>
+What’s been overwhelming you?
+</D00.OP01>
+
+<D00.OP02>
+How do you manage everything you’re dealing with?
+</D00.OP02>
+
+<D00.OP03>
+Do you have too many things on the plate currently?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’m stressed about work, my relationships, 
+and just keeping up with everything.
+</D00.01.Text>
+
+<D00.01.OP01>
+That’s a lot to handle at once. Have you thought about taking a break?
+</D00.01.OP01>
+
+<D00.01.OP02>
+How do you usually cope with stress?
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+I try to keep moving, but it doesn’t seem to help.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I try to back away and take a breather, but it rarely helps much.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+I try to push through, but it’s starting to feel like too much.
+</D00.02.Text>
+
+<D00.02.OP01>
+Maybe it’s time to ask for help. You don’t have to do everything alone.
+</D00.02.OP01>
+
+<D00.02.OP02>
+Have you had time to rest, or are you constantly working?
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I know I don’t. It’s just hard letting go of it all and taking a breather.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I guess I need to rest more. It’s just hard to stop.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+It's just work and chores that pile up. I hardly have time for myself.
+</D00.03.Text>
+
+<D00.03.OP01>
+Maybe letting go of some of your responsibilities would help a bit.
+</D00.03.OP01>
+
+<D00.03.OP02>
+Maybe try to prioritize your hobbies a bit. It could help out.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+I think you are right. I should spread out some of the work.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+That's a good idea. I do enjoy swimming.
+</D00.03.02.Text>
+</D00.03.02>

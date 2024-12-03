@@ -1,0 +1,113 @@
+<Location>
+Bar
+</Location>
+
+<Name>
+Alex
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Alex. I’ve been feeling a bit off lately, 
+but I’m trying to stay positive.
+</D00.Text>
+<D00.OP01>
+What’s been going on with you, Alex?
+</D00.OP01>
+<D00.OP02>
+How have you been handling things?
+</D00.OP02>
+<D00.OP03>
+What have you been doing to stay positive?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been feeling stressed about everything I have to do, 
+and it’s overwhelming.
+</D00.01.Text>
+<D00.01.OP01>
+It’s okay to feel that way. 
+Have you tried breaking things into smaller tasks?
+</D00.01.OP01>
+<D00.01.OP02>
+What usually helps you manage your stress?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been keeping busy, but it’s hard to find time for myself.
+</D00.02.Text>
+<D00.02.OP01>
+Self-care is so important. Have you done anything for yourself lately?
+</D00.02.OP01>
+<D00.02.OP02>
+Maybe taking a small break could help you recharge.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Just trying to focus on the things I like, 
+but they don’t feel that rewarding anymore.
+</D00.03.Text>
+<D00.03.OP01>
+Maybe it’s time for you to reach out for some help. 
+I’m sure you could feel much better afterwards.
+</D00.03.OP01>
+<D00.03.OP02>
+Sounds like you’re having a bit of a tough time. 
+Remember to focus on yourself too.
+</D00.03.OP02>
+<D00.03.OP03>
+Good point my friend. Thank you for the suggestion.
+</D00.03.OP03>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I have been trying to take time off to do the things I like. 
+It's working a bit.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I try to do the things I like to do, but I feel like I don’t have the time.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I haven’t taken too much time for myself, but I’ll try to focus a bit more.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+That’s some great advice. I’ll take it to heart.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Sometimes, taking a break can help you find clarity.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Thanks for listening. I’ll give myself more time.
+</D00.03.02.Text>
+</D00.03.02>
+

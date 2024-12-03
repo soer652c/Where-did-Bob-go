@@ -1,0 +1,103 @@
+<Location>
+Moderate Risk
+</Location>
+
+<Name>
+Mia
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Mia. Things haven’t been great lately, but I’m managing.
+</D00.Text>
+<D00.OP01>
+What’s been going on, Mia?
+</D00.OP01>
+<D00.OP02>
+How have you been holding up?
+</D00.OP02>
+<D00.OP03>
+What have you been as of late?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been having trouble focusing on schoolwork, and it’s stressing me out.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds tough. Have you tried taking breaks or asking for help?
+</D00.01.OP01>
+<D00.01.OP02>
+It’s important to take care of yourself. What helps you relax?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been feeling really tired, but I’m pushing through.
+</D00.02.Text>
+<D00.02.OP01>
+It’s okay to rest when you need to. Have you been sleeping enough?
+</D00.02.OP01>
+<D00.02.OP02>
+Sometimes, taking a step back can help. Have you tried that?
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+Focusing on schoolwork mainly, it's tough to keep up from time to time.
+</D00.03.Text>
+<D00.03.OP01>
+You’ve got to remember to set aside time for yourself sometimes.
+</D00.03.OP01>
+<D00.03.OP02>
+Sounds like you are working hard. I bet it’s going to pay off soon.
+</D00.03.OP02>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+It has crossed my mind. Good call; I’ll give it a go.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I guess reading books helps me mellow out. I should do it more.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Focusing on schoolwork mainly; it’s tough to keep up from time to time.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+That sounds like a reasonable plan. Thank you for the suggestion.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+I really appreciate your suggestions. I’ll give them a try.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Thanks for listening. It means a lot.
+</D00.03.02.Text>
+</D00.03.02>
+

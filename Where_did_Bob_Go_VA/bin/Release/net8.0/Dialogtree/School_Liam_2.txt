@@ -1,0 +1,113 @@
+<Location>
+School
+</Location>
+
+<Name>
+Liam
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Liam. Things have been alright... I guess.
+</D00.Text>
+
+<D00.OP01>
+What’s been bothering you lately?
+</D00.OP01>
+
+<D00.OP02>
+Have you been able to find any time for yourself?
+</D00.OP02>
+
+<D00.OP03>
+Have you been enjoying the things you have done lately?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+Just stressed about work, but I’m managing.
+</D00.01.Text>
+
+<D00.01.OP01>
+Work can be overwhelming. Have you tried taking breaks?
+</D00.01.OP01>
+
+<D00.01.OP02>
+How do you usually handle stress?
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+I’m trying to take it easier, but it’s hard.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I like taking long hot baths.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+I’ve been working non-stop to keep busy.
+</D00.02.Text>
+
+<D00.02.OP01>
+Staying busy can help, but have you been taking care of yourself?
+</D00.02.OP01>
+
+<D00.02.OP02>
+Sometimes it’s okay to slow down a little.
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I’ll see if I can manage to take it a bit slower.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I’ll try to take a step back. Thanks for the reminder.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+I’ve not been enjoying the past weeks.
+</D00.03.Text>
+
+<D00.03.OP01>
+Doesn’t sound fun, to be honest. 
+Anything in the near future you are looking forward to?
+</D00.03.OP01>
+
+<D00.03.OP02>
+It can be rough to feel under the weather. 
+But remember it is just a phase.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+I am looking forward to Christmas at my mom's.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Thanks, I guess.
+</D00.03.02.Text>
+</D00.03.02>

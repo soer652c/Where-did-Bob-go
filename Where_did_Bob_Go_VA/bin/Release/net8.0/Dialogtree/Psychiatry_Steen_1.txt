@@ -1,0 +1,112 @@
+<Location>
+Psychiatry
+</Location>
+
+<Name>
+Steen
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+"Hey, I’m Steen. I have been really feeling bad for the longest time now."
+</D00.Text>
+
+<D00.OP01>
+"What’s keeping you in this state for so long?"
+</D00.OP01>
+
+<D00.OP02>
+"Have you reached out for help yet?"
+</D00.OP02>
+
+<D00.OP03>
+"Do you need any help?"
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"I don't really know, it just feels like I have been in this state forever."
+</D00.01.Text>
+
+<D00.01.OP01>
+"That’s really not great, have you tried to solve it yourself?"
+</D00.01.OP01>
+
+<D00.01.OP02>
+"Have you tried seeking help from outside?"
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"No, I haven’t really."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"I haven’t really spoken with anyone about my problem."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"I haven’t been reaching out to anyone."
+</D00.02.Text>
+
+<D00.02.OP01>
+"You should try and look into what is keeping you in this dark place."
+</D00.02.OP01>
+
+<D00.02.OP02>
+"What if reaching out could help you out?"
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"I will look into it."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"I will try to reach out then."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"I don’t know if you can pull me out of the darkness I find myself in."
+</D00.03.Text>
+
+<D00.03.OP01>
+"You could try doing something fun or fulfilling."
+</D00.03.OP01>
+
+<D00.03.OP02>
+"Maybe you should try reaching out to a psychiatrist?"
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"Then what should I do?"
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"I don’t know if I want to."
+</D00.03.02.Text>
+</D00.03.02>
+

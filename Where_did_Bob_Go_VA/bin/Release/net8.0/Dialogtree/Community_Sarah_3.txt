@@ -1,0 +1,111 @@
+<Location>
+Community
+</Location>
+
+<Name>
+Sarah
+</Name>
+
+<ID>
+3
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Sarah. Honestly, 
+I don’t know how much longer I can keep pretending everything’s fine.
+</D00.Text>
+
+<D00.OP01>
+What’s been weighing on you?
+</D00.OP01>
+
+<D00.OP02>
+Have you thought about getting some help?
+</D00.OP02>
+
+<D00.OP03>
+I would be happy to help out.
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+It just feels like nothing’s going right, and I’m always on the edge.
+</D00.01.Text>
+
+<D00.01.OP01>
+That sounds really tough. Want to talk more about it?
+</D00.01.OP01>
+
+<D00.01.OP02>
+What’s causing you to feel like you’re on the edge?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+No, I haven’t reached out to anyone. What’s the point?
+</D00.02.Text>
+
+<D00.02.OP01>
+You don’t have to carry this alone, Sarah. There’s always a way out.
+</D00.02.OP01>
+
+<D00.02.OP02>
+Talking might be the first step toward feeling better.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I’m done talking, I just want to be left alone.
+</D00.03.Text>
+
+<D00.03.OP01>
+I’m sure opening up about your troubles could help a bit.
+</D00.03.OP01>
+
+<D00.03.OP02>
+I’m not in the mood to share anything at the moment.
+</D00.03.OP02>
+
+<D00.03.OP03>
+Alright, I’ll give you some space to breathe.
+</D00.03.OP03>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I don’t think talking would help. I’m too far gone.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+It feels like I can’t keep up with my peers, 
+making me feel all alone.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I’ll think about it, but I’m not sure.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Talking doesn’t feel like it helps a lot.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Thank you, see you later.
+</D00.03.01.Text>
+</D00.03.01>

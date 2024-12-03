@@ -1,0 +1,103 @@
+<Location>
+Playground
+</Location>
+
+<Name>
+Lily
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hi, I’m Lily. I’m not sure how much longer I can pretend I’m okay. 
+Everything feels so overwhelming.
+</D00.Text>
+<D00.OP01>
+What’s been going on, Lily?
+</D00.OP01>
+<D00.OP02>
+Have you thought about talking to someone about this?
+</D00.OP02>
+<D00.OP03>
+I'm sure a little help from friends would go a long way.
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+It just feels like everything is falling apart, and I’m so tired.
+</D00.01.Text>
+<D00.01.OP01>
+That sounds really tough. Have you been able to rest at all?
+</D00.01.OP01>
+<D00.01.OP02>
+What’s been making you feel so tired?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I don’t think talking to anyone would change anything. It’s just how I feel.
+</D00.02.Text>
+<D00.02.OP01>
+You don’t have to carry this burden alone, Lily.
+</D00.02.OP01>
+<D00.02.OP02>
+Maybe sharing how you feel could help you understand it better.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+It’s complicated. I don’t want my friends to deal with me.
+</D00.03.Text>
+<D00.03.OP01>
+I’m sure your friends would be happy to help.
+</D00.03.OP01>
+<D00.03.OP02>
+You are no burden; your friends really value your presence.
+</D00.03.OP02>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I don’t think resting would help. I just can’t keep going
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don’t know, I just feel tapped for energy
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I don’t want to burden others too
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Maybe... but I’m not sure it would make a difference
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Don’t think they would be able to help me anyways
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Im not sure they do, i just get in the way
+</D00.03.02.Text>
+</D00.03.02>

@@ -1,0 +1,113 @@
+<Location>
+Psychiatry
+</Location>
+
+<Name>
+Steen
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+"Hey, I’m Steen. I’ve been having a bad day today."
+</D00.Text>
+
+<D00.OP01>
+"Why are you having a bad day?"
+</D00.OP01>
+
+<D00.OP02>
+"What have you done to solve your problem?"
+</D00.OP02>
+
+<D00.OP03>
+"Oh, that is not great. Do you want to talk with somebody?"
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+"My partner left me, so I don’t feel so great today."
+</D00.01.Text>
+
+<D00.01.OP01>
+"Oh, that is unfortunate. Hopefully, you will find someone better."
+</D00.01.OP01>
+
+<D00.01.OP02>
+"Oh, that is not great. 
+You should take some time to yourself to cheer yourself up."
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+"Maybe."
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+"I think you’re right. I’ll try to get some rest."
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+"There is nothing I can do."
+</D00.02.Text>
+
+<D00.02.OP01>
+"You are right, but remember that you will feel better over time."
+</D00.02.OP01>
+
+<D00.02.OP02>
+"I think you are wrong. 
+There are many things you can do to cheer yourself up."
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+"I don’t know. I will think about it."
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+"Thanks, I will figure something out."
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+"Well, who should I talk to?"
+</D00.03.Text>
+
+<D00.03.OP01>
+"You could talk to a friend."
+</D00.03.OP01>
+
+<D00.03.OP02>
+"You could talk with me."
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+"Yeah... maybe you are right about that. I will try that."
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+"I will ask someone else."
+</D00.03.02.Text>
+</D00.03.02>

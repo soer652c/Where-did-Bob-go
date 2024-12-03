@@ -1,0 +1,115 @@
+<Location>
+Hospital
+</Location>
+
+<Name>
+Emma
+</Name>
+
+<ID>
+1
+</ID>
+
+<Risk>
+High
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Emma. Honestly, 
+I’ve been feeling like I’m stuck in a dark place with no way out.
+</D00.Text>
+
+<D00.OP01>
+What’s keeping you in this dark place?
+</D00.OP01>
+
+<D00.OP02>
+Have you reached out for help yet?
+</D00.OP02>
+
+<D00.OP03>
+Do you need my help?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+It feels like everything’s going wrong, 
+and nothing ever gets better.
+</D00.01.Text>
+
+<D00.01.OP01>
+That’s really tough. Want to talk about it more?
+</D00.01.OP01>
+
+<D00.01.OP02>
+Have you talked to anyone about what you’re feeling?
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+I don’t think you are the right person to talk to.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I will reach out then.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+I haven’t been reaching out, 
+it feels like no one can help me with my problem.
+</D00.02.Text>
+
+<D00.02.OP01>
+That sounds really bad, 
+I think you should really talk about your problems with someone.
+</D00.02.OP01>
+
+<D00.02.OP02>
+Do you want to talk about it with me?
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I will talk with someone then.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I will think about it.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+I don’t know if you can pull me out of the darkness I find myself in.
+</D00.03.Text>
+
+<D00.03.OP01>
+I might try to contact one of your friends.
+</D00.03.OP01>
+
+<D00.03.OP02>
+Maybe you should try reaching out to a psychiatrist?
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+I don’t want to involve my friends in this.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+I will contact a psychiatrist.
+</D00.03.02.Text>
+</D00.03.02>

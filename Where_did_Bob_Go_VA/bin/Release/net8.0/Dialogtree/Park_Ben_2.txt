@@ -1,0 +1,104 @@
+<Location>
+Park
+</Location>
+
+<Name>
+Ben
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Ben. I’m doing okay, 
+but some days it’s hard to keep my head above water.
+</D00.Text>
+<D00.OP01>
+What’s been making things tough for you?
+</D00.OP01>
+<D00.OP02>
+Have you been able to find time for yourself?
+</D00.OP02>
+<D00.OP03>
+Have you thought about what to do in those situations?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’ve been struggling to find balance between work and personal life.
+</D00.01.Text>
+<D00.01.OP01>
+Balancing everything can be tough. Have you tried taking breaks?
+</D00.01.OP01>
+<D00.01.OP02>
+What do you do to relax when things get overwhelming?
+</D00.01.OP02>
+</D00.01>
+
+<D00.02>
+<D00.02.Text>
+I’ve been keeping myself busy to avoid dealing with how I feel.
+</D00.02.Text>
+<D00.02.OP01>
+It can be tempting to stay busy, but are you giving yourself a chance to rest?
+</D00.02.OP01>
+<D00.02.OP02>
+Maybe it’s time to focus on what’s making you feel this way.
+</D00.02.OP02>
+</D00.02>
+
+<D00.03>
+<D00.03.Text>
+I haven’t really.
+</D00.03.Text>
+<D00.03.OP01>
+You should find something relaxing and fun to do in those situations.
+</D00.03.OP01>
+<D00.03.OP02>
+You should talk with someone you love.
+</D00.03.OP02>
+</D00.03>
+
+<D00.01.01>
+<D00.01.01.Text>
+I'll try to take some breaks more often
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't have time to relax
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+No, I don't feel like i have the time
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I'll try to focus on my problem 
+more instead of running away from them
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+I ill look into it
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Yearh, I will think about it
+</D00.03.02.Text>
+</D00.03.02>

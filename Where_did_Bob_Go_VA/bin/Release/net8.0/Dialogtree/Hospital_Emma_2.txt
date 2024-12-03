@@ -1,0 +1,111 @@
+<Location>
+Hospital
+</Location>
+
+<Name>
+Emma
+</Name>
+
+<ID>
+2
+</ID>
+
+<Risk>
+Moderate
+</Risk>
+
+<D00>
+<D00.Text>
+Hey, I’m Emma. Things are okay, but I feel like I’m running on empty.
+</D00.Text>
+
+<D00.OP01>
+What’s making you feel empty?
+</D00.OP01>
+
+<D00.OP02>
+Have you been able to get any rest?
+</D00.OP02>
+
+<D00.OP03>
+Have you tried finding something new to fulfill you?
+</D00.OP03>
+</D00>
+
+<D00.01>
+<D00.01.Text>
+I’m just so tired all the time, even when I sleep.
+</D00.01.Text>
+
+<D00.01.OP01>
+That sounds really hard. Have you talked to a doctor about it?
+</D00.01.OP01>
+
+<D00.01.OP02>
+Maybe it’s time to take a break and recharge.
+</D00.01.OP02>
+</D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+Maybe I’ll talk to the doctor next week.
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I think you’re right. I’ll try to rest more.
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02>
+<D00.02.Text>
+I’ve been focusing on other people’s problems to avoid my own.
+</D00.02.Text>
+
+<D00.02.OP01>
+It’s easy to do that, but are you taking care of yourself too?
+</D00.02.OP01>
+
+<D00.02.OP02>
+Maybe it’s time to focus on what you need right now.
+</D00.02.OP02>
+</D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Yeah... I think I need to focus on myself more.
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I might try and do that.
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03>
+<D00.03.Text>
+I haven’t tried something like that, I don’t know if it will benefit me.
+</D00.03.Text>
+
+<D00.03.OP01>
+It doesn’t hurt to try.
+</D00.03.OP01>
+
+<D00.03.OP02>
+Maybe you know someone who can help with something like that.
+</D00.03.OP02>
+</D00.03>
+
+<D00.03.01>
+<D00.03.01.Text>
+Yeah... maybe you are right about that. I will try something.
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+I might ask around.
+</D00.03.02.Text>
+</D00.03.02>
