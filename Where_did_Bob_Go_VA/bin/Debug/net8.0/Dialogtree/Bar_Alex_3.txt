@@ -59,7 +59,8 @@ It’s wonderful that you’re feeling so positive. What’s been the highlight?
 Just living life the best I can.
 </D00.03.Text>
 <D00.03.OP01>
-That’s great to hear. Thank you for the talk, it has been a very uplifting experience.
+That’s great to hear. Thank you for the talk, 
+it has been a very uplifting experience.
 </D00.03.OP01>
 <D00.03.OP02>
 Thank you! Hope you have a great day.
@@ -71,7 +72,8 @@ Now that’s the correct approach.
 
 <D00.01.01>
 <D00.01.01.Text>
-I’m working on learning how to 3D print. It’s really fun and fulfilling.
+I’m working on learning how to 3D print. 
+It’s really fun and fulfilling.
 </D00.01.01.Text>
 </D00.01.01>
 
@@ -83,7 +85,8 @@ I have been taking time out of my day to do the things I like to do.
 
 <D00.02.01>
 <D00.02.01.Text>
-Different kinds of events. I partook in a wedding the other day; it was beautiful.
+Different kinds of events. 
+I partook in a wedding the other day; it was beautiful.
 </D00.02.01.Text>
 </D00.02.01>
 
