@@ -76,10 +76,31 @@ namespace Where_did_Bob_Go_VA
         {
             Random rnd = new Random();
 
+            int temp_value1_Of100 = 0, temp_value2_Of100 = 0, temp_value3_Of3 = 0;
+
             for (int j = 0; j < npc_DialogID_Arr.Length; j++)
             {
-                npc_DialogID_Arr[j].NPC_ID = (rnd.Next(1, 3)).ToString();
-                Console.WriteLine(npc_DialogID_Arr[j].File_ID);
+                temp_value1_Of100 = rnd.Next(14, 100);
+                temp_value2_Of100 = rnd.Next(27, 100);
+
+                temp_value1_Of100 = temp_value2_Of100 - temp_value1_Of100;
+
+                temp_value2_Of100 = rnd.Next(48, 100);
+
+                temp_value3_Of3 = temp_value2_Of100 % 4;
+
+                if ((temp_value3_Of3 != 0) && (temp_value3_Of3 < 0))
+                {
+                    npc_DialogID_Arr[j].NPC_ID = (temp_value3_Of3).ToString();
+                    //Console.WriteLine((temp_value3_Of3).ToString());
+                }
+                else
+                {
+                    npc_DialogID_Arr[j].NPC_ID = (rnd.Next(1, 4)).ToString();
+                    //Console.WriteLine((rnd.Next(1, 4)).ToString());
+                }
+
+                //Console.WriteLine(npc_DialogID_Arr[j].NPC_ID);
             }
 
             return;
