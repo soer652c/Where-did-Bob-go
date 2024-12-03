@@ -16,97 +16,98 @@ None
 
 <D00>
 <D00.Text>
-"Hey, I’m Emma. Life’s been pretty good lately!"
+Hey, I’m Emma. Life’s been pretty good lately!
 </D00.Text>
 
 <D00.OP01>
-"That’s awesome! What’s been going well?"
+That’s awesome! What’s been going well?
 </D00.OP01>
 
 <D00.OP02>
-"What’s making you feel so positive?"
+What’s making you feel so positive?
 </D00.OP02>
 
 <D00.OP03>
-“That is nice to hear. What keeps you feeling good?”
+That is nice to hear. What keeps you feeling good?
 </D00.OP03>
 </D00>
 
 <D00.01>
 <D00.01.Text>
-"I’ve been really productive at work, and I’ve been exercising more."
+I’ve been really productive at work, and I’ve been exercising more.
 </D00.01.Text>
 
 <D00.01.OP01>
-"That’s fantastic! How’s the exercise going?"
+That’s fantastic! How’s the exercise going?
 </D00.01.OP01>
 
 <D00.01.OP02>
-"It sounds like you’ve been really focused."
+It sounds like you’ve been really focused.
 </D00.01.OP02>
 </D00.01>
 
 <D00.01.01>
 <D00.01.01.Text>
-"They have been going really well."
+They have been going really well.
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-"Yeah, I’ve been feeling great!"
+Yeah, I’ve been feeling great!
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02>
 <D00.02.Text>
-"I’ve been spending more time with my family and it’s been amazing."
+I’ve been spending more time with my family and it’s been amazing.
 </D00.02.Text>
 
 <D00.02.OP01>
-"Family time is so important! What do you do together?"
+Family time is so important! What do you do together?
 </D00.02.OP01>
 
 <D00.02.OP02>
-"It’s wonderful that you have a supportive family."
+It’s wonderful that you have a supportive family.
 </D00.02.OP02>
 </D00.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-"We have begun to do sports every weekend and we always eat together at the dinner table now."
+We have begun to do sports every weekend and we 
+always eat together at the dinner table now.
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-"Yes, it’s been really special."
+Yes, it’s been really special.
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03>
 <D00.03.Text>
-"That is a good question, 
-I keep my schedule balanced and always have fun activities to do in my free time."
+That is a good question, 
+I keep my schedule balanced and always have fun activities to do in my free time.
 </D00.03.Text>
 
 <D00.03.OP01>
-"That is great, how do you keep a good schedule?"
+That is great, how do you keep a good schedule?
 </D00.03.OP01>
 
 <D00.03.OP02>
-"Nice to hear, what fun activities do you do?"
+Nice to hear, what fun activities do you do?
 </D00.03.OP02>
 </D00.03>
 
 <D00.03.01>
 <D00.03.01.Text>
-"I organize in my calendar, thanks for asking."
+I organize in my calendar, thanks for asking.
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-"I go to sports, and play relaxing games."
+I go to sports, and play relaxing games.
 </D00.03.02.Text>
 </D00.03.02>
