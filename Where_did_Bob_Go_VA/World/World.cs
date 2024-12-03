@@ -73,7 +73,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             // ----------------------------------------------
 
             Space home = new Space("home", "You stand in your cozy apartment. \nSunlight shines through the windows, lighting up the rooms. \nThe warm light landing on the furniture’s and the potted plants in the windowsills. \nThe sound of the busy streets outside hums like white noise in the background. \n\nYou wonder if you should go outside to explorer.");
-            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze");
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze. \nThe sun is hitting the trees, giving a nice warm feeling in the mind.");
             Space subway = new Space("subway", "You descend into the dim subway, the air heavy with echoes and grime.", Jack, Mia, Banana);
             Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma);
             Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen, Thomas, Mirror);
