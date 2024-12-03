@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hey, I’m Sarah. Honestly, I don’t know how much longer I can keep pretending everything’s fine.
+Hey, I’m Sarah. Honestly, 
+I don’t know how much longer I can keep pretending everything’s fine.
 </D00.Text>
 
 <D00.OP01>
@@ -86,7 +87,8 @@ I don’t think talking would help. I’m too far gone.
 
 <D00.01.02>
 <D00.01.02.Text>
-It feels like I can’t keep up with my peers, making me feel all alone.
+It feels like I can’t keep up with my peers, 
+making me feel all alone.
 </D00.01.02.Text>
 </D00.01.02>
 
