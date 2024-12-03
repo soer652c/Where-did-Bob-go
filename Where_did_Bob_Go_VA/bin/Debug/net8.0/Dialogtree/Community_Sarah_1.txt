@@ -100,7 +100,8 @@ Happy to hear it’s going well. Thank you for a great conversation.
 
 <D00.03.01>
 <D00.03.01.Text>
-I had a great time with my family last weekend, and I went out with my friends the day after.
+I had a great time with my family last weekend, 
+and I went out with my friends the day after.
 </D00.03.01.Text>
 </D00.03.01>
 
