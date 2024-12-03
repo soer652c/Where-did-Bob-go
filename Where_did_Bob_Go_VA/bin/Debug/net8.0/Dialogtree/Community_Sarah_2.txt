@@ -16,7 +16,8 @@ Moderate
 
 <D00>
 <D00.Text>
-Hey, I’m Sarah. Things aren’t terrible, but I feel like I’m constantly juggling too much.
+Hey, I’m Sarah. Things aren’t terrible, 
+but I feel like I’m constantly juggling too much.
 </D00.Text>
 
 <D00.OP01>
@@ -34,7 +35,8 @@ Do you have too many things on the plate currently?
 
 <D00.01>
 <D00.01.Text>
-I’m stressed about work, my relationships, and just keeping up with everything.
+I’m stressed about work, my relationships, 
+and just keeping up with everything.
 </D00.01.Text>
 
 <D00.01.OP01>
