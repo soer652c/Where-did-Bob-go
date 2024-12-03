@@ -149,7 +149,7 @@ namespace Where_did_Bob_Go_VA.World_NS
         {
             NPCLeft();
             string? NPCString = NPCVisualbilitiCounter.ToString();
-            Change_TextBox_TopRight("NPC left: " + NPCString);
+            Change_TextBox_TopRight("People left: " + NPCString);
             return NPCVisualbilitiCounter;
         }
     }

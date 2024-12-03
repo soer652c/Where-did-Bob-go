@@ -108,7 +108,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             if (NPC_Map.Count != 0)
             {
-                welcome_description[3] = "You see the following NPCs: ";
+                welcome_description[3] = "You see the following people: ";
 
 
                 foreach (KeyValuePair<string, NPC> npc in NPC_Map)
@@ -183,7 +183,7 @@ namespace Where_did_Bob_Go_VA.World_NS
 
             if (NPC_Map.Count != 0)
             {
-                welcome_description[3] = "You see the following NPCs: ";
+                welcome_description[3] = "You see the following people: ";
 
 
                 foreach (KeyValuePair<string, NPC> npc in NPC_Map)

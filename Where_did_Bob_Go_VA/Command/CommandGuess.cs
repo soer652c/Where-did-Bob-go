@@ -50,14 +50,14 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
             if (npcName == null)
             {
-                Console.WriteLine($"No NPC named {npcName} is in this room.");
+                Console.WriteLine($"Nobody is named {npcName} is in this room.");
                 return;
             }
             
 
             if( (false == (current_location.CheckFor_NPC(npcName))) )  // Gets NPC from NPCMap in current room by name then outputs fetced NPC
             {
-                Console.WriteLine($"No NPC named {npcName} is in this room. Maybe try a different location");
+                Console.WriteLine($"Nobody is named {npcName} is in this room. Maybe try a different location");
                 return;
             }
             else
@@ -132,7 +132,7 @@ namespace Where_did_Bob_Go_VA.Command_NS
 
         public string GetDescription()
         {
-            return "Guess the risk level of an NPC in the current room.";
+            return "Guess the risk level of an person in the current room.";
         }
     }
 } // End of namespace Where_did_Bob_Go_VA.Command_NS
