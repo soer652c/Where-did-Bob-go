@@ -1,18 +1,17 @@
-
 <Location>
-[Moderate Risk]
+Moderate Risk
 </Location>
 
 <Name>
-[Mia]
+Mia
 </Name>
 
 <ID>
-[5]
+2
 </ID>
 
 <Risk>
-[Moderate]
+Moderate
 </Risk>
 
 <D00>

@@ -16,96 +16,96 @@ High
 
 <D00>
 <D00.Text>
-"Hey, I’m Jack. I’ve been feeling like I’m constantly fighting a battle that I can’t win."
+Hey, I’m Jack. I’ve been feeling like I’m constantly fighting a battle that I can’t win.
 </D00.Text>
 
 <D00.OP01>
-"What kind of battle are you fighting?"
+What kind of battle are you fighting?
 </D00.OP01>
 
 <D00.OP02>
-"Have you tried talking to anyone about this?"
+Have you tried talking to anyone about this?
 </D00.OP02>
 
 <D00.OP03>
-"Why don't you figure it out yourself!"
+Why don't you figure it out yourself!
 </D00.OP03>
 </D00>
 
 <D00.01>
 <D00.01.Text>
-"It feels like everything is falling apart, and I’m too tired to keep going."
+It feels like everything is falling apart, and I’m too tired to keep going.
 </D00.01.Text>
 
 <D00.01.OP01>
-"I’m really sorry you feel that way. Want to talk more about it?"
+I’m really sorry you feel that way. Want to talk more about it?
 </D00.01.OP01>
 
 <D00.01.OP02>
-"Have you considered reaching out for help?"
+Have you considered reaching out for help?
 </D00.01.OP02>
 </D00.01>
 
 <D00.01.01>
 <D00.01.01.Text>
-"Yes, I would really like that."
+Yes, I would really like that.
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-"I don’t think anyone can help me."
+I don’t think anyone can help me.
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02>
 <D00.02.Text>
-"I can’t do it anymore, the pressure is too much."
+I can’t do it anymore, the pressure is too much.
 </D00.02.Text>
 
 <D00.02.OP01>
-"It can be really hard to open up, but it might help."
+It can be really hard to open up, but it might help.
 </D00.02.OP01>
 
 <D00.02.OP02>
-"You’re not alone, Jack. People care about you."
+You’re not alone, Jack. People care about you.
 </D00.02.OP02>
 </D00.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-"You say that, but I can’t."
+You say that, but I can’t.
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-"Maybe I’ll try... but it’s hard."
+Maybe I’ll try... but it’s hard.
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03>
 <D00.03.Text>
-"I need help, please what do I do?"
+I need help, please what do I do?
 </D00.03.Text>
 
 <D00.03.OP01>
-"You should go see a shrink."
+You should go see a shrink.
 </D00.03.OP01>
 
 <D00.03.OP02>
-"Talk to me, we can get through this together."
+Talk to me, we can get through this together.
 </D00.03.OP02>
 </D00.03>
 
 <D00.03.01>
 <D00.03.01.Text>
-"I have tried but it's not working."
+I have tried but it's not working.
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-"Ok, you are a good friend."
+Ok, you are a good friend.
 </D00.03.02.Text>
 </D00.03.02>

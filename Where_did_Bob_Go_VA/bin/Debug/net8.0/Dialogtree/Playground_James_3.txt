@@ -31,7 +31,8 @@ Any interesting events happening as of late?
 
 <D00.01>
 <D00.01.Text>
-I’ve been getting a lot of positive feedback at work, and I’m feeling good about it.
+I’ve been getting a lot of positive feedback at work, 
+and I’m feeling good about it.
 </D00.01.Text>
 <D00.01.OP01>
 That’s great! It sounds like your hard work is paying off.
@@ -49,7 +50,8 @@ I’ve been spending a lot of time with friends, and it’s been really fun.
 That’s awesome! What have you guys been doing?
 </D00.02.OP01>
 <D00.02.OP02>
-It’s great that you’re staying connected. Spending time with people is so important.
+It’s great that you’re staying connected. 
+Spending time with people is so important.
 </D00.02.OP02>
 </D00.02>
 

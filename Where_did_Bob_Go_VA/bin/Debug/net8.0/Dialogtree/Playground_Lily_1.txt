@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hi, I’m Lily. I’m not sure how much longer I can pretend I’m okay. Everything feels so overwhelming.
+Hi, I’m Lily. I’m not sure how much longer I can pretend I’m okay. 
+Everything feels so overwhelming.
 </D00.Text>
 <D00.OP01>
 What’s been going on, Lily?

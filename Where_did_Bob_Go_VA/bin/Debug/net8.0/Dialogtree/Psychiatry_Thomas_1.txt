@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hey, I’m Thomas, it feels like I’m just stuck in this endless cycle of negativity.
+Hey, I’m Thomas, 
+it feels like I’m just stuck in this endless cycle of negativity.
 </D00.Text>
 <D00.OP01>
 What’s making you feel this way for so long?
@@ -31,15 +32,29 @@ Is there anything I can do to help?
 
 <D00.01>
 <D00.01.Text>
-I’ve been doing a lot of negative activities lately, but I can't stop with them.
+I’ve been doing a lot of negative activities lately, 
+but I can't stop with them.
 </D00.01.Text>
 <D00.01.OP01>
 That’s really not great, what have you been doing?
 </D00.01.OP01>
+
 <D00.01.OP02>
 Have you tried seeking help?
 </D00.01.OP02>
 </D00.01>
+
+<D00.01.01>
+<D00.01.01.Text>
+Drinking a lot
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+No, it's not working
+</D00.01.02.Text>
+</D00.01.02>
 
 <D00.02>
 <D00.02.Text>
@@ -51,23 +66,42 @@ Addictions? That does not sound very healthy.
 <D00.02.OP02>
 What addictions? I can help you get through anything.
 </D00.02.OP02>
-<D00.02.OP03>
-Maybe you should try reaching out to a psychiatrist?
-</D00.02.OP03>
 </D00.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+At this point, I don't care
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Thank you, i don't think i want help, i can manage
+</D00.02.02.Text>
+</D00.02.02>
 
 <D00.03>
 <D00.03.Text>
 I haven’t really spoken with anyone about my problem.
 </D00.03.Text>
 <D00.03.OP01>
-You should maybe seek professional help. Some people know how to deal with those kinds of problems.
+You should maybe seek professional help. 
+Some people know how to deal with those kinds of problems.
 </D00.03.OP01>
 <D00.03.OP02>
 Maybe you should. It would benefit you a lot.
 </D00.03.OP02>
-<D00.03.OP03>
-I will try to reach out to someone then.
-</D00.03.OP03>
+<D00.03.01>
+<D00.03.01.Text>
+I will look into it
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+I will try to reach out to someone then
+</D00.03.02.Text>
+</D00.03.02>
+
 </D00.03>
 

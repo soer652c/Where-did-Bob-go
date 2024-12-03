@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-"Hi, I’m Clara. Sometimes, I feel like the weight of the world is too much for me."
+"Hi, I’m Clara. Sometimes, 
+I feel like the weight of the world is too much for me."
 </D00.Text>
 
 <D00.OP01>
@@ -106,6 +107,7 @@ High
 
 <D00.03.02>
 <D00.03.02.Text>
-"I don’t feel like coping anymore. I just want to let go and not be here anymore."
+"I don’t feel like coping anymore. 
+I just want to let go and not be here anymore."
 </D00.03.02.Text>
 </D00.03.02>

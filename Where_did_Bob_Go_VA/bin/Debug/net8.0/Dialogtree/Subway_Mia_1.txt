@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hi, I’m Mia. Lately, I feel like I’ve lost control over everything in my life.
+Hi, I’m Mia. 
+Lately, I feel like I’ve lost control over everything in my life.
 </D00.Text>
 <D00.OP01>
 What’s been happening, Mia?
@@ -31,10 +32,12 @@ If you want to talk about it, I'll gladly listen.
 
 <D00.01>
 <D00.01.Text>
-I’ve been struggling to keep up with school and friends. I feel like I’m failing at everything.
+I’ve been struggling to keep up with school and friends. 
+I feel like I’m failing at everything.
 </D00.01.Text>
 <D00.01.OP01>
-It’s okay to feel overwhelmed. Have you talked to anyone about this?
+It’s okay to feel overwhelmed. 
+Have you talked to anyone about this?
 </D00.01.OP01>
 <D00.01.OP02>
 What’s been the hardest thing to deal with lately?
@@ -46,28 +49,33 @@ What’s been the hardest thing to deal with lately?
 I just feel like I can’t keep pretending everything is fine anymore.
 </D00.02.Text>
 <D00.02.OP01>
-Sometimes, sharing can help you feel less alone. I’m here to listen.
+Sometimes, sharing can help you feel less alone. 
+I’m here to listen.
 </D00.02.OP01>
 <D00.02.OP02>
-You don’t have to go through this alone. There are people who care about you.
+You don’t have to go through this alone. 
+There are people who care about you.
 </D00.02.OP02>
 </D00.02>
 
 <D00.03>
 <D00.03.Text>
-I’m not sure it would help. I’ve been feeling this way for a while.
+I’m not sure it would help. 
+I’ve been feeling this way for a while.
 </D00.03.Text>
 <D00.03.OP01>
 I’m sure talking about it would ease some of the pressure.
 </D00.03.OP01>
 <D00.03.OP02>
-That’s fair, I don’t want to pressure you further. It was nice bumping into you.
+That’s fair, I don’t want to pressure you further. 
+It was nice bumping into you.
 </D00.03.OP02>
 </D00.03>
 
 <D00.01.01>
 <D00.01.01.Text>
-I have been bottling it all up instead. It makes me able to keep going.
+I have been bottling it all up instead. 
+It makes me able to keep going.
 </D00.01.01.Text>
 </D00.01.01>
 
@@ -85,7 +93,8 @@ Maybe I’ll try... but it’s so hard to open up.
 
 <D00.02.02>
 <D00.02.02.Text>
-I’m not sure you would be able to help one bit. I just want to be left alone.
+I’m not sure you would be able to help one bit. 
+I just want to be left alone.
 </D00.02.02.Text>
 </D00.02.02>
 

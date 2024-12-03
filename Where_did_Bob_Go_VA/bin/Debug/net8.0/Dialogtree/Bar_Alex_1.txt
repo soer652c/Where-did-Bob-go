@@ -43,7 +43,8 @@ I don’t think anyone would be able to help me out of this mess I'm in.
 
 <D00.02>
 <D00.02.Text>
-Just the stress of it all, people annoy me and rarely have the energy to talk to anyone.
+Just the stress of it all, people annoy me 
+and rarely have the energy to talk to anyone.
 </D00.02.Text>
 <D00.02.OP01>
 What’s been the hardest thing to deal with recently?
@@ -88,13 +89,15 @@ Sometimes, sharing your feelings can make things feel lighter.
 
 <D00.02.02>
 <D00.02.02.Text>
-I don’t feel like talking about the bad stuff. Thank you for reaching out though.
+I don’t feel like talking about the bad stuff. 
+Thank you for reaching out though.
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03.01>
 <D00.03.01.Text>
-I have thought about it, but stuff like that takes time and money I don’t have.
+I have thought about it, but stuff like that takes time and money 
+I don’t have.
 </D00.03.01.Text>
 </D00.03.01>
 

@@ -16,7 +16,8 @@ Moderate
 
 <D00>
 <D00.Text>
-Hey, I’m Alex. I’ve been feeling a bit off lately, but I’m trying to stay positive.
+Hey, I’m Alex. I’ve been feeling a bit off lately, 
+but I’m trying to stay positive.
 </D00.Text>
 <D00.OP01>
 What’s been going on with you, Alex?
@@ -31,10 +32,12 @@ What have you been doing to stay positive?
 
 <D00.01>
 <D00.01.Text>
-I’ve been feeling stressed about everything I have to do, and it’s overwhelming.
+I’ve been feeling stressed about everything I have to do, 
+and it’s overwhelming.
 </D00.01.Text>
 <D00.01.OP01>
-It’s okay to feel that way. Have you tried breaking things into smaller tasks?
+It’s okay to feel that way. 
+Have you tried breaking things into smaller tasks?
 </D00.01.OP01>
 <D00.01.OP02>
 What usually helps you manage your stress?
@@ -55,13 +58,16 @@ Maybe taking a small break could help you recharge.
 
 <D00.03>
 <D00.03.Text>
-Just trying to focus on the things I like, but they don’t feel that rewarding anymore.
+Just trying to focus on the things I like, 
+but they don’t feel that rewarding anymore.
 </D00.03.Text>
 <D00.03.OP01>
-Maybe it’s time for you to reach out for some help. I’m sure you could feel much better afterwards.
+Maybe it’s time for you to reach out for some help. 
+I’m sure you could feel much better afterwards.
 </D00.03.OP01>
 <D00.03.OP02>
-Sounds like you’re having a bit of a tough time. Remember to focus on yourself too.
+Sounds like you’re having a bit of a tough time. 
+Remember to focus on yourself too.
 </D00.03.OP02>
 <D00.03.OP03>
 Good point my friend. Thank you for the suggestion.
@@ -70,7 +76,8 @@ Good point my friend. Thank you for the suggestion.
 
 <D00.01.01>
 <D00.01.01.Text>
-I have been trying to take time off to do the things I like. It's working a bit.
+I have been trying to take time off to do the things I like. 
+It's working a bit.
 </D00.01.01.Text>
 </D00.01.01>
 
