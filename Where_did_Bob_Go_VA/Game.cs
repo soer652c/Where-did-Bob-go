@@ -101,9 +101,9 @@ namespace Where_did_Bob_Go_VA
             Console.ReadLine();
             Update_TextBox_Main("But be warned: not everyone needs saving, and not everyone can be saved");
             Console.ReadLine();
-            Update_TextBox_Main("How to Play \n Where did Bob go is a text-based terminal game.\n You’ll explore the town \n and interact with NPCs entirely through text commands. \n Your choices will shape the story \n as you navigate through dialogues.");
+            Update_TextBox_Main("How to Play \n Where did Bob go is a text-based terminal game.\n You’ll explore the town \n and interact with NPCs entirely through text commands. \n Your choices will shape the story \n as you navigate through dialogues. \n    When you have meet an NPC and talked to them. \n   You have to guess their level of suisiderisk. \n    you do so by typing guess name of NPC and their level. \n Their level can either be High, Moderate or None. \n   If you guessed the rigth level the NPC will become invisubal");
             Console.ReadLine();
-            Update_TextBox_Main("Here's how it works:\n 1.Navigate the World: \n Use simple text commands like 'go outside' \n to look around \n to move through the game’s location \n Explore key areas like the school or park \n each holding unique characters and clues."); 
+            Update_TextBox_Main("Here's how it works:\n 1.Navigate the World: \n Use simple text commands like 'go outside' \n to look around \n to move through the game’s location \n Explore key areas like the school or park \n each holding unique characters and clues. \n    There will be several food-items shown on differnt locations. \n    These items can give you an extra life \n    type use and then the item"); 
             Console.ReadLine();
             Update_TextBox_Main("Engage in Dialogue:\n When you meet an NPC \n initiate a conversation with commands like “talk” or “leave”. \n Choose the responses by typing 1, 2, or 3 \n this steer the conversation."); 
             Console.ReadLine();
