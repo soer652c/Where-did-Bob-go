@@ -67,9 +67,38 @@ You should destress.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I don't know if that would help me
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+It's just everything feels so exhausting
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Who cares about a miserable guy like me
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Maybe i wil.... But im not sure anyone can help me
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-Sure, I will figure something out.
+You're probably right
 </D00.03.01.Text>
 </D00.03.01>
 
+<D00.03.02>
+<D00.03.02.Text>
+Sure, I will figure something out
+</D00.03.02.Text>
+</D00.03.02>

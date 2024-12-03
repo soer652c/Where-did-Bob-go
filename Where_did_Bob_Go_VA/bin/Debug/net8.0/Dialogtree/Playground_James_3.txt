@@ -57,7 +57,8 @@ Spending time with people is so important.
 
 <D00.03>
 <D00.03.Text>
-I was promoted at work. I got a lot more responsibility on my plate. It’s great.
+I was promoted at work. I got a lot more responsibility on my plate. 
+It’s great.
 </D00.03.Text>
 <D00.03.OP01>
 Happy to hear that, working your way up the corporate ladder.
@@ -67,15 +68,39 @@ Sounds great! Hope you have time enough for the rest of your responsibilities.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+It feels really rewarding! I'm proud of what i have accomplished
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+It feels great, i'm on top of the world
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Playing some football and going out with my friends
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Yeah, its been a lot of fun, i've really been enjoying it
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-I gotta get used to the new role, but it's working out fine for now.
+Reaching the top soon enough
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-Reaching the top soon enough.
+I gotta get used to the new role,
+But it's working out fine for now
 </D00.03.02.Text>
 </D00.03.02>
-

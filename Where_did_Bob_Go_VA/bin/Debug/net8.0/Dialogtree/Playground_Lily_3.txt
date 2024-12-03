@@ -65,15 +65,38 @@ Very nice! Must be a big accomplishment.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I don't think resting would work. I just can't keep going
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't know, I just feel tapped for energy
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+I don't want to burden others too
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Maybe... But im not sure it would make a difference
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-Next time, I’ll get the gold!
+I don't think they would be able to help me anyway
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-For sure. Makes the effort I put in worth it.
+Im not sure they do. i just get in the way
 </D00.03.02.Text>
 </D00.03.02>
-
