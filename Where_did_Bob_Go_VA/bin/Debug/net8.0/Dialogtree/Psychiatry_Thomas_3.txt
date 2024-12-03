@@ -39,6 +39,17 @@ That’s fantastic! What hobby is it?
 <D00.01.OP02>
 It sounds like you’ve been having a lot of fun.
 </D00.01.OP02>
+
+<D00.01.01>
+<D00.01.01.Text>
+Tennis! You should try it one day
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+Yearh. I love it!
+</D00.01.02.Text>
 </D00.01>
 
 <D00.02>
@@ -52,6 +63,17 @@ Oh, that sounds nice. How has it been going your way?
 Just doing what you love, 
 or even doing something new that you might find interesting.
 </D00.02.OP02>
+<D00.02.01>
+<D00.02.01.Text>
+Just doing what you love.
+Or even doing something new that you might find interesting
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+You're welcome
+</D00.02.02.Text>
 </D00.02>
 
 <D00.03>
@@ -65,5 +87,15 @@ That is great. What is it?
 <D00.03.OP02>
 Nice to hear. Have you felt bad before today?
 </D00.03.OP02>
+<D00.03.01>
+<D00.03.01.Text>
+Been trying a new sport
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+Not really, Today has been a great day
+</D00.03.02.Text>
 </D00.03>
 
