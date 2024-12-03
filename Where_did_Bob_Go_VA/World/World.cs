@@ -74,12 +74,12 @@ namespace Where_did_Bob_Go_VA.World_NS
             // ----------------------------------------------
 
             Space home = new Space("home", "You stand in your cozy apartment. \nSunlight shines through the windows, lighting up the rooms. \nThe warm light landing on the furniture’s and the potted plants in the windowsills. \nThe sound of the busy streets outside hums like white noise in the background. \n\nYou wonder if you should go outside to explorer.");
-            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze");
+            Space outside = new Space("outside", "The weather is nice and you feel a calming breeze. \nThe sun is hitting the trees, giving a nice warm feeling in the mind.");
             Space subway = new Space("subway", "You descend into the dim subway, the air heavy with echoes and grime.", Jack, Mia, Banana);
             Space hospital = new Space("hospital", "Doctors, nurses and patients roam the halls", Emma);
             Space psychiatry = new Space("psychiatry", "you have a unsetteling feeling that you don't belong here", Steen, Thomas, Mirror);
-            Space school = new Space("school", "Children are playing around on the playground", Clara, Liam, Apple);
-            Space community = new Space("community", "you feel at ease here", Sarah);
+            Space school = new Space("school", "Children are playing around on the playground, \n since the weather is nice. \n You hear screams and laughter around you. \nSeems as though you are in a fun place...maybe", Clara, Liam, Apple);
+            Space community = new Space("community", "you feel at ease here. \n A lot of people came here from school it seems. \n It is dark and gloomy outside, \nbut it is bright and cheerful inside.", Sarah);
             Space park = new Space("park", "The park is covered in lush green grass and majestic trees. \nYou spot people relaxing at the fountain and in the shade. \nYou can hear  the sound of children having fun. \nYou can see the playground at the other end of the park.", Ben);
             Space playground = new Space("playground", "The sandy playground is filled with the sound of playing children. \nYou spot parents and young people sitting at the benches along the edge of the playground. \nThere is a mix of calmness and joy in the air, as you look around.", Lily, James);
             Space bar = new Space("bar", "The music is playing in the background and people are drinking \n you make the way to floor \n yuo zone in an dance the nigth away", Alex, Sandwich);
