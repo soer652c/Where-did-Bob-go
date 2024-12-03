@@ -68,36 +68,36 @@ You are no burden; your friends really value your presence.
 
 <D00.01.01>
 <D00.01.01.Text>
-I have been climbing a bit, really pumps up the muscles
+I don’t think resting would help. I just can’t keep going
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-Yearh, Its been really interesting
+I don’t know, I just feel tapped for energy
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-Eating well and being active goes a long way
+I don’t want to burden others too
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-Definitely! It's made a big difference
+Maybe... but I’m not sure it would make a difference
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03.01>
 <D00.03.01.Text>
-Next time i'll get the gold 
+Don’t think they would be able to help me anyways
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-For sure, Makes the effort i put in worth it
+Im not sure they do, i just get in the way
 </D00.03.02.Text>
 </D00.03.02>
