@@ -53,15 +53,39 @@ Maybe you should consider talking to someone about how you’re feeling.
 </D00.02.OP02>
 </D00.02>
 
-<D00.03>
-<D00.03.Text>
-We could go for a walk and talk then?
-</D00.03.Text>
-<D00.03.OP01>
-Let us do so!
-</D00.03.OP01>
-<D00.03.OP02>
-You can call me anytime; I’ll happily help.
-</D00.03.OP02>
-</D00.03>
+<D00.01.01>
+<D00.01.01.Text>
+I'm trying to do so, but it's not always that easy
+</D00.01.01.Text>
+</D00.01.01>
 
+<D00.01.02>
+<D00.01.02.Text>
+I'll try to take a step back and not let it consume me
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+The though has crossed my min for sure, 
+I just haven't pulled the trigger just yet
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I just might, goo thinking
+</D00.02.02.Text>
+</D00.02.02>
+
+<D00.03.01>
+<D00.03.01.Text>
+Let us do so
+</D00.03.01.Text>
+</D00.03.01>
+
+<D00.03.02>
+<D00.03.02.Text>
+That's very kind of you, thank you
+</D00.03.02.Text>
+</D00.03.02>
