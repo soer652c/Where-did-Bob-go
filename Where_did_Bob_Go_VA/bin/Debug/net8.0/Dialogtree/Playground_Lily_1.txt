@@ -66,15 +66,38 @@ You are no burden; your friends really value your presence.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I have been climbing a bit, really pumps up the muscles
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+Yearh, Its been really interesting
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+Eating well and being active goes a long way
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+Definitely! It's made a big difference
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-I’m not sure they do. I just get in the way.
+Next time i'll get the gold 
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-Thank you for caring. I’ll think about it.
+For sure, Makes the effort i put in worth it
 </D00.03.02.Text>
 </D00.03.02>
-
