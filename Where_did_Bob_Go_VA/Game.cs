@@ -94,25 +94,23 @@ namespace Where_did_Bob_Go_VA
         }
         public void Introduction() //laver en metode ved navn Introduction
         {
-            Change_TextBox_Main("Welcome to Where did Bob go. \n A text-based narrative game where every word carries weight \n every choice could save a life. \n Inspired by the classic World of ZUUL \n this game takes you on an emotional journey through the mysterious town \n where your sharp mind and empathetic heart will be your greatest tools");
+            Change_TextBox_Main("Welcome to \"Where did Bob go?!\" \n\nA text-based narrative game where every word carries weight, \nwhere every choice could save a life, and you will learn through out your journey.\n\nInspired by the classic World of ZUUL \nThis game takes you on an emotional journey through this mysterious town. \nWhere your sharp mind and empathetic heart will be your greatest tools.");
             Change_TextBox_Options("Press Enter...");
             Update_GUI();
             Console.ReadLine(); // når man trykker enter, så går den videre til næste del af teksten
-            Update_TextBox_Main("The Story of the game \n You’ve just arrived to the town shrouded in secrets.\n You’ll meet 12 unique people \n each with their own stories and challenges.\n Some may hold clues to what the person is struggling with. \n It’s up to you to connect with them \n ask the right questions \n and decide how best to help");
+            Update_TextBox_Main("The Story of the game.\n\nYou’ve just arrived to the town shrouded in secrets.\nYou’ll meet 12 unique people each with their own stories and challenges.\nSome may hold clues to what the person is struggling with. \n\nIt’s up to you to connect with them ask the right questions and decide how best to help.");
             Console.ReadLine();
             Update_TextBox_Main("But be warned: not everyone needs saving, and not everyone can be saved");
             Console.ReadLine();
-            Update_TextBox_Main("How to Play \n Where did Bob go is a text-based terminal game.\n You’ll explore the town \n and interact with the person entirely through text commands. \n Your choices will shape the story \n as you navigate through dialogues. \n    When you have meet an person and talked to them. \n   You have to guess their level of suisiderisk. \n    you do so by typing guess name of person and their level. \n Their level can either be High, Moderate or None. \n   If you guessed the rigth level the person will become invisubal");
+            Update_TextBox_Main("How to Play \n\nWhere did Bob go is a text-based terminal game.\nYou’ll explore the town and interact with the person entirely through text commands.\n\nYour choices will shape the story as :  \n - as you talk with different people. \n - as you navigate through dialogues.\n - and as you have to guess their level of suicide-risk. \n\nYou do so by typing guess name of person and their level. \nTheir level can either be High, Moderate or None. \nIf you guessed the rigth level the person will become invisubal");
             Console.ReadLine();
-            Update_TextBox_Main("Here's how it works:\n 1.Navigate the World: \n Use simple text commands like 'go outside' to look around \n to move through the game’s location \n Explore key areas like the school or park \n each holding unique characters and clues. \n    There will be several food-items shown on differnt locations. \n    These items can give you an extra life \n    type use and then the item"); 
+            Update_TextBox_Main("Here's how it works:\n\n1. Navigate the World: \nUse simple text commands like 'go outside' to move through the game’s location\nExplore key areas like the school or park, each holding unique characters and clues.\n\nThere will be several food-items shown on differnt locations. \nThese items can give you an extra life type use and then the item.\n\n\n" + "2. Engage in Dialogue:\n\nWhen you meet an person initiate a conversation with commands like “talk” or “leave”. \nChoose the responses by typing 1, 2, or 3 this steer the conversation."); 
             Console.ReadLine();
-            Update_TextBox_Main("Engage in Dialogue:\n When you meet an person \n initiate a conversation with commands like “talk” or “leave”. \n Choose the responses by typing 1, 2, or 3 \n this steer the conversation."); 
+            Update_TextBox_Main("3. Gather Clues:\n\nPay close attention to the people words and behavior. \nSubtle hints could reveal their emotional state.\n\n4. Make Critical Choices:\nEach decision affects the story. Will you dig deeper, or let things slide ? \nSome paths may close forever depending on your responses.");
             Console.ReadLine();
-            Update_TextBox_Main("Gather Clues:\n Pay close attention to the people words and behavior. \n Subtle hints could reveal their emotional state.\n Make Critical Choices:\n Each decision affects the story.Will you dig deeper, or let things slide ? \n Some paths may close forever depending on your responses.");
+            Update_TextBox_Main("Why It Matters : \n\nThe towns inhabitants have lives complex similar to the world around them. \nBy choosing the right words and actions you could make a real difference,\nor miss the chance entirely. \n\nWill you be the one to help those who need it the most? \nOr will the weight of your choices leave unanswered questions behind?");
             Console.ReadLine();
-            Update_TextBox_Main("Why It Matters \n the towns inhabitants have lives as complex as the world around them. \n By choosing the right words and actions \n you could make a real difference \n or miss the chance entirely. \n Will you be the one to help those who need it the most? \n Or will the weight of your choices leave unanswered questions behind?");
-            Console.ReadLine();
-            Update_TextBox_Main("The Journey Begins \n they are waiting. \n Type your first command \n and step into a story of mystery, connection, and empathy.\n  Where did Bob go? The answer is in your hands.");
+            Update_TextBox_Main("The Journey Begins... \n\nThey are waiting... \n\nType your first command and step into a story of mystery, connection, and empathy.\n\n\nWhere did Bob go? \nThe answer is in your hands.");
             Console.ReadLine();
             Update_TextBox_Main("Enjoy the Game");
             Console.ReadLine();
