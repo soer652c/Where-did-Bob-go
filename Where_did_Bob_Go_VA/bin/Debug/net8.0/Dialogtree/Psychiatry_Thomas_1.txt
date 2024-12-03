@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hey, I’m Thomas, it feels like I’m just stuck in this endless cycle of negativity.
+Hey, I’m Thomas, 
+it feels like I’m just stuck in this endless cycle of negativity.
 </D00.Text>
 <D00.OP01>
 What’s making you feel this way for so long?
@@ -31,7 +32,8 @@ Is there anything I can do to help?
 
 <D00.01>
 <D00.01.Text>
-I’ve been doing a lot of negative activities lately, but I can't stop with them.
+I’ve been doing a lot of negative activities lately, 
+but I can't stop with them.
 </D00.01.Text>
 <D00.01.OP01>
 That’s really not great, what have you been doing?
@@ -61,7 +63,8 @@ Maybe you should try reaching out to a psychiatrist?
 I haven’t really spoken with anyone about my problem.
 </D00.03.Text>
 <D00.03.OP01>
-You should maybe seek professional help. Some people know how to deal with those kinds of problems.
+You should maybe seek professional help. 
+Some people know how to deal with those kinds of problems.
 </D00.03.OP01>
 <D00.03.OP02>
 Maybe you should. It would benefit you a lot.
