@@ -66,9 +66,39 @@ You should talk with someone you love.
 </D00.03.OP02>
 </D00.03>
 
+<D00.01.01>
+<D00.01.01.Text>
+I'll try to take some breaks more often
+</D00.01.01.Text>
+</D00.01.01>
+
+<D00.01.02>
+<D00.01.02.Text>
+I don't have time to relax
+</D00.01.02.Text>
+</D00.01.02>
+
+<D00.02.01>
+<D00.02.01.Text>
+No, I don't feel like i have the time
+</D00.02.01.Text>
+</D00.02.01>
+
+<D00.02.02>
+<D00.02.02.Text>
+I'll try to focus on my problem 
+more instead of running away from them
+</D00.02.02.Text>
+</D00.02.02>
+
 <D00.03.01>
 <D00.03.01.Text>
-Yeah, I will think about it.
+I ill look into it
 </D00.03.01.Text>
 </D00.03.01>
 
+<D00.03.02>
+<D00.03.02.Text>
+Yearh, I will think about it
+</D00.03.02.Text>
+</D00.03.02>
