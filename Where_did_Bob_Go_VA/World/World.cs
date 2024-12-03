@@ -12,6 +12,7 @@ using Where_did_Bob_Go_VA.World_NS;
 using Where_did_Bob_Go_VA.Game_NS;
 
 using static Where_did_Bob_Go_VA.GUI_NS.GUI;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Where_did_Bob_Go_VA.World_NS
 {
@@ -80,7 +81,7 @@ namespace Where_did_Bob_Go_VA.World_NS
             Space school = new Space("school", "Children are playing around on the playground", Clara, Liam, Apple);
             Space community = new Space("community", "you feel at ease here", Sarah);
             Space park = new Space("park", "The park is covered in lush green grass and majestic trees. \nYou spot people relaxing at the fountain and in the shade. \nYou can hear  the sound of children having fun. \nYou can see the playground at the other end of the park.", Ben);
-            Space playground = new Space("playground", "Children are playing\naround and some parents are camped on the benches nearby", Lily, James);
+            Space playground = new Space("playground", "The sandy playground is filled with the sound of playing children. \nYou spot parents and young people sitting at the benches along the edge of the playground. \nThere is a mix of calmness and joy in the air, as you look around.", Lily, James);
             Space bar = new Space("bar", "The music is playing in the background and people are drinking", Alex, Sandwich);
 
 
