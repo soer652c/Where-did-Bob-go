@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-"Hey, I’m Emma. Honestly, I’ve been feeling like I’m stuck in a dark place with no way out."
+"Hey, I’m Emma. Honestly, 
+I’ve been feeling like I’m stuck in a dark place with no way out."
 </D00.Text>
 
 <D00.OP01>
@@ -34,7 +35,8 @@ High
 
 <D00.01>
 <D00.01.Text>
-"It feels like everything’s going wrong, and nothing ever gets better."
+"It feels like everything’s going wrong, 
+and nothing ever gets better."
 </D00.01.Text>
 
 <D00.01.OP01>
@@ -60,11 +62,13 @@ High
 
 <D00.02>
 <D00.02.Text>
-"I haven’t been reaching out, it feels like no one can help me with my problem."
+"I haven’t been reaching out, 
+it feels like no one can help me with my problem."
 </D00.02.Text>
 
 <D00.02.OP01>
-"That sounds really bad, I think you should really talk about your problems with someone."
+"That sounds really bad, 
+I think you should really talk about your problems with someone."
 </D00.02.OP01>
 
 <D00.02.OP02>

@@ -58,7 +58,8 @@ Have you tried talking to a friend about how you’re feeling?
 Not right now. I have been focusing mainly on work.
 </D00.03.Text>
 <D00.03.OP01>
-I think taking a little break could help you out a lot, or maybe reaching out to your friends.
+I think taking a little break could help you out a lot, 
+or maybe reaching out to your friends.
 </D00.03.OP01>
 <D00.03.OP02>
 I’m sure you could find some time off to enjoy life a bit.

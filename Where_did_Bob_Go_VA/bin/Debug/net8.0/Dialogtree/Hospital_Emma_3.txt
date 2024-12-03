@@ -86,7 +86,8 @@ None
 
 <D00.03>
 <D00.03.Text>
-"That is a good question, I keep my schedule balanced and always have fun activities to do in my free time."
+"That is a good question, 
+I keep my schedule balanced and always have fun activities to do in my free time."
 </D00.03.Text>
 
 <D00.03.OP01>

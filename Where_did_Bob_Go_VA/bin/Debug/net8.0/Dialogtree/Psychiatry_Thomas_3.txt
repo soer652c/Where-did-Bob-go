@@ -49,13 +49,15 @@ When everything is going your way, it makes you feel great.
 Oh, that sounds nice. How has it been going your way?
 </D00.02.OP01>
 <D00.02.OP02>
-Just doing what you love, or even doing something new that you might find interesting.
+Just doing what you love, 
+or even doing something new that you might find interesting.
 </D00.02.OP02>
 </D00.02>
 
 <D00.03>
 <D00.03.Text>
-That is a good question. Just been trying something new, and it has been going well.
+That is a good question. 
+Just been trying something new, and it has been going well.
 </D00.03.Text>
 <D00.03.OP01>
 That is great. What is it?

@@ -42,7 +42,8 @@ Moderate
 </D00.01.OP01>
 
 <D00.01.OP02>
-"Oh, that is not great. You should take some time to yourself to cheer yourself up."
+"Oh, that is not great. 
+You should take some time to yourself to cheer yourself up."
 </D00.01.OP02>
 </D00.01>
 
@@ -68,7 +69,8 @@ Moderate
 </D00.02.OP01>
 
 <D00.02.OP02>
-"I think you are wrong. There are many things you can do to cheer yourself up."
+"I think you are wrong. 
+There are many things you can do to cheer yourself up."
 </D00.02.OP02>
 </D00.02>
 
