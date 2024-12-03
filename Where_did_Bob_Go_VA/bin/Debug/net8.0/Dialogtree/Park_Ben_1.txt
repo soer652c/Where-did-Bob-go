@@ -16,7 +16,8 @@ High
 
 <D00>
 <D00.Text>
-Hey, I’m Ben. I don’t know how to keep going some days. It feels like everything’s falling apart.
+Hey, I’m Ben. I don’t know how to keep going some days. 
+It feels like everything’s falling apart.
 </D00.Text>
 <D00.OP01>
 What’s been happening? You don’t have to face it alone.
@@ -31,7 +32,8 @@ You look like someone who’s troubled.
 
 <D00.01>
 <D00.01.Text>
-I’m losing interest in everything I used to care about. It’s all so exhausting.
+I’m losing interest in everything I used to care about. 
+It’s all so exhausting.
 </D00.01.Text>
 <D00.01.OP01>
 It’s okay to feel exhausted. Maybe you could talk to someone about it?
