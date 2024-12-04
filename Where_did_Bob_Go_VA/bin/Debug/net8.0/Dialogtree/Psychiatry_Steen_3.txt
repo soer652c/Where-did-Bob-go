@@ -16,96 +16,96 @@ None
 
 <D00>
 <D00.Text>
-"Hey, I’m Steen. I’ve been feeling like I’m on top of the world."
+Hey, I’m Steen. I’ve been feeling like I’m on top of the world.
 </D00.Text>
 
 <D00.OP01>
-"That’s awesome! What makes you feel that way?"
+That’s awesome! What makes you feel that way?
 </D00.OP01>
 
 <D00.OP02>
-"How do you keep a positive mood?"
+How do you keep a positive mood?
 </D00.OP02>
 
 <D00.OP03>
-"That is nice to hear. What do you do to make you feel so good?"
+That is nice to hear. What do you do to make you feel so good?
 </D00.OP03>
 </D00>
 
 <D00.01>
 <D00.01.Text>
-"I've got a new girlfriend."
+I've got a new girlfriend.
 </D00.01.Text>
 
 <D00.01.OP01>
-"That’s fantastic! What do you guys do together?"
+That’s fantastic! What do you guys do together?
 </D00.01.OP01>
 
 <D00.01.OP02>
-"It sounds like you’ve found the one and only."
+It sounds like you’ve found the one and only.
 </D00.01.OP02>
 </D00.01>
 
 <D00.01.01>
 <D00.01.01.Text>
-"We’ve been to the park a few times."
+We’ve been to the park a few times.
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-"Yeah, I hope so!"
+Yeah, I hope so!
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02>
 <D00.02.Text>
-"Just keep doing what you love."
+Just keep doing what you love.
 </D00.02.Text>
 
 <D00.02.OP01>
-"Oh, that sounds nice. What do you love to do?"
+Oh, that sounds nice. What do you love to do?
 </D00.02.OP01>
 
 <D00.02.OP02>
-"Oh nice, have you been doing what you love?"
+Oh nice, have you been doing what you love?
 </D00.02.OP02>
 </D00.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-"I like hanging out with my friends and taking walks in the park."
+I like hanging out with my friends and taking walks in the park.
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-"Of course, every day!"
+Of course, every day!
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03>
 <D00.03.Text>
-"I do activities like going to the park and hanging out with my friends."
+I do activities like going to the park and hanging out with my friends.
 </D00.03.Text>
 
 <D00.03.OP01>
-"That is great. How many trips to the park do you take a week?"
+That is great. How many trips to the park do you take a week?
 </D00.03.OP01>
 
 <D00.03.OP02>
-"Nice to hear. How many times do you hang out with your friends?"
+Nice to hear. How many times do you hang out with your friends?
 </D00.03.OP02>
 </D00.03>
 
 <D00.03.01>
 <D00.03.01.Text>
-"A few times a week. Whenever I have time."
+A few times a week. Whenever I have time.
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-"Every weekend, but I also play games with them."
+Every weekend, but I also play games with them.
 </D00.03.02.Text>
 </D00.03.02>
