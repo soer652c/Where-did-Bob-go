@@ -16,96 +16,96 @@ None
 
 <D00>
 <D00.Text>
-"Hi, I’m Clara. Things have been pretty great lately."
+Hi, I’m Clara. Things have been pretty great lately.
 </D00.Text>
 
 <D00.OP01>
-"That’s awesome! What’s been going well for you?"
+That’s awesome! What’s been going well for you?
 </D00.OP01>
 
 <D00.OP02>
-"I’m glad to hear that! Anything exciting happening?"
+I’m glad to hear that! Anything exciting happening?
 </D00.OP02>
 
 <D00.OP03>
-“Sounds fantastic, why is that if I may ask?”
+Sounds fantastic, why is that if I may ask?
 </D00.OP03>
 </D00>
 
 <D00.01>
 <D00.01.Text>
-"I’ve been focusing on self-care and spending time with friends."
+I’ve been focusing on self-care and spending time with friends.
 </D00.01.Text>
 
 <D00.01.OP01>
-"That’s wonderful! What kind of self-care have you been doing?"
+That’s wonderful! What kind of self-care have you been doing?
 </D00.01.OP01>
 
 <D00.01.OP02>
-"It’s so important to take care of yourself."
+It’s so important to take care of yourself.
 </D00.01.OP02>
 </D00.01>
 
 <D00.01.01>
 <D00.01.01.Text>
-"I’m feeling more confident lately."
+I’m feeling more confident lately.
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-"Yeah, I’ve been feeling so much better!"
+Yeah, I’ve been feeling so much better!
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02>
 <D00.02.Text>
-"I’ve just had a fantastic few weeks, so I’m feeling good."
+I’ve just had a fantastic few weeks, so I’m feeling good.
 </D00.02.Text>
 
 <D00.02.OP01>
-"That’s amazing! What’s helped boost your confidence?"
+That’s amazing! What’s helped boost your confidence?
 </D00.02.OP01>
 
 <D00.02.OP02>
-"It’s great that you’re feeling this way. Keep it up!"
+It’s great that you’re feeling this way. Keep it up!
 </D00.02.OP02>
 </D00.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-"Wearing clothes I like and keeping my chin high."
+Wearing clothes I like and keeping my chin high.
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-"Thanks! It’s been a great change."
+Thanks! It’s been a great change.
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03>
 <D00.03.Text>
-"I’ve been trying to stay grateful and focus on all the positive in life."
+I’ve been trying to stay grateful and focus on all the positive in life.
 </D00.03.Text>
 
 <D00.03.OP01>
-"That’s amazing! What’s going on lately?"
+That’s amazing! What’s going on lately?
 </D00.03.OP01>
 
 <D00.03.OP02>
-"It’s great that you’re feeling this way. Keep it up!"
+It’s great that you’re feeling this way. Keep it up!
 </D00.03.OP02>
 </D00.03>
 
 <D00.03.01>
 <D00.03.01.Text>
-"I’ve been visiting family and friends a lot, which was nice."
+I’ve been visiting family and friends a lot, which was nice.
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-"Thanks! It’s been a great change."
+Thanks! It’s been a great change.
 </D00.03.02.Text>
 </D00.03.02>

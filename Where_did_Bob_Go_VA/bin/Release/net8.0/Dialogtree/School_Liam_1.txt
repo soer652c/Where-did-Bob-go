@@ -16,99 +16,99 @@ High
 
 <D00>
 <D00.Text>
-"Hey, I’m Liam. Honestly, 
-I’ve been feeling like there’s no point in anything lately."
+Hey, I’m Liam. Honestly, 
+I’ve been feeling like there’s no point in anything lately.
 </D00.Text>
 
 <D00.OP01>
-"What’s making you feel like that?"
+What’s making you feel like that?
 </D00.OP01>
 
 <D00.OP02>
-"Have you told anyone about how you're feeling?"
+Have you told anyone about how you're feeling?
 </D00.OP02>
 
 <D00.OP03>
-"You can always talk to me."
+You can always talk to me.
 </D00.OP03>
 </D00>
 
 <D00.01>
 <D00.01.Text>
-"I don’t know, it’s like I’m invisible, and nothing I do matters."
+I don’t know, it’s like I’m invisible, and nothing I do matters.
 </D00.01.Text>
 
 <D00.01.OP01>
-"That must feel really heavy. I’m here for you if you want to talk."
+That must feel really heavy. I’m here for you if you want to talk.
 </D00.01.OP01>
 
 <D00.01.OP02>
-"Have you thought about reaching out to someone?"
+Have you thought about reaching out to someone?
 </D00.01.OP02>
 </D00.01>
 
 <D00.01.01>
 <D00.01.01.Text>
-"I don’t think it would make a difference. But thanks."
+I don’t think it would make a difference. But thanks.
 </D00.01.01.Text>
 </D00.01.01>
 
 <D00.01.02>
 <D00.01.02.Text>
-"I don’t think it would make a difference. But thanks."
+I don’t think it would make a difference. But thanks.
 </D00.01.02.Text>
 </D00.01.02>
 
 <D00.02>
 <D00.02.Text>
-"No, I just keep it all inside."
+No, I just keep it all inside.
 </D00.02.Text>
 
 <D00.02.OP01>
-"I understand, but sometimes talking helps. 
-You don’t have to keep it all in."
+I understand, but sometimes talking helps. 
+You don’t have to keep it all in.
 </D00.02.OP01>
 
 <D00.02.OP02>
-"What if someone understood what you're going through?"
+What if someone understood what you're going through?
 </D00.02.OP02>
 </D00.02>
 
 <D00.02.01>
 <D00.02.01.Text>
-"Maybe, but no one will ever understand."
+Maybe, but no one will ever understand.
 </D00.02.01.Text>
 </D00.02.01>
 
 <D00.02.02>
 <D00.02.02.Text>
-"Maybe I’ll think about it."
+Maybe I’ll think about it.
 </D00.02.02.Text>
 </D00.02.02>
 
 <D00.03>
 <D00.03.Text>
-"I feel like no one really knows me. And I just feel so depressed."
+I feel like no one really knows me. And I just feel so depressed.
 </D00.03.Text>
 
 <D00.03.OP01>
-"It must be very difficult to feel like that. 
-I can find you a number to a shrink."
+It must be very difficult to feel like that. 
+I can find you a number to a shrink.
 </D00.03.OP01>
 
 <D00.03.OP02>
-"Can I talk to a dear friend for you?"
+Can I talk to a dear friend for you?
 </D00.03.OP02>
 </D00.03>
 
 <D00.03.01>
 <D00.03.01.Text>
-"I don’t have the money."
+I don’t have the money.
 </D00.03.01.Text>
 </D00.03.01>
 
 <D00.03.02>
 <D00.03.02.Text>
-"I don’t feel like involving anybody. No one can relate."
+I don’t feel like involving anybody. No one can relate.
 </D00.03.02.Text>
 </D00.03.02>
